@@ -1,0 +1,283 @@
+//подключение шрифтов
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+//import
+@import "fonts";
+@import "normalize";
+
+//брейкпойнты
+$md1: 1198.98;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$maxWidth: 1920;
+
+button, a {
+    cursor: pointer;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: white;
+    @media (max-width: $md3 + px) {
+        &.lock {
+            overflow: hidden;
+        }
+    } 
+}
+
+.wrapper {
+    max-width: $maxWidth + px;
+    min-width: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+<<<<<<< HEAD
+    width: 100%;
+    max-width: $maxWidth + px;
+    margin: 0 auto;
+    &-header {
+=======
+    &-header {
+        width: 100%;
+>>>>>>> parent of 09417a9... Начало вёрстки структуры, хэдера и фулскрина
+        padding: 0 50px;
+    }
+    /*
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;*/
+}
+<<<<<<< HEAD
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+//========================================
+.header {
+    width: 100%;
+    height: 85px;
+    font-family: 'Futura';
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        flex: 0 1 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+=======
+//========================================
+.header {
+>>>>>>> parent of 09417a9... Начало вёрстки структуры, хэдера и фулскрина
+    // .header__logo
+
+    &__logo {
+        width: 215px;
+        height: auto;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .header__lang
+
+    &__lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__menu
+
+    &__menu {
+        flex: 0 1 40%;
+    }
+
+<<<<<<< HEAD
+    // .header__contacts
+
+    &__contacts {
+        flex: 0 1 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__address
+
+    &__address {
+    }
+
+    // .header__time
+
+    &__time {
+    }
+
+    // .header__link
+
+    &__link {
+    }
+
+.lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		// .lang__option
+
+		&__option {
+		}
+}
+.menu {
+    &__burger {
+        display: none
+    }
+    &__body {
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+    }
+}
+    
+=======
+    // .header__burger
+
+    &__burger {
+        display: none
+    }
+
+    // .header__body
+
+    &__body {
+    }
+
+    // .header__list
+
+    &__list {
+    }
+
+    // .header__link
+
+    &__link {
+    }
+>>>>>>> parent of 09417a9... Начало вёрстки структуры, хэдера и фулскрина
+/*    @media (max-width: $md3 + px) {
+        .menu {
+            &__burger {
+                display: block;
+                position: relative;
+                width: 30px;
+                height: 20px;
+                padding: 2px;
+                z-index: 3;
+                span {
+                    background-color: rgba(104, 104, 104, 1);
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    top: 9px;
+                    transition: all 0.3s ease 0s;
+                }
+                &:before, &:after {
+                    content: '';
+                    background-color:rgba(104, 104, 104, 1);
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    transition: all 0.3s ease 0s;
+                }
+                &:before {
+                    top: 0;
+                }
+                &:after {
+                    bottom: 0;
+                }
+                &.active {
+                    &:before {
+                        transform: rotate(45deg);
+                        top: 9px;
+                    }
+                    &:after {
+                        transform: rotate(-45deg);
+                        bottom: 9px;
+                    }
+                    span {
+                        transform: scale(0);
+                    }
+                }
+            }
+            &__body {
+                display: none;
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                //важно для прокрутки
+                overflow: auto;
+                z-index: 2;
+                padding: 120px 20px 30px 20px;
+                transition: all .3s ease 0s;
+                background-color: #fff;
+                &.active {
+                    display: block;
+                }
+                //плашка для прокрутки на маленьких экранах
+                &:before {
+                    content: '';
+                    position: fixed;
+                    width: 100%;
+                    height: 105px;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+                    background-color: yellow;
+                }
+            }
+            &__list {
+                //важно для прокрутки
+                height: 100%;
+            }
+        } 
+    }*/
+}
+//========================================
