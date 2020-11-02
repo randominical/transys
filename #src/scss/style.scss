@@ -284,6 +284,7 @@ body {
     background: url('../img/fullscreen_bg.jpg') center/cover no-repeat;
     padding: 100px 0 25px 0;
     color: rgba(255,255,255,1);
+    position: relative;
     .container {
         height: 100%;
         display: flex;
@@ -336,10 +337,30 @@ body {
     // .fullscreen__iconbar
 
     &__iconbar {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0, -50%);
     }
 
     // .fullscreen__soc
 
     &__soc {
+        font-family: 'FIcons';
+        font-size: 29px;
+        color: rgba(69, 75, 82, 1);
+        margin: 15px 0 15px 0;
     }
+    .fs-fullscreen_soc_3:before {
+        content: "\e900";
+    }
+    .fs-fullscreen_soc_2:before {
+    content: "\e901";
+    }
+    .fs-fullscreen_soc_1:before {
+    content: "\e902";
+    }
+      
 }

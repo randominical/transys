@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'fullscreen-icons';
-  src:  url('../fonts/fullscreen-icons.woff?3qni1r') format('woff'), url('../fonts/fullscreen-icons.woff2?3qni1r') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
+
 
 [class^="fs-"], [class*=" fs-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
