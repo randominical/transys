@@ -47,15 +47,10 @@ body {
 }
 
 .container {
-<<<<<<< HEAD
     width: 100%;
     max-width: $maxWidth + px;
     margin: 0 auto;
     &-header {
-=======
-    &-header {
-        width: 100%;
->>>>>>> parent of 09417a9... Начало вёрстки структуры, хэдера и фулскрина
         padding: 0 50px;
     }
     /*
@@ -63,7 +58,6 @@ body {
     margin: 0 auto;
     padding: 0 20px;*/
 }
-<<<<<<< HEAD
 
 .main {
     width: 100%;
@@ -97,10 +91,6 @@ body {
         align-items: center;
     }
 
-=======
-//========================================
-.header {
->>>>>>> parent of 09417a9... Начало вёрстки структуры, хэдера и фулскрина
     // .header__logo
 
     &__logo {
@@ -127,7 +117,6 @@ body {
         flex: 0 1 40%;
     }
 
-<<<<<<< HEAD
     // .header__contacts
 
     &__contacts {
@@ -176,7 +165,6 @@ body {
     }
 }
     
-=======
     // .header__burger
 
     &__burger {
@@ -197,7 +185,6 @@ body {
 
     &__link {
     }
->>>>>>> parent of 09417a9... Начало вёрстки структуры, хэдера и фулскрина
 /*    @media (max-width: $md3 + px) {
         .menu {
             &__burger {
@@ -281,3 +268,8 @@ body {
     }*/
 }
 //========================================
+.fullscreen {
+    width: 100%;
+    height: 100%;
+    background: url('../img/fullscreen_bg.jpg') center/cover no-repeat;
+}
