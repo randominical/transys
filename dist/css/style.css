@@ -961,6 +961,17 @@ body {
   font-size: 48px;
   line-height: 59px;
   margin: 0 0 49px;
+  position: relative;
+}
+
+.fullscreen__title:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #0093ff;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
 }
 
 .fullscreen__text {

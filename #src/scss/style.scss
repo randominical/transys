@@ -117,9 +117,6 @@ body {
         justify-content: space-between;
         margin: 0 0 0 10px;
     }
-
-    // .header__logo
-
     &__logo {
         width: 215px;
         height: auto;
@@ -129,20 +126,11 @@ body {
             height: auto;
         }
     }
-
-    // .header__lang
-
     &__lang {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
-
-
-
-    // .header__address
-
     &__address {
         flex: 0 0 140px;
         margin: 0 10px 0 0;
@@ -150,16 +138,10 @@ body {
             font-style: normal;
         }
     }
-
-    // .header__time
-
     &__time {
         flex: 0 0 100px;
         margin: 0 10px 0 0;
     }
-
-    // .header__link
-
     &__link {
         flex: 0 1 200px;
         height: 32px;
@@ -174,7 +156,6 @@ body {
             border: $blue;
         }
     }
-    
     .lang {
         display: flex;
         justify-content: space-between;
@@ -323,6 +304,16 @@ body {
         font-size: 48px;
         line-height: 59px;
         margin: 0 0 49px;
+        position: relative;
+        &:after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            background: $blue;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+        }
     }
     &__text {
         font-weight: 500;
