@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Futura";
   font-display: swap;
-  src: url("../fonts/FuturaBk.woff") format("woff"), url("../fonts/FuturaBk.woff2") format("woff2");
+  src: url("../fonts/Futura.woff") format("woff"), url("../fonts/Futura.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -57,11 +57,43 @@
 }
 
 @font-face {
-  font-family: "FIcons";
+  font-family: "Icon1";
   font-display: swap;
-  src: url("../fonts/fullscreen-icons.woff") format("woff"), url("../fonts/fullscreen-icons.woff2") format("woff2");
+  src: url("../fonts/iconfont_tb.woff") format("woff"), url("../fonts/iconfont_tb.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+}
+
+.if_tbig:before {
+  content: "\e900";
+}
+
+.if_tbwhatsapp:before {
+  content: "\e901";
+}
+
+.if_tbcall-int:before {
+  content: "\e902";
+}
+
+.if_tbtwitter:before {
+  content: "\e903";
+}
+
+.if_tbfacebook:before {
+  content: "\e904";
+}
+
+.if_tbcall-phone:before {
+  content: "\e905";
+}
+
+.if_tbpin:before {
+  content: "\e906";
+}
+
+.if_tbtime:before {
+  content: "\e907";
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -570,6 +602,9 @@ body {
 }
 
 .wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   max-width: 1920px;
   min-width: 280px;
   margin: 0 auto;
@@ -580,6 +615,7 @@ body {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 20px;
   /*
     max-width: 1440px;
     margin: 0 auto;
@@ -605,9 +641,6 @@ body {
 .header {
   width: 100%;
   height: 85px;
-  font-family: 'Futura';
-  font-size: 12px;
-  line-height: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,6 +737,13 @@ body {
     }*/
 }
 
+.header,
+.header a {
+  font-size: 12px;
+  line-height: 120%;
+  color: white;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,8 +758,8 @@ body {
 
 .header__left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
+      -ms-flex: 0 1 415px;
+          flex: 0 1 415px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,6 +768,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.header__menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 628px;
+          flex: 0 1 628px;
+  margin: 0 10px;
+}
+
+.header__contacts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 10px;
 }
 
 .header__logo {
@@ -753,25 +817,8 @@ body {
           align-items: center;
 }
 
-.header__menu {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
-}
-
-.header__contacts {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header__link {
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .header .lang {
@@ -784,6 +831,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .lang__option {
+  color: #78a1b6;
+  text-transform: uppercase;
+  margin: 0 6px;
+}
+
+.header .lang__option.active,
+.header .lang__option:hover {
+  color: white;
 }
 
 .header .menu__burger {
@@ -800,6 +858,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .menu__link {
+  margin: 0 7px;
+}
+
+.header .menu__link:hover {
+  color: #39b8ff;
 }
 
 .header__burger {
@@ -896,7 +962,7 @@ body {
 }
 
 .fullscreen__soc {
-  font-family: 'FIcons';
+  font-family: 'Icon1';
   font-size: 29px;
   color: #454b52;
   margin: 15px 0 15px 0;
@@ -906,16 +972,10 @@ body {
   color: white;
 }
 
-.fullscreen .fs-fullscreen_soc_1:before {
-  content: "\e902";
-}
-
-.fullscreen .fs-fullscreen_soc_2:before {
-  content: "\e901";
-}
-
-.fullscreen .fs-fullscreen_soc_3:before {
-  content: "\e900";
+.section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 @-webkit-keyframes arrow {
