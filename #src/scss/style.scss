@@ -28,6 +28,7 @@ $maxWidth: 1920;
 
 button, a {
     cursor: pointer;
+    transition: color .3s ease-in, background .3s ease-in;
 }
 
 html {
@@ -302,8 +303,6 @@ body {
         line-height: 59px;
         margin: 0 0 49px;
     }
-    // .fullscreen__text
-
     &__text {
         font-weight: 500;
         font-size: 18px;
@@ -313,9 +312,6 @@ body {
             margin: 0 0 34px 0;
         }
     }
-
-    // .fullscreen__link
-
     &__link {
         color: rgba(255,255,255,1);
         background: $blue;
@@ -323,19 +319,18 @@ body {
         font-size: 14px;
         line-height: 17px;
         padding: 8px 25px;
+        &:hover {
+            color: $blue;
+            background: rgba(255,255,255,1); 
+        }
     }
-
-    // .fullscreen__button
-
     &__down {
         width: 32.17px;
         height: 20px;
         background: url('../img/down.svg') 50% 50%/cover no-repeat;
         align-self: center;
+        animation: arrow 1s infinite;
     }
-
-    // .fullscreen__iconbar
-
     &__iconbar {
         position: absolute;
         top: 50%;
@@ -344,23 +339,34 @@ body {
         flex-direction: column;
         transform: translate(0, -50%);
     }
-
-    // .fullscreen__soc
-
     &__soc {
         font-family: 'FIcons';
         font-size: 29px;
         color: rgba(69, 75, 82, 1);
         margin: 15px 0 15px 0;
+        &:hover {
+            color: rgba(255,255,255,1);
+        }
+    }
+    .fs-fullscreen_soc_1:before {
+        content: "\e902";
+    }
+    .fs-fullscreen_soc_2:before {
+        content: "\e901";
     }
     .fs-fullscreen_soc_3:before {
         content: "\e900";
+    }   
+}
+//========================================
+@keyframes arrow {
+    0% {
+        transform: translate(0,0);
     }
-    .fs-fullscreen_soc_2:before {
-    content: "\e901";
+    50% {
+        transform: translate(0,10px);
     }
-    .fs-fullscreen_soc_1:before {
-    content: "\e902";
+    100% {
+        transform: translate(0,0);
     }
-      
 }
