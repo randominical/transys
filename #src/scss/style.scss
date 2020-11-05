@@ -68,8 +68,8 @@ body {
     &-fullscreen {
         max-width: 1216px;
     }
-    &-benefits {
-        max-width: 1500px;
+    &-main {
+        max-width: 1478px;
     }
     /*
     max-width: 1440px;
@@ -418,8 +418,6 @@ body {
         background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
         z-index: -1;
     }
-    // .benefits__title
-
     &__title {
         margin: 0 0 119px 0;
         .title_b {
@@ -428,28 +426,16 @@ body {
             }
         }
     }
-
-    // .benefits__box
-
     &__box {
         display: flex;
     }
-
-    // .benefits__pic
-
     &__pic {
         flex: 0 1 66.666%;
     }
-
-    // .benefits__list
-
     &__list {
         flex: 0 1 33.333%;
         max-width: 350px;
     }
-
-    // .benefits__li
-
     &__li {
         font-family: $fontM;
         font-size: 18px;
@@ -463,6 +449,58 @@ body {
             height: 56px;
             margin: 0 45px 0 0;
         }
+    }
+}
+//========================================
+.types {
+
+    // .types__title
+
+    &__title {
+    }
+
+    // .types__box
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url('../img/types/types_line.svg') center 290px /contain no-repeat;
+    }
+
+    // .types__row
+
+    &__row {
+        display: flex;
+        height: 296px;
+        align-items: flex-end;
+        &:last-child {
+            height: auto;
+        }
+    }
+
+    // .types__column
+
+    &__column {
+        
+    }
+
+    // .types__pic
+
+    &__pic {
+        position: relative;
+    }
+    &__lable {
+        font-family: $fontM;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #3C464E;
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translate(-50%, 0);
     }
 }
 //========================================
