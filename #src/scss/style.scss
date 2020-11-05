@@ -366,8 +366,32 @@ body {
     }  
 }
 //========================================
-.section {
-    flex: 0 0 auto;
+.benefits {
+
+    // .benefits__title
+
+    &__title {
+    }
+
+    // .benefits__box
+
+    &__box {
+    }
+
+    // .benefits__pic
+
+    &__pic {
+    }
+
+    // .benefits__list
+
+    &__list {
+    }
+
+    // .benefits__li
+
+    &__li {
+    }
 }
 //========================================
 @keyframes arrow {
