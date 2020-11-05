@@ -637,7 +637,7 @@ body {
 }
 
 .container-main {
-  max-width: 1478px;
+  max-width: 1476px;
 }
 
 .main {
@@ -652,36 +652,37 @@ body {
           flex-direction: column;
 }
 
-.title-section {
-  text-align: center;
-}
-
 .title_b {
-  display: inline;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
   text-transform: uppercase;
+  text-align: center;
   color: #374148;
+}
+
+.title_b h2 {
+  display: inline-block;
   position: relative;
 }
 
-.title_b:before,
-.title_b:after {
+.title_b h2:before,
+.title_b h2:after {
   content: '';
-  width: 292px;
   height: 1px;
   position: absolute;
   top: 50%;
+  background-color: red;
 }
 
-.title_b:before {
+.title_b h2:before {
   right: 100%;
   margin-right: 60px;
 }
 
-.title_b:after {
+.title_b h2:after {
+  left: 100%;
   margin-left: 60px;
 }
 
@@ -1112,8 +1113,9 @@ body {
   margin: 0 0 119px 0;
 }
 
-.benefits__title .title_b:before,
-.benefits__title .title_b:after {
+.benefits__title .h2_line:before,
+.benefits__title .h2_line:after {
+  width: 292px;
   background: #374148;
 }
 
@@ -1156,6 +1158,16 @@ body {
   margin: 0 45px 0 0;
 }
 
+.types__title .h2_line {
+  max-width: 406px;
+}
+
+.types__title .h2_line:before,
+.types__title .h2_line:after {
+  width: 336px;
+  background: #C4C4C4;
+}
+
 .types__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1174,14 +1186,43 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 81%;
   height: 296px;
+  margin: 0 auto;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .types__row:last-child {
-  height: auto;
+  height: 580px;
+}
+
+.types__row_l {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.types__row_r {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.types__column_1 {
+  margin: 0 55px 0 0;
+}
+
+.types__column_3 {
+  margin: 0 165px 0 0;
+}
+
+.types__column_5 {
+  margin: 0 140px 0 0;
 }
 
 .types__pic {
