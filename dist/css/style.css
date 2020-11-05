@@ -662,13 +662,14 @@ body {
   color: #374148;
 }
 
-.title_b h2 {
+.title_b .h2_line {
+  margin: 0;
   display: inline-block;
   position: relative;
 }
 
-.title_b h2:before,
-.title_b h2:after {
+.title_b .h2_line:before,
+.title_b .h2_line:after {
   content: '';
   height: 1px;
   position: absolute;
@@ -676,12 +677,12 @@ body {
   background-color: red;
 }
 
-.title_b h2:before {
+.title_b .h2_line:before {
   right: 100%;
   margin-right: 60px;
 }
 
-.title_b h2:after {
+.title_b .h2_line:after {
   left: 100%;
   margin-left: 60px;
 }
@@ -1080,7 +1081,7 @@ body {
 }
 
 .benefits {
-  padding: 114px 0 123px 0;
+  padding: 114px 0 110px 0;
   position: relative;
 }
 
@@ -1158,6 +1159,15 @@ body {
   margin: 0 45px 0 0;
 }
 
+.types {
+  padding: 18px 0 125px 0;
+  background: url("../img/types/types_cloud_1.svg") right 90px top 115px/212px auto no-repeat, url("../img/types/types_cloud_2.svg") 100px 195px/299px auto no-repeat, url("../img/types/types_cloud_1.svg") 128px 630px/212px auto no-repeat, url("../img/types/types_cloud_1.svg") 230px 1245px/109px auto no-repeat;
+}
+
+.types__title {
+  margin: 0;
+}
+
 .types__title .h2_line {
   max-width: 406px;
 }
@@ -1179,7 +1189,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../img/types/types_line.svg") center 290px/contain no-repeat;
+  background: url("../img/types/types_line.svg") center 290px/1436px 1224.5px no-repeat;
 }
 
 .types__row {
@@ -1195,6 +1205,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.types__row:nth-child(1) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.types__row:nth-child(2) {
+  background: url("../img/types/types_cloud_1.svg") 400px 140px/109px auto no-repeat, url("../img/types/types_cloud_3.svg") 809px 90px/299px auto no-repeat;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.types__row:nth-child(3) {
+  background: url("../img/types/types_cloud_1.svg") left 60%/103px auto no-repeat, url("../img/types/types_cloud_2.svg") 60% 100px/299px auto no-repeat, url("../img/types/types_cloud_1.svg") right 110px/109px auto no-repeat;
+}
+
+.types__row:nth-child(4) {
+  background: url("../img/types/types_cloud_1.svg") left -50px 80%/109px auto no-repeat, url("../img/types/types_cloud_2.svg") 60% 100px/299px auto no-repeat;
 }
 
 .types__row:last-child {

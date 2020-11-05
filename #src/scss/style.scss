@@ -92,7 +92,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #374148;
-    h2 {
+    .h2_line {
+        margin: 0;
         display: inline-block;
         position: relative;
         &:before, &:after {
@@ -399,7 +400,7 @@ body {
 }
 //========================================
 .benefits {
-    padding: 114px 0 123px 0;
+    padding: 114px 0 110px 0;
     position: relative;
     &:before {
         content: '';
@@ -456,10 +457,10 @@ body {
 }
 //========================================
 .types {
-
-    // .types__title
-
+    padding: 18px 0 125px 0;
+    background: url('../img/types/types_cloud_1.svg') right 90px top 115px /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 100px 195px/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 128px 630px /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 230px 1245px /109px auto no-repeat;
     &__title {
+        margin: 0;
         .h2_line {
             max-width: 406px;
             &:before, &:after {
@@ -476,7 +477,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: url('../img/types/types_line.svg') center 290px /contain no-repeat;
+        background: url('../img/types/types_line.svg') center 290px /1436px 1224.5px no-repeat;
     }
 
     // .types__row
@@ -488,6 +489,19 @@ body {
         margin: 0 auto;
         align-items: flex-end;
         justify-content: center;
+        &:nth-child(1) {
+            justify-content: flex-end;
+        }
+        &:nth-child(2) {
+            background: url('../img/types/types_cloud_1.svg') 400px 140px /109px auto no-repeat, url('../img/types/types_cloud_3.svg') 809px 90px /299px auto no-repeat;
+            justify-content: flex-start;
+        }
+        &:nth-child(3) {
+            background: url('../img/types/types_cloud_1.svg') left 60% /103px auto no-repeat, url('../img/types/types_cloud_2.svg') 60% 100px /299px auto no-repeat, url('../img/types/types_cloud_1.svg') right 110px /109px auto no-repeat;
+        }
+        &:nth-child(4) {
+            background: url('../img/types/types_cloud_1.svg') left -50px 80% /109px auto no-repeat, url('../img/types/types_cloud_2.svg') 60% 100px /299px auto no-repeat;
+        }
         &:last-child {
             height: 580px;
         }
