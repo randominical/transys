@@ -50,7 +50,8 @@ body {
 
 .wrapper {
     flex: 0 0 auto;
-    max-width: $maxWidth + px;
+    width: 100%;
+ //   max-width: $maxWidth + px;
     min-width: 280px;
     margin: 0 auto;
     overflow: hidden;
@@ -67,6 +68,9 @@ body {
     &-fullscreen {
         max-width: 1216px;
     }
+    &-benefits {
+        max-width: 1500px;
+    }
     /*
     max-width: 1440px;
     margin: 0 auto;
@@ -78,6 +82,33 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+.title-section {
+    text-align: center;
+}
+.title_b {
+    display: inline;
+    font-family: $fontM;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #374148;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        width: 292px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+    }
+    &:before {
+        right: 100%;
+        margin-right: 60px;
+    }
+    &:after {
+        margin-left: 60px;
+    }
 }
 //========================================
 .header {
@@ -367,30 +398,63 @@ body {
 }
 //========================================
 .benefits {
-
+    background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+    padding: 114px 0 123px 0;
+    position: relative;
+    &:before {
+        content: '';
+        height: 25px;
+        width: 741px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:linear-gradient(to right, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+    }
     // .benefits__title
 
     &__title {
+        margin: 0 0 119px 0;
+        .title_b {
+            &:before, &:after {
+                background: #374148;
+            }
+        }
     }
 
     // .benefits__box
 
     &__box {
+        display: flex;
     }
 
     // .benefits__pic
 
     &__pic {
+        flex: 0 1 66.666%;
     }
 
     // .benefits__list
 
     &__list {
+        flex: 0 1 33.333%;
+        max-width: 350px;
     }
 
     // .benefits__li
 
     &__li {
+        font-family: $fontM;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3C464E;
+        display: flex;
+        align-items: center;
+        margin: 0 0 25px 0;
+        img {
+            width: 56px;
+            height: 56px;
+            margin: 0 45px 0 0;
+        }
     }
 }
 //========================================

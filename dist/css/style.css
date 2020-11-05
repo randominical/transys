@@ -614,7 +614,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  max-width: 1920px;
+  width: 100%;
   min-width: 280px;
   margin: 0 auto;
   overflow: hidden;
@@ -635,6 +635,10 @@ body {
   max-width: 1216px;
 }
 
+.container-benefits {
+  max-width: 1500px;
+}
+
 .main {
   width: 100%;
   height: 100%;
@@ -645,6 +649,39 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.title-section {
+  text-align: center;
+}
+
+.title_b {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #374148;
+  position: relative;
+}
+
+.title_b:before,
+.title_b:after {
+  content: '';
+  width: 292px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+}
+
+.title_b:before {
+  right: 100%;
+  margin-right: 60px;
+}
+
+.title_b:after {
+  margin-left: 60px;
 }
 
 .header {
@@ -1039,6 +1076,74 @@ body {
 
 .fullscreen__soc:hover {
   color: white;
+}
+
+.benefits {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(43.05%, #CFD4DB), to(rgba(186, 193, 201, 0)));
+  background: -o-linear-gradient(top, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+  background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+  padding: 114px 0 123px 0;
+  position: relative;
+}
+
+.benefits:before {
+  content: '';
+  height: 25px;
+  width: 741px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #003C5F), color-stop(33%, #003C5F), color-stop(33%, #0A6397), color-stop(66%, #0A6397), color-stop(66%, #008DD2), to(#008DD2));
+  background: -o-linear-gradient(left, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+  background: linear-gradient(to right, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+}
+
+.benefits__title {
+  margin: 0 0 119px 0;
+}
+
+.benefits__title .title_b:before,
+.benefits__title .title_b:after {
+  background: #374148;
+}
+
+.benefits__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits__pic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 66.666%;
+          flex: 0 1 66.666%;
+}
+
+.benefits__list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  max-width: 350px;
+}
+
+.benefits__li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3C464E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 25px 0;
+}
+
+.benefits__li img {
+  width: 56px;
+  height: 56px;
+  margin: 0 45px 0 0;
 }
 
 @-webkit-keyframes arrow {
