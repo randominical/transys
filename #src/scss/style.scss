@@ -51,7 +51,7 @@ body {
 .wrapper {
     flex: 0 0 auto;
     width: 100%;
- //   max-width: $maxWidth + px;
+    max-width: $maxWidth + px;
     min-width: 280px;
     margin: 0 auto;
     overflow: hidden;
@@ -319,7 +319,6 @@ body {
     background: url('../img/fullscreen_bg.jpg') center/cover no-repeat;
     padding: 100px 0 25px 0;
     color: rgba(255,255,255,1);
-    position: relative;
     .container {
         height: 100%;
         display: flex;
@@ -398,7 +397,6 @@ body {
 }
 //========================================
 .benefits {
-    background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
     padding: 114px 0 123px 0;
     position: relative;
     &:before {
@@ -409,6 +407,16 @@ body {
         top: 0;
         left: 0;
         background:linear-gradient(to right, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+    }
+    &:after {
+        content: '';
+        width: 100vw;
+        height: 120%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+        z-index: -1;
     }
     // .benefits__title
 
