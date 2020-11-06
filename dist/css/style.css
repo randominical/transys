@@ -1196,12 +1196,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 81%;
+  width: 100%;
   height: 296px;
+  padding: 0 10%;
   margin: 0 auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1214,34 +1212,40 @@ body {
 }
 
 .types__row:nth-child(2) {
-  background: url("../img/types/types_cloud_1.svg") 400px 140px/109px auto no-repeat, url("../img/types/types_cloud_3.svg") 809px 90px/299px auto no-repeat;
+  background: url("../img/types/types_cloud_1.svg") 40% 50%/109px auto no-repeat, url("../img/types/types_cloud_3.svg") 85% 90px/299px auto no-repeat;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
 .types__row:nth-child(3) {
-  background: url("../img/types/types_cloud_1.svg") left 60%/103px auto no-repeat, url("../img/types/types_cloud_2.svg") 60% 100px/299px auto no-repeat, url("../img/types/types_cloud_1.svg") right 110px/109px auto no-repeat;
+  background: url("../img/types/types_cloud_1.svg") 130px 60%/103px auto no-repeat, url("../img/types/types_cloud_2.svg") 55% 40%/299px auto no-repeat, url("../img/types/types_cloud_1.svg") right 110px top 45%/109px auto no-repeat;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .types__row:nth-child(4) {
-  background: url("../img/types/types_cloud_1.svg") left -50px 80%/109px auto no-repeat, url("../img/types/types_cloud_2.svg") 60% 100px/299px auto no-repeat;
+  background: url("../img/types/types_cloud_1.svg") 45% 55%/109px auto no-repeat, url("../img/types/types_cloud_1.svg") right 60px bottom 60px/109px auto no-repeat, url("../img/types/types_cloud_3.svg") 100px 50%/299px auto no-repeat, url("../img/types/types_cloud_3.svg") right 164px top 46%/299px auto no-repeat;
 }
 
 .types__row:last-child {
   height: 580px;
+  background: url("../img/types/types_wave_1.svg") bottom 10% left 24%/164px auto no-repeat, url("../img/types/types_wave_2.svg") bottom 8.5% right 18.5%/316px auto no-repeat, url("../img/types/types_cloud_1.svg") top 35% right 20%/109px auto no-repeat, url("../img/types/types_cloud_2.svg") left 33% top 46%/255px auto no-repeat, url("../img/types/types_cloud_4.svg") left 42% top 30%/114px auto no-repeat;
 }
 
-.types__row_l {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.types__row_r {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.types__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
 }
 
 .types__column_1 {
@@ -1258,6 +1262,29 @@ body {
 
 .types__pic {
   position: relative;
+  height: 44.65%;
+  width: auto;
+}
+
+.types__pic_5 {
+  height: 61.12%;
+}
+
+.types__pic_6 {
+  height: 46.82%;
+}
+
+.types__pic_7 {
+  height: 65.02%;
+}
+
+.types__pic_8 {
+  height: 19.74%;
+}
+
+.types__pic img {
+  height: 100%;
+  width: auto;
 }
 
 .types__lable {
@@ -1273,6 +1300,32 @@ body {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+.types__ship {
+  height: 32.38%;
+  width: auto;
+  position: absolute;
+  top: 54%;
+  left: 15%;
+}
+
+.types__ship img {
+  height: 100%;
+  width: auto;
+}
+
+.types__plane {
+  height: 14.01%;
+  width: auto;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+}
+
+.types__plane img {
+  height: 100%;
+  width: auto;
 }
 
 @-webkit-keyframes arrow {
