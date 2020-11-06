@@ -1329,13 +1329,16 @@ body {
 }
 
 .quality {
-  background: url("../img/quality_w.png") top/cover no-repeat, url("../img/quality_bg.svg") 50%/cover no-repeat, #0A6397;
+  background: url("../img/quality_w.png") 0 0/contain no-repeat, url("../img/quality_bg.svg") 0 600px/1920px no-repeat, #0A6397;
   padding: 80px 0 100px 0;
   font-family: "Montserrat", sans-serif;
 }
 
 .quality__top {
-  max-width: 700px;
+  background: url("../img/quality.png") 0 0/358px no-repeat;
+  max-width: 1500px;
+  height: 698px;
+  padding: 0 0 0 350px;
 }
 
 .quality__slogan {
