@@ -705,6 +705,39 @@ body {
     }
 }
 //========================================
+.guarantee {
+    &__title {
+
+    }
+    &__tabs {
+
+    }
+    .tabs {
+        &__captions {
+
+        }
+        &__caption {
+
+        }
+        &__item {
+            &.active {
+
+            }
+        }
+        &__features {
+
+        }
+        &__feature {
+
+        }
+        &__pic {
+            img {
+
+            }
+        }
+    }
+}
+//========================================
 @keyframes arrow {
     0% {
         transform: translate(0,0);
