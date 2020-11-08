@@ -102,7 +102,6 @@ body {
             height: 1px;
             position: absolute;
             top: 50%;
-            background-color: red;
         }
         &:before {
             right: 100%;
@@ -706,8 +705,15 @@ body {
 }
 //========================================
 .guarantee {
+    padding: 90px 0 102px 0;
     &__title {
-
+        margin: 0 0 95.3px 0;
+        .h2_line {
+            &:before, &:after {
+                width: 336px;
+                background: #C4C4C4;
+            }
+        }
     }
     &__tabs {
         font-family: $fontM;
@@ -737,8 +743,9 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 0 5px 0 0;
             cursor: pointer;
-            &:hover {
+            &:hover, &.active {
                 font-weight: 600;
                 .tabs__icon {
                     &_1 {
@@ -796,19 +803,47 @@ body {
             }
         }
         &__item {
+            display: flex;
             &.active {
 
             }
         }
         &__features {
-
+            flex: 0 1 29.1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 55px 0 0;
+            counter-reset: myCounter;
         }
         &__feature {
-
+            padding: 0 0 0 90px;
+            list-style: none;
+            margin: 0 0 64px 0;
+            position: relative;
+            &:before {
+                counter-increment: myCounter;
+                content:counter(myCounter);
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                border: 1px solid #0A6397;
+                font-family: $fontM;
+                font-size: 50px;
+                color: #008DD2;
+                position: absolute;
+                top: -18px;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
         &__pic {
+            flex: 0 1 63.24%;
             img {
-
+                width: 100%;
+                height: auto;
             }
         }
     }

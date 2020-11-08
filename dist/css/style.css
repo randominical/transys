@@ -674,7 +674,6 @@ body {
   height: 1px;
   position: absolute;
   top: 50%;
-  background-color: red;
 }
 
 .title_b .h2_line:before {
@@ -1451,6 +1450,20 @@ body {
   height: 100%;
 }
 
+.guarantee {
+  padding: 90px 0 102px 0;
+}
+
+.guarantee__title {
+  margin: 0 0 95.3px 0;
+}
+
+.guarantee__title .h2_line:before,
+.guarantee__title .h2_line:after {
+  width: 336px;
+  background: #C4C4C4;
+}
+
 .guarantee__tabs {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -1493,30 +1506,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 5px 0 0;
   cursor: pointer;
 }
 
-.guarantee .tabs__caption:hover {
+.guarantee .tabs__caption:hover,
+.guarantee .tabs__caption.active {
   font-weight: 600;
 }
 
-.guarantee .tabs__caption:hover .tabs__icon_1 {
+.guarantee .tabs__caption:hover .tabs__icon_1,
+.guarantee .tabs__caption.active .tabs__icon_1 {
   background: #0A6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/29.37px no-repeat;
 }
 
-.guarantee .tabs__caption:hover .tabs__icon_2 {
+.guarantee .tabs__caption:hover .tabs__icon_2,
+.guarantee .tabs__caption.active .tabs__icon_2 {
   background: #0A6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/29.37px no-repeat;
 }
 
-.guarantee .tabs__caption:hover .tabs__icon_3 {
+.guarantee .tabs__caption:hover .tabs__icon_3,
+.guarantee .tabs__caption.active .tabs__icon_3 {
   background: #0A6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/29.37px no-repeat;
 }
 
-.guarantee .tabs__caption:hover .tabs__icon_4 {
+.guarantee .tabs__caption:hover .tabs__icon_4,
+.guarantee .tabs__caption.active .tabs__icon_4 {
   background: #0A6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/29.37px no-repeat;
 }
 
-.guarantee .tabs__caption:hover .tabs__icon_5 {
+.guarantee .tabs__caption:hover .tabs__icon_5,
+.guarantee .tabs__caption.active .tabs__icon_5 {
   background: #0A6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/29.37px no-repeat;
 }
 
@@ -1567,6 +1587,72 @@ body {
 
 .guarantee .tabs__icon_5:hover {
   background: #0A6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/29.37px no-repeat;
+}
+
+.guarantee .tabs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.guarantee .tabs__features {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 29.1%;
+          flex: 0 1 29.1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 55px 0 0;
+  counter-reset: myCounter;
+}
+
+.guarantee .tabs__feature {
+  padding: 0 0 0 90px;
+  list-style: none;
+  margin: 0 0 64px 0;
+  position: relative;
+}
+
+.guarantee .tabs__feature:before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #0A6397;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #008DD2;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guarantee .tabs__pic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 63.24%;
+          flex: 0 1 63.24%;
+}
+
+.guarantee .tabs__pic img {
+  width: 100%;
+  height: auto;
 }
 
 @-webkit-keyframes arrow {
