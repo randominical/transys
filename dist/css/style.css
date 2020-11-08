@@ -1662,6 +1662,61 @@ body {
   height: auto;
 }
 
+.team__portraits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 121px;
+}
+
+.team__portrait {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 121px;
+          flex: 0 0 121px;
+  height: 100%;
+}
+
+.team__portrait img {
+  width: 100%;
+  height: 100%;
+}
+
+.team__portrait:first-child {
+  position: relative;
+}
+
+.team__portrait:first-child:before {
+  content: '';
+  width: 242px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #008DD2), color-stop(50%, #008DD2), color-stop(50%, #0A6397), to(#0A6397));
+  background: -o-linear-gradient(left, #008DD2 0, #008DD2 50%, #0A6397 50%, #0A6397 100%);
+  background: linear-gradient(to right, #008DD2 0, #008DD2 50%, #0A6397 50%, #0A6397 100%);
+}
+
+.team__portrait:last-child {
+  position: relative;
+}
+
+.team__portrait:last-child:after {
+  content: '';
+  width: 242px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #0A6397), color-stop(50%, #0A6397), color-stop(50%, #008DD2), to(#008DD2));
+  background: -o-linear-gradient(left, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
+  background: linear-gradient(to right, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
+  z-index: -1;
+}
+
 @-webkit-keyframes arrow {
   0% {
     -webkit-transform: translate(0, 0);
