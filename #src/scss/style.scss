@@ -719,6 +719,42 @@ body {
         &__caption {
 
         }
+        &__icon {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            transition: background .3s ease-in;
+            &_1 {
+                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_1.svg') center/29.37px no-repeat;
+                &:hover {
+                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_1.svg') center/29.37px no-repeat;
+                }
+            }
+            &_2 {
+                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_2.svg') center/29.37px no-repeat;
+                &:hover {
+                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_2.svg') center/29.37px no-repeat;
+                }
+            }
+            &_3 {
+                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_3.svg') center/29.37px no-repeat;
+                &:hover {
+                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_3.svg') center/29.37px no-repeat;
+                }
+            }
+            &_4 {
+                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_4.svg') center/29.37px no-repeat;
+                &:hover {
+                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_4.svg') center/29.37px no-repeat;
+                }
+            }
+            &_5 {
+                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_5.svg') center/29.37px no-repeat;
+                &:hover {
+                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_5.svg') center/29.37px no-repeat;
+                }
+            }
+        }
         &__item {
             &.active {
 
