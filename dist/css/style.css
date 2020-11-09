@@ -1772,10 +1772,19 @@ body {
   color: #374148;
 }
 
+.recommendation .slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .recommendation .slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.recommendation .slider .slick-slide:not(.slick-active) {
+  opacity: 0.5;
 }
 
 .recommendation__logos {
