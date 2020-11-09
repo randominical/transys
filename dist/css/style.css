@@ -1763,6 +1763,12 @@ body {
   margin: 0 0 23px 0;
 }
 
+.recommendation__title .h2_line:before,
+.recommendation__title .h2_line:after {
+  width: 336px;
+  background: #C4C4C4;
+}
+
 .recommendation__subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
