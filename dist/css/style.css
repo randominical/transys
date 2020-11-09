@@ -1756,7 +1756,7 @@ body {
 }
 
 .recommendation {
-  padding: 43px 0 60px 0;
+  padding: 43px 0 80px 0;
 }
 
 .recommendation__title {
@@ -1775,7 +1775,7 @@ body {
 
 .recommendation .slider {
   width: 62%;
-  margin: 0 auto;
+  margin: 0 auto 51px auto;
 }
 
 .recommendation .slider .slick-track {
@@ -1827,6 +1827,17 @@ body {
 
 .recommendation .item-slider__text {
   margin: 0;
+}
+
+.recommendation__partners {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF8B20;
+  margin: 0 0 70px 0;
 }
 
 .recommendation__logos {
