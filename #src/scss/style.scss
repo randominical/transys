@@ -591,7 +591,7 @@ body {
 }
 //========================================
 .quality {
-    background:  url('../img/quality_w.png') 0 0/contain no-repeat, url('../img/quality_bg.svg') 50% 800px/90% no-repeat, #0A6397;
+    background: url('../img/quality_bg.svg') 50% 800px/90% no-repeat, linear-gradient(170deg, white 0, white 550px, #0A6397 550px, #0A6397);
     padding: 80px 0 100px 0;
     font-family: $fontM;
     // .quality__top
