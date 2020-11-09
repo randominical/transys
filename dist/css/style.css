@@ -1755,6 +1755,46 @@ body {
   margin: 0 auto;
 }
 
+.recommendation {
+  padding: 43px 0 0 0;
+}
+
+.recommendation__title {
+  margin: 0 0 23px 0;
+}
+
+.recommendation__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #374148;
+}
+
+.recommendation .slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommendation__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommendation__logo {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 @-webkit-keyframes arrow {
   0% {
     -webkit-transform: translate(0, 0);

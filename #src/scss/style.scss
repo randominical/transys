@@ -897,11 +897,17 @@ body {
 }
 //========================================
 .recommendation {
+    padding: 43px 0 0 0;
     &__title {
-
+        margin: 0 0 23px 0;
     }
     &__subtitle {
-
+        font-family: $fontM;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: lowercase;
+        color: #374148;
     }
     &__slider {
 
@@ -909,6 +915,9 @@ body {
     .slider {
         &__item {
 
+        }
+        .slick-track{
+            display: flex;
         }
     }
     .item-slider {
@@ -922,7 +931,7 @@ body {
 
         }
         &__date {
-            
+
         }
         &__raiting {
 
@@ -930,6 +939,17 @@ body {
         &__text {
 
         }
+    }
+    &__partners {
+
+    }
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        filter: grayscale(1);
     }
 }
 //========================================
