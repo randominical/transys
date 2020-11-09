@@ -896,7 +896,42 @@ body {
     }
 }
 //========================================
+.recommendation {
+    &__title {
 
+    }
+    &__subtitle {
+
+    }
+    &__slider {
+
+    }
+    .slider {
+        &__item {
+
+        }
+    }
+    .item-slider {
+        &__header {
+
+        }
+        &__left {
+
+        }
+        &__user {
+
+        }
+        &__date {
+            
+        }
+        &__raiting {
+
+        }
+        &__text {
+
+        }
+    }
+}
 //========================================
 @keyframes arrow {
     0% {
