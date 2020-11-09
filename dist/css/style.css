@@ -1745,6 +1745,10 @@ body {
   margin: 0 auto 67px auto;
 }
 
+.team__article p {
+  margin: 0 0 30px 0;
+}
+
 .team__link {
   width: 278px;
   height: 40px;

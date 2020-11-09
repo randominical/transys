@@ -598,17 +598,12 @@ body {
     background: url('../img/quality_bg.svg') 50% 800px/90% no-repeat, linear-gradient(170deg, white 0, white 550px, #0A6397 550px, #0A6397);
     padding: 80px 0 100px 0;
     font-family: $fontM;
-    // .quality__top
-
     &__top {
         background: url('../img/quality.png') 0 -50px/358px no-repeat;
         max-width: 920px;
         height: 698px;
         padding: 0 0 0 350px;
     }
-
-    // .quality__slogan
-
     &__slogan {
         font-weight: 600;
         font-size: 50px;
@@ -616,9 +611,6 @@ body {
         color: rgba(10, 99, 151, 1);
         margin: 0 0 30px 0;
     }
-
-    // .quality__name
-
     &__name {
         font-weight: bold;
         font-size: 20px;
@@ -626,26 +618,17 @@ body {
         color: rgba(60, 70, 78, 1);
         margin: 0 0 25px 0;
     }
-
-    // .quality__contact
-
     &__contact {
         font-size: 18px;
         line-height: 22px;
         color: rgba(60, 70, 78, 1);
     }
-
-    // .quality__body
-
     &__body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: -300px 0 120px 0;
     }
-
-    // .quality__item
-
     &__item {
         display: flex;
         padding: 40px 10px;
@@ -658,9 +641,6 @@ body {
             align-self: flex-start;
         }
     }
-
-    // .quality__number
-
     &__number {
         color: #0A6397;
         font-weight: 300;
@@ -668,17 +648,11 @@ body {
         text-shadow: 1.5px 1.5px 0px rgba(255, 255, 255, 1), -1.5px -1.5px 0px rgba(255, 255, 255, 1), 1.5px -1.5px 0px rgba(255, 255, 255, 1), -1.5px 1.5px 0px rgba(255, 255, 255, 1);
         margin: 0 57px 0 0;
     }
-
-    // .quality__article
-
     &__article {
         font-size: 20px;
         line-height: 125.9%;
         color: rgba(255, 255, 255, 1);
     }
-
-    // .quality__title
-
     &__title {
     }
     &__link {
@@ -911,6 +885,9 @@ body {
         color: #FFFFFF;
         max-width: 817px;
         margin: 0 auto 67px auto;
+        p {
+            margin: 0 0 30px 0;
+        }
     }
     &__link {
         width: 278px;
@@ -918,6 +895,8 @@ body {
         margin: 0 auto;
     }
 }
+//========================================
+
 //========================================
 @keyframes arrow {
     0% {
