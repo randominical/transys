@@ -689,6 +689,15 @@ body {
 .link-blue {
   color: white;
   background: #0093ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .link-blue:hover {
@@ -1039,10 +1048,11 @@ body {
 }
 
 .fullscreen__link {
+  width: 206px;
+  height: 30px;
   font-family: "Futura", sans-serif;
   font-size: 14px;
   line-height: 17px;
-  padding: 8px 25px;
 }
 
 .fullscreen__down {
@@ -1416,15 +1426,6 @@ body {
 .quality__link {
   width: 298px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: "Futura", sans-serif;
   font-size: 14px;
   margin: 0 auto;
@@ -1663,6 +1664,22 @@ body {
   height: auto;
 }
 
+.team {
+  background: url("../img/team/team_bg.jpg") center/cover no-repeat;
+  padding: 76px 0 102px 0;
+}
+
+.team__title {
+  color: white;
+  margin: 0 0 82px 0;
+}
+
+.team__title .h2_line:before,
+.team__title .h2_line:after {
+  width: 336px;
+  background: white;
+}
+
 .team__portraits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1671,6 +1688,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 121px;
+  margin: 0 0 76px 0;
 }
 
 .team__portrait {
@@ -1716,6 +1734,21 @@ body {
   background: -o-linear-gradient(left, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
   background: linear-gradient(to right, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
   z-index: -1;
+}
+
+.team__article {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  max-width: 817px;
+  margin: 0 auto 67px auto;
+}
+
+.team__link {
+  width: 278px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes arrow {

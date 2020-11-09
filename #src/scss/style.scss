@@ -117,6 +117,9 @@ body {
 .link-blue {
     color: rgba(255,255,255,1);
     background: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
         color: #003C5F;
         background: rgba(255,255,255,1); 
@@ -371,10 +374,11 @@ body {
         }
     }
     &__link {
+        width: 206px;
+        height: 30px;
         font-family: $fontF;
         font-size: 14px;
         line-height: 17px;
-        padding: 8px 25px;
     }
     &__down {
         width: 32.17px;
@@ -680,9 +684,6 @@ body {
     &__link {
         width: 298px;
         height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-family: $fontF;
         font-size: 14px;
         margin: 0 auto;
@@ -852,13 +853,23 @@ body {
 }
 //========================================
 .team {
+    background: url('../img/team/team_bg.jpg') center/cover no-repeat;
+    padding: 76px 0 102px 0;
     &__title {
-
+        color: white;
+        margin: 0 0 82px 0;
+        .h2_line {
+            &:before, &:after {
+                width: 336px;
+                background: white;
+            }
+        }
     }
     &__portraits {
         display: flex;
         justify-content: center;
         height: 121px;
+        margin: 0 0 76px 0;
     }
     &__portrait {
         flex: 0 0 121px;
@@ -894,10 +905,17 @@ body {
         }
     }
     &__article {
-
+        font-family: $fontM;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        max-width: 817px;
+        margin: 0 auto 67px auto;
     }
     &__link {
-
+        width: 278px;
+        height: 40px;
+        margin: 0 auto;
     }
 }
 //========================================
