@@ -1756,7 +1756,7 @@ body {
 }
 
 .recommendation {
-  padding: 43px 0 0 0;
+  padding: 43px 0 60px 0;
 }
 
 .recommendation__title {
@@ -1770,10 +1770,11 @@ body {
   text-align: center;
   text-transform: lowercase;
   color: #374148;
+  margin: 0 0 48px 0;
 }
 
 .recommendation .slider {
-  width: 80%;
+  width: 62%;
   margin: 0 auto;
 }
 
@@ -1785,6 +1786,47 @@ body {
 
 .recommendation .slider .slick-slide:not(.slick-active) {
   opacity: 0.5;
+}
+
+.recommendation .slider__item {
+  background: white;
+  padding: 29px 29px 60px 29px;
+  margin: 0 20px 0 0;
+  -webkit-box-shadow: 0 0 100px #DADADA;
+          box-shadow: 0 0 100px #DADADA;
+}
+
+.recommendation .item-slider__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 54px 0;
+}
+
+.recommendation .item-slider__left {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #181A18;
+  margin: 5px;
+  padding: 0 0 0 24px;
+  background: url("../img/recommendation/user.svg") 0 0/14.67px 14.67px no-repeat;
+}
+
+.recommendation .item-slider__user {
+  margin: 0;
+  font-weight: bold;
+}
+
+.recommendation .item-slider__date {
+  margin: 0;
+}
+
+.recommendation .item-slider__text {
+  margin: 0;
 }
 
 .recommendation__logos {

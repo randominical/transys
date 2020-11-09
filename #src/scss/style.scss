@@ -897,7 +897,7 @@ body {
 }
 //========================================
 .recommendation {
-    padding: 43px 0 0 0;
+    padding: 43px 0 60px 0;
     &__title {
         margin: 0 0 23px 0;
     }
@@ -908,12 +908,13 @@ body {
         text-align: center;
         text-transform: lowercase;
         color: #374148;
+        margin: 0 0 48px 0;
     }
     &__slider {
 
     }
     .slider {
-        width: 80%;
+        width: 62%;
         margin: 0 auto;
         .slick-track{
             display: flex;
@@ -926,27 +927,39 @@ body {
             opacity: 0.5;
          }
         &__item {
-
+            background: white;
+            padding: 29px 29px 60px 29px;
+            margin: 0 20px 0 0;
+            box-shadow: 0 0 100px #DADADA;
         }
     }
     .item-slider {
         &__header {
-
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 54px 0;
         }
         &__left {
-
+            font-family: $fontM;
+            font-size: 16px;
+            line-height: 18px;
+            color: #181A18;
+            margin: 5px;   
+            padding: 0 0 0 24px;
+            background: url('../img/recommendation/user.svg') 0 0/14.67px 14.67px no-repeat;         
         }
         &__user {
-
+            margin: 0;
+            font-weight: bold;
         }
         &__date {
-
+            margin: 0;
         }
         &__raiting {
 
         }
         &__text {
-
+            margin: 0;
         }
     }
     &__partners {
