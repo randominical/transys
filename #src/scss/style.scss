@@ -1003,10 +1003,24 @@ body {
     background: #1278B4;
     font-family: $fontM;
     color: #FFFFFF;
-    // .price__form
-
+    .container {
+        display: flex;
+        position: relative;
+    }
+    &__pic {
+        position: absolute;
+        left: 80px;
+        bottom: 0;
+        height: 110%;
+        z-index: 1;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
     &__form {
         background: #003C5F;
+        margin: -15px 0 -15px 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1023,9 +1037,21 @@ body {
             right: 0;
         }
     }
-    // .price__list
-
+    &__offer {
+        font-size: 18px;
+        line-height: 125.9%;
+        max-width: 444px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span {
+            font-weight: bold;
+        }
+    }
     &__list {
+        
     }
 }
 .form {
@@ -1082,10 +1108,32 @@ body {
     }
 }
 .list-price {
-
-    // .list-price__item
-
+    counter-reset: myCounter;
     &__item {
+        padding: 0 0 0 90px;
+        list-style: none;
+        margin: 0 0 64px 0;
+        position: relative;
+        &:before {
+            counter-increment: myCounter;
+            content:counter(myCounter);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 1px solid white;
+            font-family: $fontM;
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            top: -18px;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:last-child {
+            margin: 0;
+        }
     }
 }
 //========================================
