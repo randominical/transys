@@ -999,6 +999,96 @@ body {
     }
 }
 //========================================
+.price {
+    background: #1278B4;
+    font-family: $fontM;
+    color: #FFFFFF;
+    // .price__form
+
+    &__form {
+        background: #003C5F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 561px;
+        padding: 40px 20px 20px 40px;
+        position: relative;
+        &:after {
+            content: '';
+            width: 12px;
+            height: 100%;
+            background:linear-gradient(#003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    // .price__list
+
+    &__list {
+    }
+}
+.form {
+    // .form__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        margin: 0 0 75px 0;
+    }
+    &__row {
+        display: flex;
+        margin: 0 0 40px 0;
+    }
+    // .form__input
+
+    &__input {
+        height: 32px;
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-flex;
+        align-items: center;
+        padding: 9px 13px;
+        &_name, &_tel {
+            color: rgba(24, 26, 24, 0.5);
+            border: 1px solid #C4C4C4;
+        }
+        &_name {
+            flex: 0 1 46%;
+            margin: 0 16px 0 0;
+        }
+        &_tel {
+            flex: 0 1 44%;
+        }
+        &_submit, &_reset {
+            flex: 0 0 129.33px;
+            justify-content: center;
+            color: white;
+            &:hover {
+                background: white;
+                color: rgba(24, 26, 24, 0.5);
+            }
+        }
+        &_submit {
+            margin: 0 9.67px 0 0;
+            background: #22B0F5;
+        }
+        &_reset {
+            background: transparent;
+            border: 1px solid white;
+        }
+    }
+}
+.list-price {
+
+    // .list-price__item
+
+    &__item {
+    }
+}
+//========================================
 @keyframes arrow {
     0% {
         transform: translate(0,0);

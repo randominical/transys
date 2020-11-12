@@ -522,10 +522,14 @@
         <form action="#" id="form" class="price__form">
             <h2 class="form__title">Узнайте<br>
                 стоимость перевозки по своему маршруту</h2>
-            <input type="text" name="name" class="form__input" placeholder="Укажите  ваше имя">
-            <input type="tel" name="phone" class="form__input" placeholder="Ваш номер телефона">
-            <button type="submit" value="submit" class="form__input">Узнать</button>
-            <button type="reset" value="cancel" class="form__input">Отмена</button>
+            <div class="form__row">
+                <input type="text" name="name" class="form__input form__input_name" placeholder="Укажите  ваше имя">
+                <input type="tel" name="phone" class="form__input form__input_tel" placeholder="Ваш номер телефона">
+            </div>
+            <div class="form__row">
+                <button type="submit" class="form__input form__input_submit">Узнать</button>
+                <button type="reset" class="form__input form__input_reset">Отмена</button>
+            </div>
         </form>
         <ol class="price__list list-price">
             <li class="list-price__item">Подберем <span>2-3</span> варианта транспорта за <span>60</span> минут по цене от <span>0,5</span> евро за <span>1</span> км.

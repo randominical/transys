@@ -1885,6 +1885,115 @@ body {
           filter: grayscale(1);
 }
 
+.price {
+  background: #1278B4;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+
+.price__form {
+  background: #003C5F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 561px;
+  padding: 40px 20px 20px 40px;
+  position: relative;
+}
+
+.price__form:after {
+  content: '';
+  width: 12px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #003C5F), color-stop(33%, #003C5F), color-stop(33%, #0A6397), color-stop(66%, #0A6397), color-stop(66%, #008DD2), to(#008DD2));
+  background: -o-linear-gradient(#003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+  background: linear-gradient(#003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin: 0 0 75px 0;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 40px 0;
+}
+
+.form__input {
+  height: 32px;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 13px;
+}
+
+.form__input_name,
+.form__input_tel {
+  color: rgba(24, 26, 24, 0.5);
+  border: 1px solid #C4C4C4;
+}
+
+.form__input_name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 46%;
+          flex: 0 1 46%;
+  margin: 0 16px 0 0;
+}
+
+.form__input_tel {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 44%;
+          flex: 0 1 44%;
+}
+
+.form__input_submit,
+.form__input_reset {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 129.33px;
+          flex: 0 0 129.33px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.form__input_submit:hover,
+.form__input_reset:hover {
+  background: white;
+  color: rgba(24, 26, 24, 0.5);
+}
+
+.form__input_submit {
+  margin: 0 9.67px 0 0;
+  background: #22B0F5;
+}
+
+.form__input_reset {
+  background: transparent;
+  border: 1px solid white;
+}
+
 @-webkit-keyframes arrow {
   0% {
     -webkit-transform: translate(0, 0);
