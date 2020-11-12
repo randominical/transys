@@ -1027,6 +1027,7 @@ body {
         max-width: 561px;
         padding: 40px 20px 20px 40px;
         position: relative;
+        z-index: 1;
         &:after {
             content: '';
             width: 12px;
