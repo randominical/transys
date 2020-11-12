@@ -920,7 +920,7 @@ body {
 
     }
     .slider {
-        width: 62%;
+        width: 65%;
         margin: 0 auto 51px auto;
         .slick-track{
             display: flex;
@@ -940,13 +940,13 @@ body {
         }
     }
     .item-slider {
+        font-family: $fontM;
         &__header {
             display: flex;
             justify-content: space-between;
             margin: 0 0 54px 0;
         }
         &__left {
-            font-family: $fontM;
             font-size: 16px;
             line-height: 18px;
             color: #181A18;
@@ -975,6 +975,9 @@ body {
         }
         &__text {
             margin: 0;
+            font-size: 12px;
+            line-height: 14px;
+            color: #181A18;
         }
     }
     &__partners {

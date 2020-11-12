@@ -1780,7 +1780,7 @@ body {
 }
 
 .recommendation .slider {
-  width: 62%;
+  width: 65%;
   margin: 0 auto 51px auto;
 }
 
@@ -1802,6 +1802,10 @@ body {
           box-shadow: 0 0 100px #DADADA;
 }
 
+.recommendation .item-slider {
+  font-family: "Montserrat", sans-serif;
+}
+
 .recommendation .item-slider__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1813,7 +1817,6 @@ body {
 }
 
 .recommendation .item-slider__left {
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #181A18;
@@ -1850,6 +1853,9 @@ body {
 
 .recommendation .item-slider__text {
   margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #181A18;
 }
 
 .recommendation__partners {
