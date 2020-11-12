@@ -2,3 +2,4 @@
 @@include('tabs.js');
 @@include('slick.min.js');
 @@include('slider.js');
+@@include('map.js');

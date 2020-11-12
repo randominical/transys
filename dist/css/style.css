@@ -2078,6 +2078,18 @@ body {
   margin: 0;
 }
 
+.map {
+  height: 239px;
+}
+
+.ymaps-layers-pane {
+  filter: hue-rotate(90deg);
+  -ms-filter: hue-rotate(90deg);
+  -webkit-filter: hue-rotate(90deg);
+  -moz-filter: hue-rotate(90deg);
+  -o-filter: hue-rotate(90deg);
+}
+
 @-webkit-keyframes arrow {
   0% {
     -webkit-transform: translate(0, 0);

@@ -1055,8 +1055,6 @@ body {
     }
 }
 .form {
-    // .form__title
-
     &__title {
         font-weight: 600;
         font-size: 36px;
@@ -1068,8 +1066,6 @@ body {
         display: flex;
         margin: 0 0 40px 0;
     }
-    // .form__input
-
     &__input {
         height: 32px;
         font-size: 12px;
@@ -1135,6 +1131,18 @@ body {
             margin: 0;
         }
     }
+}
+//========================================
+.map {
+    height: 239px;
+    
+}
+.ymaps-layers-pane {
+    filter: hue-rotate(90deg);  
+    -ms-filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(90deg);
+    -moz-filter: hue-rotate(90deg);
+    -o-filter: hue-rotate(90deg);
 }
 //========================================
 @keyframes arrow {
