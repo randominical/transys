@@ -6,5 +6,6 @@ $(document).ready(function(){
       dots: false,
       slidesToShow: 3,
       infinite: true,
+      swipeToSlide: true,
   });
 });
