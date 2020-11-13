@@ -1,10 +1,8 @@
 window.initMap = function() {
-    var location = {lat: 52.09, lng: 23.69};
-    var markerloc = {lat: 52.09, lng: 23.69};
     map = new google.maps.Map(document.getElementById('map'), {
-       center: location,
+       center: {lat: 52.090050, lng: 23.694638},
        scrollwheel: false,
-       zoom: 16,
+       zoom: 15,
        disableDefaultUI: true,
        styles: [
         {
@@ -42,7 +40,7 @@ window.initMap = function() {
     });
     var marker = new google.maps.Marker({
       icon: '../img/map_icon.png',
-      position: markerloc,
+      position: {lat: 52.090050, lng: 23.694638},
       map: map,
     });
   };
