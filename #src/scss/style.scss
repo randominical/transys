@@ -26,6 +26,10 @@ $md4: 479.98;
 
 $maxWidth: 1920;
 
+* {
+    font-family: $fontM;
+}
+
 button, a {
     cursor: pointer;
     transition: color .3s ease-in, background .3s ease-in;
@@ -61,21 +65,19 @@ body {
     width: 100%;
     max-width: $maxWidth + px;
     margin: 0 auto;
-    padding: 0 20px;
-    &-header {
-        
+    padding: 0 27px;
+    &_f {
+        padding: 0 93px;
     }
-    &-fullscreen {
-        max-width: 1216px;
+    &_h {
+        padding: 0 45px;
     }
-    &-main {
-        max-width: 1476px;
+    &_m {
+        max-width: 1490px;
     }
-    
-    /*
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;*/
+    @media (max-width: $md1 + px) {
+        padding: 0 20px;
+    }
 }
 
 .main {
@@ -87,7 +89,6 @@ body {
 .title {
     &_section {
         text-align: center;
-        font-family: $fontM;
         font-weight: 600;
         font-size: 36px;
         line-height: 44px;
@@ -150,14 +151,14 @@ body {
         align-items: center;
     }
     &__left {
-        flex: 0 1 415px;
+        flex: 0 1 20%;
         display: flex;
-        justify-content: space-around;
+        justify-content: left;
         align-items: center;
         margin: 0 10px 0 0;
     }
     &__menu {
-        flex: 0 1 628px;
+        flex: 0 1 30%;
         margin: 0 10px;
     }
     &__contacts {
@@ -170,6 +171,7 @@ body {
         width: 215px;
         height: auto;
         overflow: hidden;
+        margin: 0 45px 0 0;
         img {
             width: 100%;
             height: auto;
@@ -181,15 +183,15 @@ body {
         align-items: center;
     }
     &__address {
-        flex: 0 0 140px;
-        margin: 0 10px 0 0;
+        flex: 0 0 150px;
+        margin: 0 20px 0 0;
         address {
             font-style: normal;
         }
     }
     &__time {
         flex: 0 0 100px;
-        margin: 0 10px 0 0;
+        margin: 0 50px 0 0;
     }
     &__link {
         flex: 0 1 200px;
@@ -226,11 +228,13 @@ body {
         }
         &__list {
             display: flex;
-        justify-content: space-between;
-        align-items: center;
+            justify-content: space-between;
+            align-items: center;
     }
     &__link {
-        margin: 0 7px;
+        margin: 0 10px;
+        padding: 17px 5px;
+        white-space: nowrap;
             &:hover {
                 color: rgba(57, 184, 255, 1);
             }
@@ -336,6 +340,7 @@ body {
     background: url('../img/fullscreen_bg.jpg') center/cover no-repeat;
     padding: 100px 0 25px 0;
     color: rgba(255,255,255,1);
+    position: relative;
     .container {
         height: 100%;
         display: flex;
@@ -343,9 +348,9 @@ body {
         justify-content: space-between;
     }
     &__content {
-        max-width: 554px;
-        font-family: $fontM;
+        max-width: 750px;
         margin: auto 0;
+        padding: 0 0 0 259px;
     }
     &__title {
         font-weight: 700;
@@ -414,7 +419,7 @@ body {
     &:before {
         content: '';
         height: 25px;
-        width: 741px;
+        width: 38.59%;
         position: absolute;
         top: 0;
         left: 0;
@@ -450,7 +455,6 @@ body {
         max-width: 350px;
     }
     &__li {
-        font-family: $fontM;
         font-size: 18px;
         line-height: 22px;
         color: rgba(60, 70, 78, 1);
@@ -538,7 +542,6 @@ body {
         }
     }
     &__lable {
-        font-family: $fontM;
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
@@ -576,7 +579,6 @@ body {
 .quality {
     background: url('../img/quality_bg.svg') 50% 800px/90% no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 550px, rgba(10, 99, 151, 1) 550px, rgba(10, 99, 151, 1));
     padding: 80px 0 100px 0;
-    font-family: $fontM;
     &__top {
         background: url('../img/quality.png') 0 -50px/358px no-repeat;
         max-width: 920px;
@@ -662,7 +664,6 @@ body {
         margin: 0 0 95.3px 0;   
     }
     &__tabs {
-        font-family: $fontM;
         font-size: 18px;
         line-height: 22px;
         color: rgba(55, 65, 72, 1);
@@ -776,7 +777,6 @@ body {
                 height: 64px;
                 border-radius: 50%;
                 border: 1px solid rgba(10, 99, 151, 1);
-                font-family: $fontM;
                 font-size: 50px;
                 color: rgba(0, 141, 210, 1);
                 position: absolute;
@@ -789,6 +789,7 @@ body {
         }
         &__pic {
             flex: 0 1 63.24%;
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.4));
             img {
                 width: 100%;
                 height: auto;
@@ -848,7 +849,6 @@ body {
         }
     }
     &__article {
-        font-family: $fontM;
         font-size: 18px;
         line-height: 23px;
         color: rgba(255, 255, 255, 1);
@@ -871,7 +871,6 @@ body {
         margin: 0 0 23px 0;
     }
     &__subtitle {
-        font-family: $fontM;
         font-size: 18px;
         line-height: 22px;
         text-align: center;
@@ -897,7 +896,6 @@ body {
         }
     }
     .item-slider {
-        font-family: $fontM;
         &__header {
             display: flex;
             justify-content: space-between;
@@ -938,7 +936,6 @@ body {
         }
     }
     &__partners {
-        font-family: $fontM;
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
@@ -960,7 +957,6 @@ body {
 //========================================
 .price {
     background: rgba(18, 120, 180, 1);
-    font-family: $fontM;
     color: rgba(255, 255, 255, 1);
     .container {
         display: flex;
@@ -1043,6 +1039,7 @@ body {
             &_submit, &_reset {
                 flex: 0 0 129.33px;
                 justify-content: center;
+                font-family: $fontR;
                 color: rgba(255, 255, 255, 1);
                 &:hover {
                     background: rgba(255, 255, 255, 1);
@@ -1073,7 +1070,6 @@ body {
                 height: 64px;
                 border-radius: 50%;
                 border: 1px solid rgba(255, 255, 255, 1);
-                font-family: $fontM;
                 font-size: 50px;
                 color: rgba(255, 255, 255, 1);
                 position: absolute;
@@ -1096,7 +1092,6 @@ body {
 //========================================
 .footer {
     background: rgba(60, 70, 78, 1);
-    font-family: $fontM;
     font-size: 12px;
     line-height: 18px;
     color: rgba(255, 255, 255, 1);
