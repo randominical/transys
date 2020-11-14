@@ -702,7 +702,7 @@ body {
 }
 
 .link-blue:hover {
-  color: #003C5F;
+  color: #003d61;
   background: white;
 }
 
@@ -781,7 +781,7 @@ body {
                 z-index: 2;
                 padding: 120px 20px 30px 20px;
                 transition: all .3s ease 0s;
-                background-color: #fff;
+                background-color: rgba(255, 255, 255, 1);
                 &.active {
                     display: block;
                 }
@@ -1105,9 +1105,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #003C5F), color-stop(33%, #003C5F), color-stop(33%, #0A6397), color-stop(66%, #0A6397), color-stop(66%, #008DD2), to(#008DD2));
-  background: -o-linear-gradient(left, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
-  background: linear-gradient(to right, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #003c5f), color-stop(33%, #003c5f), color-stop(33%, #0a6397), color-stop(66%, #0a6397), color-stop(66%, #008dd2), to(#008dd2));
+  background: -o-linear-gradient(left, #003c5f 0, #003c5f 33%, #0a6397 33%, #0a6397 66%, #008dd2 66%, #008dd2 100%);
+  background: linear-gradient(to right, #003c5f 0, #003c5f 33%, #0a6397 33%, #0a6397 66%, #008dd2 66%, #008dd2 100%);
 }
 
 .benefits:after {
@@ -1117,9 +1117,9 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(43.05%, #CFD4DB), to(rgba(186, 193, 201, 0)));
-  background: -o-linear-gradient(top, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
-  background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(43.05%, #cfd4db), to(rgba(186, 193, 201, 0)));
+  background: -o-linear-gradient(top, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
+  background: linear-gradient(180deg, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
   z-index: -1;
 }
 
@@ -1156,7 +1156,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 22px;
-  color: #3C464E;
+  color: #3c464e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1292,7 +1292,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #3C464E;
+  color: #3c464e;
   position: absolute;
   left: 50%;
   bottom: -30px;
@@ -1328,8 +1328,8 @@ body {
 }
 
 .quality {
-  background: url("../img/quality_bg.svg") 50% 800px/90% no-repeat, -o-linear-gradient(280deg, white 0, white 550px, #0A6397 550px, #0A6397);
-  background: url("../img/quality_bg.svg") 50% 800px/90% no-repeat, linear-gradient(170deg, white 0, white 550px, #0A6397 550px, #0A6397);
+  background: url("../img/quality_bg.svg") 50% 800px/90% no-repeat, -o-linear-gradient(280deg, white 0, white 550px, #0a6397 550px, #0a6397);
+  background: url("../img/quality_bg.svg") 50% 800px/90% no-repeat, linear-gradient(170deg, white 0, white 550px, #0a6397 550px, #0a6397);
   padding: 80px 0 100px 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -1397,7 +1397,7 @@ body {
 }
 
 .quality__number {
-  color: #0A6397;
+  color: #0a6397;
   font-weight: 300;
   font-size: 170px;
   text-shadow: 1.5px 1.5px 0px white, -1.5px -1.5px 0px white, 1.5px -1.5px 0px white, -1.5px 1.5px 0px white;
@@ -1468,7 +1468,7 @@ body {
   content: '';
   width: 100%;
   height: 1px;
-  background: #70787C;
+  background: #70787c;
   position: absolute;
   left: 0;
   bottom: 26.5px;
@@ -1503,27 +1503,27 @@ body {
 
 .guarantee .tabs__caption:hover .tabs__icon_1,
 .guarantee .tabs__caption.active .tabs__icon_1 {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__caption:hover .tabs__icon_2,
 .guarantee .tabs__caption.active .tabs__icon_2 {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__caption:hover .tabs__icon_3,
 .guarantee .tabs__caption.active .tabs__icon_3 {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__caption:hover .tabs__icon_4,
 .guarantee .tabs__caption.active .tabs__icon_4 {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__caption:hover .tabs__icon_5,
 .guarantee .tabs__caption.active .tabs__icon_5 {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon {
@@ -1536,43 +1536,43 @@ body {
 }
 
 .guarantee .tabs__icon_1 {
-  background: #F1F1F1 url("../img/guarantee/icons_n/guarantee_1.svg") center/29.37px no-repeat;
+  background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_1.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_1:hover {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_2 {
-  background: #F1F1F1 url("../img/guarantee/icons_n/guarantee_2.svg") center/29.37px no-repeat;
+  background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_2.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_2:hover {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_3 {
-  background: #F1F1F1 url("../img/guarantee/icons_n/guarantee_3.svg") center/29.37px no-repeat;
+  background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_3.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_3:hover {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_4 {
-  background: #F1F1F1 url("../img/guarantee/icons_n/guarantee_4.svg") center/29.37px no-repeat;
+  background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_4.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_4:hover {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_5 {
-  background: #F1F1F1 url("../img/guarantee/icons_n/guarantee_5.svg") center/29.37px no-repeat;
+  background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_5.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__icon_5:hover {
-  background: #0A6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/29.37px no-repeat;
+  background: #0a6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/29.37px no-repeat;
 }
 
 .guarantee .tabs__item {
@@ -1616,10 +1616,10 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: 1px solid #0A6397;
+  border: 1px solid #0a6397;
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
-  color: #008DD2;
+  color: #008dd2;
   position: absolute;
   top: -18px;
   left: 0;
@@ -1657,7 +1657,7 @@ body {
 
 .team .title_b:before,
 .team .title_b:after {
-  background: #FFFFFF;
+  background: white;
 }
 
 .team__portraits {
@@ -1694,9 +1694,9 @@ body {
   position: absolute;
   top: 0;
   right: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #008DD2), color-stop(50%, #008DD2), color-stop(50%, #0A6397), to(#0A6397));
-  background: -o-linear-gradient(left, #008DD2 0, #008DD2 50%, #0A6397 50%, #0A6397 100%);
-  background: linear-gradient(to right, #008DD2 0, #008DD2 50%, #0A6397 50%, #0A6397 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #008dd2), color-stop(50%, #008dd2), color-stop(50%, #0a6397), to(#0a6397));
+  background: -o-linear-gradient(left, #008dd2 0, #008dd2 50%, #0a6397 50%, #0a6397 100%);
+  background: linear-gradient(to right, #008dd2 0, #008dd2 50%, #0a6397 50%, #0a6397 100%);
 }
 
 .team__portrait:last-child {
@@ -1710,16 +1710,16 @@ body {
   position: absolute;
   top: 0;
   left: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #0A6397), color-stop(50%, #0A6397), color-stop(50%, #008DD2), to(#008DD2));
-  background: -o-linear-gradient(left, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
-  background: linear-gradient(to right, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #0a6397), color-stop(50%, #0a6397), color-stop(50%, #008dd2), to(#008dd2));
+  background: -o-linear-gradient(left, #0a6397 0, #0a6397 50%, #008dd2 50%, #008dd2 100%);
+  background: linear-gradient(to right, #0a6397 0, #0a6397 50%, #008dd2 50%, #008dd2 100%);
 }
 
 .team__article {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: white;
   max-width: 817px;
   margin: 0 auto 67px auto;
 }
@@ -1771,8 +1771,8 @@ body {
   background: white;
   padding: 29px 29px 60px 29px;
   margin: 0 20px 0 0;
-  -webkit-box-shadow: 0 0 100px #DADADA;
-          box-shadow: 0 0 100px #DADADA;
+  -webkit-box-shadow: 0 0 100px #dadada;
+          box-shadow: 0 0 100px #dadada;
 }
 
 .recommendation .item-slider {
@@ -1792,7 +1792,7 @@ body {
 .recommendation .item-slider__left {
   font-size: 16px;
   line-height: 18px;
-  color: #181A18;
+  color: #181a18;
   margin: 5px;
   padding: 0 0 0 24px;
   background: url("../img/recommendation/user.svg") 0 0/14.67px 14.67px no-repeat;
@@ -1828,7 +1828,7 @@ body {
   margin: 0;
   font-size: 12px;
   line-height: 14px;
-  color: #181A18;
+  color: #181a18;
 }
 
 .recommendation__partners {
@@ -1838,7 +1838,7 @@ body {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: #FF8B20;
+  color: #ff8b20;
   margin: 0 0 70px 0;
   padding: 20px 0 0 0;
 }
@@ -1861,9 +1861,9 @@ body {
 }
 
 .price {
-  background: #1278B4;
+  background: #1278b4;
   font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
+  color: white;
 }
 
 .price .container {
@@ -1887,7 +1887,7 @@ body {
 }
 
 .price__form {
-  background: #003C5F;
+  background: #003c5f;
   margin: -15px 0 -15px 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1909,9 +1909,9 @@ body {
   content: '';
   width: 12px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #003C5F), color-stop(33%, #003C5F), color-stop(33%, #0A6397), color-stop(66%, #0A6397), color-stop(66%, #008DD2), to(#008DD2));
-  background: -o-linear-gradient(#003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
-  background: linear-gradient(#003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #003c5f), color-stop(33%, #003c5f), color-stop(33%, #0a6397), color-stop(66%, #0a6397), color-stop(66%, #008dd2), to(#008dd2));
+  background: -o-linear-gradient(#003c5f 0, #003c5f 33%, #0a6397 33%, #0a6397 66%, #008dd2 66%, #008dd2 100%);
+  background: linear-gradient(#003c5f 0, #003c5f 33%, #0a6397 33%, #0a6397 66%, #008dd2 66%, #008dd2 100%);
   position: absolute;
   top: 0;
   right: 0;
@@ -1972,7 +1972,7 @@ body {
 .price .form__input_name,
 .price .form__input_tel {
   color: rgba(24, 26, 24, 0.5);
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 
 .price .form__input_name {
@@ -2007,7 +2007,7 @@ body {
 
 .price .form__input_submit {
   margin: 0 9.67px 0 0;
-  background: #22B0F5;
+  background: #22b0f5;
 }
 
 .price .form__input_reset {
@@ -2063,7 +2063,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: white;
   padding: 41px 0 29px 0;
 }
 
@@ -2111,7 +2111,7 @@ body {
 .footer__copy {
   font-size: 8px;
   line-height: 12px;
-  color: #757E85;
+  color: #757e85;
   padding: 0 0 0 19px;
 }
 
@@ -2146,7 +2146,7 @@ body {
   position: absolute;
   top: 20px;
   left: 0;
-  color: #008DD2;
+  color: #008dd2;
 }
 
 @-webkit-keyframes arrow {

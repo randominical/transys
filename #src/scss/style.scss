@@ -123,7 +123,7 @@ body {
     align-items: center;
     justify-content: center;
     &:hover {
-        color: #003C5F;
+        color: rgba(0, 61, 97, 1);
         background: rgba(255,255,255,1); 
     }
 }
@@ -306,7 +306,7 @@ body {
                 z-index: 2;
                 padding: 120px 20px 30px 20px;
                 transition: all .3s ease 0s;
-                background-color: #fff;
+                background-color: rgba(255, 255, 255, 1);
                 &.active {
                     display: block;
                 }
@@ -418,7 +418,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background:linear-gradient(to right, #003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+        background:linear-gradient(to right, rgba(0, 60, 95, 1) 0, rgba(0, 60, 95, 1) 33%, rgba(10, 99, 151, 1) 33%, rgba(10, 99, 151, 1) 66%, rgba(0, 141, 210, 1) 66%, rgba(0, 141, 210, 1) 100%);
     }
     &:after {
         content: '';
@@ -427,7 +427,7 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+        background: linear-gradient(180deg, rgba(207, 212, 219, 1) 43.05%, rgba(186, 193, 201, 0) 100%);
         z-index: -1;
     }
     &__title {
@@ -436,7 +436,7 @@ body {
     .title_b {
         &:before, &:after {
             width: 229px;
-            background: #374148;
+            background: rgba(55, 65, 72, 1);
         }
     }
     &__box {
@@ -453,7 +453,7 @@ body {
         font-family: $fontM;
         font-size: 18px;
         line-height: 22px;
-        color: #3C464E;
+        color: rgba(60, 70, 78, 1);
         display: flex;
         align-items: center;
         margin: 0 0 25px 0;
@@ -543,7 +543,7 @@ body {
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        color: #3C464E;
+        color: rgba(60, 70, 78, 1);
         position: absolute;
         left: 50%;
         bottom: -30px;
@@ -574,7 +574,7 @@ body {
 }
 //========================================
 .quality {
-    background: url('../img/quality_bg.svg') 50% 800px/90% no-repeat, linear-gradient(170deg, white 0, white 550px, #0A6397 550px, #0A6397);
+    background: url('../img/quality_bg.svg') 50% 800px/90% no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 550px, rgba(10, 99, 151, 1) 550px, rgba(10, 99, 151, 1));
     padding: 80px 0 100px 0;
     font-family: $fontM;
     &__top {
@@ -621,7 +621,7 @@ body {
         }
     }
     &__number {
-        color: #0A6397;
+        color: rgba(10, 99, 151, 1);
         font-weight: 300;
         font-size: 170px;
         text-shadow: 1.5px 1.5px 0px rgba(255, 255, 255, 1), -1.5px -1.5px 0px rgba(255, 255, 255, 1), 1.5px -1.5px 0px rgba(255, 255, 255, 1), -1.5px 1.5px 0px rgba(255, 255, 255, 1);
@@ -665,7 +665,7 @@ body {
         font-family: $fontM;
         font-size: 18px;
         line-height: 22px;
-        color: #374148;
+        color: rgba(55, 65, 72, 1);
     }
     .tabs {
         &__captions {
@@ -677,7 +677,7 @@ body {
                 content: '';
                 width: 100%;
                 height: 1px;
-                background: #70787C;
+                background: rgba(112, 120, 124, 1);
                 position: absolute;
                 left: 0;
                 bottom: 26.5px;
@@ -697,19 +697,19 @@ body {
                 font-weight: 600;
                 .tabs__icon {
                     &_1 {
-                        background: #0A6397 url('../img/guarantee/icons_h/guarantee_1.svg') center/29.37px no-repeat;
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_1.svg') center/29.37px no-repeat;
                     }
                     &_2 {
-                        background: #0A6397 url('../img/guarantee/icons_h/guarantee_2.svg') center/29.37px no-repeat;
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_2.svg') center/29.37px no-repeat;
                     }
                     &_3 {
-                        background: #0A6397 url('../img/guarantee/icons_h/guarantee_3.svg') center/29.37px no-repeat;
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_3.svg') center/29.37px no-repeat;
                     }
                     &_4 {
-                        background: #0A6397 url('../img/guarantee/icons_h/guarantee_4.svg') center/29.37px no-repeat;
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_4.svg') center/29.37px no-repeat;
                     }
                     &_5 {
-                        background: #0A6397 url('../img/guarantee/icons_h/guarantee_5.svg') center/29.37px no-repeat;
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_5.svg') center/29.37px no-repeat;
                     }
                 }
             }
@@ -720,33 +720,33 @@ body {
             border-radius: 50%;
             transition: background .3s ease-in;
             &_1 {
-                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_1.svg') center/29.37px no-repeat;
+                background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_1.svg') center/29.37px no-repeat;
                 &:hover {
-                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_1.svg') center/29.37px no-repeat;
+                    background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_1.svg') center/29.37px no-repeat;
                 }
             }
             &_2 {
-                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_2.svg') center/29.37px no-repeat;
+                background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_2.svg') center/29.37px no-repeat;
                 &:hover {
-                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_2.svg') center/29.37px no-repeat;
+                    background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_2.svg') center/29.37px no-repeat;
                 }
             }
             &_3 {
-                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_3.svg') center/29.37px no-repeat;
+                background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_3.svg') center/29.37px no-repeat;
                 &:hover {
-                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_3.svg') center/29.37px no-repeat;
+                    background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_3.svg') center/29.37px no-repeat;
                 }
             }
             &_4 {
-                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_4.svg') center/29.37px no-repeat;
+                background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_4.svg') center/29.37px no-repeat;
                 &:hover {
-                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_4.svg') center/29.37px no-repeat;
+                    background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_4.svg') center/29.37px no-repeat;
                 }
             }
             &_5 {
-                background: #F1F1F1 url('../img/guarantee/icons_n/guarantee_5.svg') center/29.37px no-repeat;
+                background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_5.svg') center/29.37px no-repeat;
                 &:hover {
-                    background: #0A6397 url('../img/guarantee/icons_h/guarantee_5.svg') center/29.37px no-repeat;
+                    background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_5.svg') center/29.37px no-repeat;
                 }
             }
         }
@@ -775,10 +775,10 @@ body {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
-                border: 1px solid #0A6397;
+                border: 1px solid rgba(10, 99, 151, 1);
                 font-family: $fontM;
                 font-size: 50px;
-                color: #008DD2;
+                color: rgba(0, 141, 210, 1);
                 position: absolute;
                 top: -18px;
                 left: 0;
@@ -801,12 +801,12 @@ body {
     background: url('../img/team/team_bg.jpg') center/cover no-repeat;
     padding: 76px 0 102px 0;
     &__title {
-        color: white;
+        color: rgba(255, 255, 255, 1);
         margin: 0 0 82px 0;
     }
     .title_b {
         &:before, &:after {
-            background: #FFFFFF;
+            background: rgba(255, 255, 255, 1);
         }
     }
     &__portraits {
@@ -831,7 +831,7 @@ body {
                 position: absolute;
                 top: 0;
                 right: 100%;
-                background: linear-gradient(to right, #008DD2 0, #008DD2 50%, #0A6397 50%, #0A6397 100%);
+                background: linear-gradient(to right, rgba(0, 141, 210, 1) 0, rgba(0, 141, 210, 1) 50%, rgba(10, 99, 151, 1) 50%, rgba(10, 99, 151, 1) 100%);
             }
         }
         &:last-child {
@@ -843,7 +843,7 @@ body {
                 position: absolute;
                 top: 0;
                 left: 100%;
-                background: linear-gradient(to right, #0A6397 0, #0A6397 50%, #008DD2 50%, #008DD2 100%);
+                background: linear-gradient(to right, rgba(10, 99, 151, 1) 0, rgba(10, 99, 151, 1) 50%, rgba(0, 141, 210, 1) 50%, rgba(0, 141, 210, 1) 100%);
             }
         }
     }
@@ -851,7 +851,7 @@ body {
         font-family: $fontM;
         font-size: 18px;
         line-height: 23px;
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 1);
         max-width: 817px;
         margin: 0 auto 67px auto;
         p {
@@ -876,7 +876,7 @@ body {
         line-height: 22px;
         text-align: center;
         text-transform: lowercase;
-        color: #374148;
+        color: rgba(55, 65, 72, 1);
         margin: 0 0 48px 0;
     }
     .slider {
@@ -890,10 +890,10 @@ body {
             opacity: 0.5;
          }
         &__item {
-            background: white;
+            background: rgba(255, 255, 255, 1);
             padding: 29px 29px 60px 29px;
             margin: 0 20px 0 0;
-            box-shadow: 0 0 100px #DADADA;
+            box-shadow: 0 0 100px rgba(218, 218, 218, 1);
         }
     }
     .item-slider {
@@ -906,7 +906,7 @@ body {
         &__left {
             font-size: 16px;
             line-height: 18px;
-            color: #181A18;
+            color: rgba(24, 26, 24, 1);
             margin: 5px;   
             padding: 0 0 0 24px;
             background: url('../img/recommendation/user.svg') 0 0/14.67px 14.67px no-repeat;         
@@ -934,7 +934,7 @@ body {
             margin: 0;
             font-size: 12px;
             line-height: 14px;
-            color: #181A18;
+            color: rgba(24, 26, 24, 1);
         }
     }
     &__partners {
@@ -944,7 +944,7 @@ body {
         line-height: 24px;
         text-align: center;
         text-transform: uppercase;
-        color: #FF8B20;
+        color: rgba(255, 139, 32, 1);
         margin: 0 0 70px 0;
         padding: 20px 0 0 0;
     }
@@ -959,9 +959,9 @@ body {
 }
 //========================================
 .price {
-    background: #1278B4;
+    background: rgba(18, 120, 180, 1);
     font-family: $fontM;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     .container {
         display: flex;
         position: relative;
@@ -978,7 +978,7 @@ body {
         }
     }
     &__form {
-        background: #003C5F;
+        background: rgba(0, 60, 95, 1);
         margin: -15px 0 -15px 320px;
         display: flex;
         flex-direction: column;
@@ -991,7 +991,7 @@ body {
             content: '';
             width: 12px;
             height: 100%;
-            background:linear-gradient(#003C5F 0, #003C5F 33%, #0A6397 33%, #0A6397 66%, #008DD2 66%, #008DD2 100%);
+            background:linear-gradient(rgba(0, 60, 95, 1) 0, rgba(0, 60, 95, 1) 33%, rgba(10, 99, 151, 1) 33%, rgba(10, 99, 151, 1) 66%, rgba(0, 141, 210, 1) 66%, rgba(0, 141, 210, 1) 100%);
             position: absolute;
             top: 0;
             right: 0;
@@ -1031,7 +1031,7 @@ body {
             padding: 9px 13px;
             &_name, &_tel {
                 color: rgba(24, 26, 24, 0.5);
-                border: 1px solid #C4C4C4;
+                border: 1px solid rgba(196, 196, 196, 1);
             }
             &_name {
                 flex: 0 1 46%;
@@ -1043,19 +1043,19 @@ body {
             &_submit, &_reset {
                 flex: 0 0 129.33px;
                 justify-content: center;
-                color: white;
+                color: rgba(255, 255, 255, 1);
                 &:hover {
-                    background: white;
+                    background: rgba(255, 255, 255, 1);
                     color: rgba(24, 26, 24, 0.5);
                 }
             }
             &_submit {
                 margin: 0 9.67px 0 0;
-                background: #22B0F5;
+                background: rgba(34, 176, 245, 1);
             }
             &_reset {
                 background: transparent;
-                border: 1px solid white;
+                border: 1px solid rgba(255, 255, 255, 1);
             }
         }
     }
@@ -1072,10 +1072,10 @@ body {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
-                border: 1px solid white;
+                border: 1px solid rgba(255, 255, 255, 1);
                 font-family: $fontM;
                 font-size: 50px;
-                color: white;
+                color: rgba(255, 255, 255, 1);
                 position: absolute;
                 top: -18px;
                 left: 0;
@@ -1099,7 +1099,7 @@ body {
     font-family: $fontM;
     font-size: 12px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     padding: 41px 0 29px 0;
     .container {
         display: flex;
@@ -1131,7 +1131,7 @@ body {
     &__copy {
         font-size: 8px;
         line-height: 12px;
-        color: #757E85;
+        color: rgba(117, 126, 133, 1);
         padding: 0 0 0 19px;
     }
     &__tel {
@@ -1163,7 +1163,7 @@ body {
             position: absolute;
             top: 20px;
             left: 0;
-            color: #008DD2;
+            color: rgba(0, 141, 210, 1);
         }
     }
 }
