@@ -84,32 +84,34 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-.title_b {
-    font-family: $fontM;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #374148;
-    .h2_line {
+.title {
+    &_section {
+        text-align: center;
+        font-family: $fontM;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(55, 65, 72, 1);
         margin: 0;
+    }
+    &_b {
         display: inline-block;
         position: relative;
         &:before, &:after {
             content: '';
             height: 1px;
+            width: 336px;
+            background: rgba(196, 196, 196, 1);
             position: absolute;
             top: 50%;
         }
         &:before {
-            right: 100%;
-            margin-right: 60px;
+            right: calc(100% + 60px);
         }
         &:after {
-            left: 100%;
-            margin-left: 60px;
+            left: calc(100% + 60px);
         }
     }
 }
@@ -430,11 +432,11 @@ body {
     }
     &__title {
         margin: 0 0 119px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 292px;
-                background: #374148;
-            }
+    }
+    .title_b {
+        &:before, &:after {
+            width: 229px;
+            background: #374148;
         }
     }
     &__box {
@@ -466,29 +468,12 @@ body {
 .types {
     padding: 18px 0 125px 0;
     background: url('../img/types/types_cloud_1.svg') right 90px top 115px /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 100px 195px/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 128px 630px /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 230px 1245px /109px auto no-repeat;
-    &__title {
-        margin: 0;
-        .h2_line {
-            max-width: 406px;
-            &:before, &:after {
-                width: 336px;
-                background: #C4C4C4;
-            }
-        }
-
-    }
-
-    // .types__box
-
     &__body {
         display: flex;
         flex-direction: column;
         align-items: center;
         background: url('../img/types/types_line.svg') center 290px /1436px 1224.5px no-repeat;
     }
-
-    // .types__row
-
     &__row {
         display: flex;
         width: 100%;
@@ -515,9 +500,6 @@ body {
             background: url('../img/types/types_wave_1.svg') bottom 10% left 24%/164px auto no-repeat, url('../img/types/types_wave_2.svg') bottom 8.5% right 18.5%/316px auto no-repeat, url('../img/types/types_cloud_1.svg') top 35% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 46%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 30%/114px auto no-repeat;
         }
     }
-
-    // .types__column
-
     &__column {
         flex: 0 0 auto;
         height: 100%;
@@ -534,9 +516,6 @@ body {
             margin: 0 140px 0 0;
         }
     }
-
-    // .types__pic
-
     &__pic {
         position: relative;
         height: 44.65%;
@@ -653,8 +632,6 @@ body {
         line-height: 125.9%;
         color: rgba(255, 255, 255, 1);
     }
-    &__title {
-    }
     &__link {
         width: 298px;
         height: 40px;
@@ -682,13 +659,7 @@ body {
 .guarantee {
     padding: 90px 0 102px 0;
     &__title {
-        margin: 0 0 95.3px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 336px;
-                background: #C4C4C4;
-            }
-        }
+        margin: 0 0 95.3px 0;   
     }
     &__tabs {
         font-family: $fontM;
@@ -832,11 +803,10 @@ body {
     &__title {
         color: white;
         margin: 0 0 82px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 336px;
-                background: white;
-            }
+    }
+    .title_b {
+        &:before, &:after {
+            background: #FFFFFF;
         }
     }
     &__portraits {
@@ -899,12 +869,6 @@ body {
     padding: 43px 0 80px 0;
     &__title {
         margin: 0 0 23px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 336px;
-                background: #C4C4C4;
-            }
-        }
     }
     &__subtitle {
         font-family: $fontM;
@@ -915,18 +879,12 @@ body {
         color: #374148;
         margin: 0 0 48px 0;
     }
-    &__slider {
-
-    }
     .slider {
         width: 65%;
         margin: 0 auto 31px auto;
         .slick-track{
             display: flex;
 
-        }
-        .slick-list {
-         //   overflow: hidden;
         }
         .slick-slide:not(.slick-active) {
             opacity: 0.5;
