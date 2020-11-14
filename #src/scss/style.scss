@@ -93,24 +93,22 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #374148;
-    .h2_line {
-        margin: 0;
-        display: inline-block;
-        position: relative;
-        &:before, &:after {
-            content: '';
-            height: 1px;
-            position: absolute;
-            top: 50%;
-        }
-        &:before {
-            right: 100%;
-            margin-right: 60px;
-        }
-        &:after {
-            left: 100%;
-            margin-left: 60px;
-        }
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        top: 50%;
+    }
+    &:before {
+        right: 100%;
+        margin-right: 60px;
+    }
+    &:after {
+        left: 100%;
+        margin-left: 60px;
     }
 }
 
@@ -475,20 +473,13 @@ body {
                 background: #C4C4C4;
             }
         }
-
     }
-
-    // .types__box
-
     &__body {
         display: flex;
         flex-direction: column;
         align-items: center;
         background: url('../img/types/types_line.svg') center 290px /1436px 1224.5px no-repeat;
     }
-
-    // .types__row
-
     &__row {
         display: flex;
         width: 100%;
@@ -515,9 +506,6 @@ body {
             background: url('../img/types/types_wave_1.svg') bottom 10% left 24%/164px auto no-repeat, url('../img/types/types_wave_2.svg') bottom 8.5% right 18.5%/316px auto no-repeat, url('../img/types/types_cloud_1.svg') top 35% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 46%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 30%/114px auto no-repeat;
         }
     }
-
-    // .types__column
-
     &__column {
         flex: 0 0 auto;
         height: 100%;
@@ -534,9 +522,6 @@ body {
             margin: 0 140px 0 0;
         }
     }
-
-    // .types__pic
-
     &__pic {
         position: relative;
         height: 44.65%;
@@ -652,8 +637,6 @@ body {
         font-size: 20px;
         line-height: 125.9%;
         color: rgba(255, 255, 255, 1);
-    }
-    &__title {
     }
     &__link {
         width: 298px;
@@ -915,18 +898,12 @@ body {
         color: #374148;
         margin: 0 0 48px 0;
     }
-    &__slider {
-
-    }
     .slider {
         width: 65%;
         margin: 0 auto 31px auto;
         .slick-track{
             display: flex;
 
-        }
-        .slick-list {
-         //   overflow: hidden;
         }
         .slick-slide:not(.slick-active) {
             opacity: 0.5;

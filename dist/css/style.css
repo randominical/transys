@@ -660,28 +660,25 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #374148;
-}
-
-.title_b .h2_line {
   margin: 0;
   display: inline-block;
   position: relative;
 }
 
-.title_b .h2_line:before,
-.title_b .h2_line:after {
+.title_b:before,
+.title_b:after {
   content: '';
   height: 1px;
   position: absolute;
   top: 50%;
 }
 
-.title_b .h2_line:before {
+.title_b:before {
   right: 100%;
   margin-right: 60px;
 }
 
-.title_b .h2_line:after {
+.title_b:after {
   left: 100%;
   margin-left: 60px;
 }
