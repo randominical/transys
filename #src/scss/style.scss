@@ -1138,6 +1138,139 @@ body {
     height: 239px;
 }
 //========================================
+.footer {
+    background: rgba(60, 70, 78, 1);
+    font-family: $fontM;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 41px 0 29px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .footer__column
+
+    &__column {
+        margin: 0 50px 0 0;
+        padding: 20px 0 0 0;
+        &:first-child {
+            flex: 0 0 25%;
+            padding: 0;
+        }
+        &:last-child {
+            flex: 0 0 16%;
+            text-align: right;
+            margin: 0;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+        width: 189px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 0 27px 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .footer__copy
+
+    &__copy {
+        font-size: 8px;
+        line-height: 12px;
+        color: #757E85;
+        padding: 0 0 0 19px;
+    }
+
+    // .footer__tel
+
+    &__tel {
+        padding: 0;
+        margin: 0;
+    }
+
+    // .footer__address
+
+    &__address {
+        font-style: normal;
+    }
+
+    // .footer__time
+
+    &__time {
+    }
+
+    // .footer__iconbar
+
+    &__iconbar {
+    }
+
+    // .footer__soc
+
+    &__soc {
+        font-family: 'Icon1';
+        font-size: 13.33px;
+        color: rgba(112, 120, 124, 1);
+        margin: 0 0 0 25px;
+        &:hover {
+            color: rgba(0, 170, 236, 1);
+        }
+    } 
+    .if_icon {
+        padding: 20px 0 0 37px;
+        position: relative;
+        &:before {
+            font-family: 'Icon1';
+            font-size: 15px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            color: #008DD2;
+        }
+    }
+}
+.container {
+}
+.container-main {
+}
+.if {
+
+    // .if_tbcall-phone
+
+    &_tbcall-phone {
+    }
+
+    // .if_tbpin
+
+    &_tbpin {
+    }
+
+    // .if_tbtime
+
+    &_tbtime {
+    }
+
+    // .if_tbfacebook
+
+    &_tbfacebook {
+    }
+
+    // .if_tbig
+
+    &_tbig {
+    }
+
+    // .if_tbtwitter
+
+    &_tbtwitter {
+    }
+}
+//========================================
 @keyframes arrow {
     0% {
         transform: translate(0,0);

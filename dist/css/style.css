@@ -2083,6 +2083,97 @@ body {
   height: 239px;
 }
 
+.footer {
+  background: #3c464e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 41px 0 29px 0;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__column {
+  margin: 0 50px 0 0;
+  padding: 20px 0 0 0;
+}
+
+.footer__column:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 0;
+}
+
+.footer__column:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16%;
+          flex: 0 0 16%;
+  text-align: right;
+  margin: 0;
+}
+
+.footer__logo {
+  width: 189px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 0 27px 0;
+}
+
+.footer__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer__copy {
+  font-size: 8px;
+  line-height: 12px;
+  color: #757E85;
+  padding: 0 0 0 19px;
+}
+
+.footer__tel {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__soc {
+  font-family: 'Icon1';
+  font-size: 13.33px;
+  color: #70787c;
+  margin: 0 0 0 25px;
+}
+
+.footer__soc:hover {
+  color: #00aaec;
+}
+
+.footer .if_icon {
+  padding: 20px 0 0 37px;
+  position: relative;
+}
+
+.footer .if_icon:before {
+  font-family: 'Icon1';
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #008DD2;
+}
+
 @-webkit-keyframes arrow {
   0% {
     -webkit-transform: translate(0, 0);
