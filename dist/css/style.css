@@ -1967,7 +1967,7 @@ body {
   font-weight: bold;
 }
 
-.form__title {
+.price .form__title {
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
@@ -1975,14 +1975,14 @@ body {
   margin: 0 0 75px 0;
 }
 
-.form__row {
+.price .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 40px 0;
 }
 
-.form__input {
+.price .form__input {
   height: 32px;
   font-size: 12px;
   line-height: 14px;
@@ -1995,27 +1995,27 @@ body {
   padding: 9px 13px;
 }
 
-.form__input_name,
-.form__input_tel {
+.price .form__input_name,
+.price .form__input_tel {
   color: rgba(24, 26, 24, 0.5);
   border: 1px solid #C4C4C4;
 }
 
-.form__input_name {
+.price .form__input_name {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 46%;
           flex: 0 1 46%;
   margin: 0 16px 0 0;
 }
 
-.form__input_tel {
+.price .form__input_tel {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 44%;
           flex: 0 1 44%;
 }
 
-.form__input_submit,
-.form__input_reset {
+.price .form__input_submit,
+.price .form__input_reset {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 129.33px;
           flex: 0 0 129.33px;
@@ -2025,34 +2025,34 @@ body {
   color: white;
 }
 
-.form__input_submit:hover,
-.form__input_reset:hover {
+.price .form__input_submit:hover,
+.price .form__input_reset:hover {
   background: white;
   color: rgba(24, 26, 24, 0.5);
 }
 
-.form__input_submit {
+.price .form__input_submit {
   margin: 0 9.67px 0 0;
   background: #22B0F5;
 }
 
-.form__input_reset {
+.price .form__input_reset {
   background: transparent;
   border: 1px solid white;
 }
 
-.list-price {
+.price .list-price {
   counter-reset: myCounter;
 }
 
-.list-price__item {
+.price .list-price__item {
   padding: 0 0 0 90px;
   list-style: none;
   margin: 0 0 64px 0;
   position: relative;
 }
 
-.list-price__item:before {
+.price .list-price__item:before {
   counter-increment: myCounter;
   content: counter(myCounter);
   width: 64px;
@@ -2076,7 +2076,7 @@ body {
           justify-content: center;
 }
 
-.list-price__item:last-child {
+.price .list-price__item:last-child {
   margin: 0;
 }
 
