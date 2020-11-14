@@ -84,31 +84,35 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-.title_b {
-    font-family: $fontM;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #374148;
-    margin: 0;
-    display: inline-block;
-    position: relative;
-    &:before, &:after {
-        content: '';
-        height: 1px;
-        position: absolute;
-        top: 50%;
+.title {
+    &_section {
+        text-align: center;
+        font-family: $fontM;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(55, 65, 72, 1);
+        margin: 0;
     }
-    &:before {
-        right: 100%;
-        margin-right: 60px;
-    }
-    &:after {
-        left: 100%;
-        margin-left: 60px;
+    &_b {
+        display: inline-block;
+        position: relative;
+        &:before, &:after {
+            content: '';
+            height: 1px;
+            width: 336px;
+            background: rgba(196, 196, 196, 1);
+            position: absolute;
+            top: 50%;
+        }
+        &:before {
+            right: calc(100% + 60px);
+        }
+        &:after {
+            left: calc(100% + 60px);
+        }
     }
 }
 
@@ -428,11 +432,11 @@ body {
     }
     &__title {
         margin: 0 0 119px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 292px;
-                background: #374148;
-            }
+    }
+    .title_b {
+        &:before, &:after {
+            width: 229px;
+            background: #374148;
         }
     }
     &__box {
@@ -464,16 +468,6 @@ body {
 .types {
     padding: 18px 0 125px 0;
     background: url('../img/types/types_cloud_1.svg') right 90px top 115px /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 100px 195px/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 128px 630px /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 230px 1245px /109px auto no-repeat;
-    &__title {
-        margin: 0;
-        .h2_line {
-            max-width: 406px;
-            &:before, &:after {
-                width: 336px;
-                background: #C4C4C4;
-            }
-        }
-    }
     &__body {
         display: flex;
         flex-direction: column;
@@ -665,13 +659,7 @@ body {
 .guarantee {
     padding: 90px 0 102px 0;
     &__title {
-        margin: 0 0 95.3px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 336px;
-                background: #C4C4C4;
-            }
-        }
+        margin: 0 0 95.3px 0;   
     }
     &__tabs {
         font-family: $fontM;
@@ -815,11 +803,10 @@ body {
     &__title {
         color: white;
         margin: 0 0 82px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 336px;
-                background: white;
-            }
+    }
+    .title_b {
+        &:before, &:after {
+            background: #FFFFFF;
         }
     }
     &__portraits {
@@ -882,12 +869,6 @@ body {
     padding: 43px 0 80px 0;
     &__title {
         margin: 0 0 23px 0;
-        .h2_line {
-            &:before, &:after {
-                width: 336px;
-                background: #C4C4C4;
-            }
-        }
     }
     &__subtitle {
         font-family: $fontM;
