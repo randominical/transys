@@ -31,7 +31,6 @@ $(document).ready(function(){
 window.initMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
        center: {lat: 52.090050, lng: 23.694638},
-       scrollwheel: false,
        zoom: 15,
        disableDefaultUI: true,
        styles: [

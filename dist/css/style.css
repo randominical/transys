@@ -1780,7 +1780,7 @@ body {
 
 .recommendation .slider {
   width: 65%;
-  margin: 0 auto 51px auto;
+  margin: 0 auto 31px auto;
 }
 
 .recommendation .slider .slick-track {
@@ -1866,6 +1866,7 @@ body {
   text-transform: uppercase;
   color: #FF8B20;
   margin: 0 0 70px 0;
+  padding: 20px 0 0 0;
 }
 
 .recommendation__logos {
