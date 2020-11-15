@@ -42,11 +42,10 @@ html {
 
 body {
     height: 100%;
-   // background: rgba(255, 255, 255, 1);
-   background: red;
+    background: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
-    @media (max-width: $md1 + px) {
+    @media (max-width: $md3 + px) {
         &.lock {
             overflow: hidden;
         }
@@ -131,7 +130,6 @@ body {
 }
 //========================================
 .header {
-    background: black;
     width: 100%;
     height: 85px;
     display: flex;
@@ -307,27 +305,32 @@ body {
         .menu {
             &__burger {
                 display: block;
-                position: relative;
+                position: fixed;
+                top: 23px;
+                left: 20px;
                 width: 20px;
                 height: 14px;
-                z-index: 3;
+                cursor: pointer;
+                z-index: 4;
                 span {
                     background: rgba(255, 255, 255, 1);
+                    box-shadow: 0 0 1px rgba(60,70,78,1);
                     position: absolute;
                     width: 100%;
                     height: 2px;
                     left: 0;
                     top: 6px;
-                    transition: all .3s ease-in;
+                    transition: all .4s ease-out;
                 }
                 &:before, &:after {
                     content: '';
                     background: rgba(255, 255, 255, 1);
+                    box-shadow: 0 0 1px rgba(60,70,78,1);
                     position: absolute;
                     width: 100%;
                     height: 2px;
                     left: 0;
-                    transition: all .3s ease-in;
+                    transition: all .4s ease-out;
                 }
                 &:before {
                     top: 0;
@@ -337,6 +340,7 @@ body {
                 }
                 &.active {
                     &:before {
+                        box-shadow: none;
                         background: rgba(60,70,78,1);
                         transform: rotate(45deg);
                         top: 6px;
@@ -362,16 +366,25 @@ body {
                 top: 0;
                 left: -100%;
                 overflow: auto;
-                z-index: 2;
+                z-index: 3;
                 padding: 20px 100px 50px 44px;
-                transition: all .3s ease-in;
+                transition: all .3s ease-out;
+                &:after {
+                    content: '';
+                    height: 100%;
+                    width: 90px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background:linear-gradient(to right, rgba(0, 141, 210, 1) 0,rgba(0, 141, 210, 1) 33%, rgba(10, 99, 151, 1) 33%, rgba(10, 99, 151, 1) 66%, rgba(0, 60, 95, 1) 66%, rgba(0, 60, 95, 1) 100%);
+                }
                 &.active {
                     left: 0;
                 }
             }
             &__list {
+                flex: 0 1 40%;
                 display: block;
-                //height: 100%;
                 li {
                     margin: 0 0 30px 0;
                 }
@@ -386,19 +399,19 @@ body {
         }
         .body-menu {
             &__logo {
-                width: 161px;
-                height: auto;
+                flex: 0 0 18px;
                 overflow: hidden;
-                margin: 0 0 104px 20px;
+                margin: 0 0 30px 20px;
                 img {
-                    width: 100%;
-                    height: auto;
+                    height: 100%;
+                    width: auto;
                 }
                 &.active {
                     display: block;
                 }
             }
             &__bottom {
+                flex: 0 1 30%;
                 color: rgba(60, 70, 78, 1);
                 p {
                     margin: 0;
@@ -407,13 +420,13 @@ body {
                     display: block;
                 }
                 .if_icon {
-                    padding: 20px 0 0 37px;
+                    padding: 0 0 0 37px;
                     position: relative;
                     &:before {
                         font-family: 'Icon1';
                         font-size: 15px;
                         position: absolute;
-                        top: 20px;
+                        top: 0;
                         left: 0;
                         color: rgba(0, 141, 210, 1);
                     }
@@ -1070,7 +1083,7 @@ body {
         left: 80px;
         bottom: 0;
         height: 110%;
-        z-index: 2;
+        z-index: 1;
         img {
             height: 100%;
             width: auto;
@@ -1085,7 +1098,7 @@ body {
         max-width: 561px;
         padding: 40px 20px 20px 40px;
         position: relative;
-        z-index: 1;
+        z-index: 0;
         &:after {
             content: '';
             width: 12px;
