@@ -3,3 +3,4 @@
 @@include('slick.min.js');
 @@include('slider.js');
 @@include('map.js');
+@@include('menu.js');

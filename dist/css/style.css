@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: "Futura";
   font-display: swap;
@@ -604,7 +602,7 @@ html {
 
 body {
   height: 100%;
-  background: white;
+  background: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,6 +708,7 @@ body {
 }
 
 .header {
+  background: black;
   width: 100%;
   height: 85px;
   display: -webkit-box;
@@ -725,87 +724,6 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  /*    @media (max-width: $md3 + px) {
-        .menu {
-            &__burger {
-                display: block;
-                position: relative;
-                width: 30px;
-                height: 20px;
-                padding: 2px;
-                z-index: 3;
-                span {
-                    background-color: rgba(104, 104, 104, 1);
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    left: 0;
-                    top: 9px;
-                    transition: all 0.3s ease 0s;
-                }
-                &:before, &:after {
-                    content: '';
-                    background-color:rgba(104, 104, 104, 1);
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    left: 0;
-                    transition: all 0.3s ease 0s;
-                }
-                &:before {
-                    top: 0;
-                }
-                &:after {
-                    bottom: 0;
-                }
-                &.active {
-                    &:before {
-                        transform: rotate(45deg);
-                        top: 9px;
-                    }
-                    &:after {
-                        transform: rotate(-45deg);
-                        bottom: 9px;
-                    }
-                    span {
-                        transform: scale(0);
-                    }
-                }
-            }
-            &__body {
-                display: none;
-                position: fixed;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                left: 0;
-                //важно для прокрутки
-                overflow: auto;
-                z-index: 2;
-                padding: 120px 20px 30px 20px;
-                transition: all .3s ease 0s;
-                background-color: rgba(255, 255, 255, 1);
-                &.active {
-                    display: block;
-                }
-                //плашка для прокрутки на маленьких экранах
-                &:before {
-                    content: '';
-                    position: fixed;
-                    width: 100%;
-                    height: 105px;
-                    top: 0;
-                    left: 0;
-                    z-index: 3;
-                    background-color: yellow;
-                }
-            }
-            &__list {
-                //важно для прокрутки
-                height: 100%;
-            }
-        } 
-    }*/
 }
 
 .header,
@@ -2179,14 +2097,184 @@ body {
   }
 }
 
+@media (max-width: 1550px) {
+  .header__logo {
+    margin: 0 25px 0 0;
+  }
+
+  .header__address {
+    margin: 0 10px 0 0;
+  }
+
+  .header__time {
+    margin: 0 15px 0 0;
+  }
+
+  .header .menu__link {
+    margin: 0 2px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header__logo {
+    width: 170px;
+    margin: 0 15px 0 0;
+  }
+
+  .header__contacts {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 27%;
+            flex: 1 1 27%;
+  }
+
+  .header__link {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+            flex: 0 1 150px;
+  }
+}
+
 @media (max-width: 1198.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 20px;
+  }
+
+  .header__menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20px;
+            flex: 0 0 20px;
+    margin: 0 10px 0 0;
+  }
+
+  .header__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+
+  .header__contacts {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .header .menu__burger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 14px;
+    z-index: 3;
+  }
+
+  .header .menu__burger span {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 6px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header .menu__burger:before,
+  .header .menu__burger:after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header .menu__burger:before {
+    top: 0;
+  }
+
+  .header .menu__burger:after {
+    bottom: 0;
+  }
+
+  .header .menu__burger.active:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header .menu__burger.active:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header .menu__burger.active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .header .menu__body {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 390px;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 2;
+    padding: 120px 20px 30px 20px;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    background: white;
+  }
+
+  .header .menu__body.active {
+    display: block;
+  }
+
+  .header .menu__body:before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 105px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: yellow;
+  }
+
+  .header .menu__list {
+    display: block;
+    height: 100%;
+  }
+
+  .header .menu__link {
+    color: #3c464e;
   }
 }
 
 @media (max-width: 767.98px) {
-  body.lock {
-    overflow: hidden;
+  .header__logo {
+    width: 135px;
   }
 }
