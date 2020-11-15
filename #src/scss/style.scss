@@ -462,6 +462,33 @@ body {
             }
         }
     }
+    @media (max-width: $md4 + px) {
+        .menu {
+            &__body {
+                width: 100%;
+            }
+        }
+        .body-menu {
+            &__content {
+                flex: 0 1 auto;
+                display: flex;
+                flex-direction: row;
+            }
+            &__bottom {
+                flex: 0 1 50%;
+                padding: 17px 0 0 20px;
+                &:before {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    background: #DDDDDD;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
 }
 //========================================
 .fullscreen {

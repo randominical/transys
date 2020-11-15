@@ -2393,3 +2393,39 @@ body {
     left: 0;
   }
 }
+
+@media (max-width: 479.98px) {
+  .header .menu__body {
+    width: 100%;
+  }
+
+  .header .body-menu__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .header .body-menu__bottom {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 17px 0 0 20px;
+  }
+
+  .header .body-menu__bottom:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #DDDDDD;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
