@@ -2340,8 +2340,8 @@ body {
 
   .header .body-menu__bottom {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
     color: #3c464e;
   }
 
@@ -2460,9 +2460,9 @@ body {
 
 @media (max-width: 319.98px) {
   .header .menu__list {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 60%;
+            flex: 0 1 60%;
   }
 
   .header .menu__list li:last-child {
@@ -2477,15 +2477,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .header .body-menu__bottom {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
     padding: 22px 0 0 0;
   }
 
