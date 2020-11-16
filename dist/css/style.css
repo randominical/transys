@@ -2271,7 +2271,7 @@ body {
     left: -100%;
     overflow: auto;
     z-index: 3;
-    padding: 20px 110px 50px 44px;
+    padding: 20px 100px 50px 44px;
     -webkit-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out;
@@ -2290,10 +2290,6 @@ body {
 
   .header .menu__list li {
     margin: 0 0 30px 0;
-  }
-
-  .header .menu__list li:last-child {
-    margin: 0 0 15px 0;
   }
 
   .header .menu__link {
@@ -2324,8 +2320,8 @@ body {
 
   .header .body-menu__content {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 70%;
-            flex: 0 1 70%;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2391,7 +2387,7 @@ body {
     content: '';
     width: 229px;
     height: 1px;
-    background: #dddddd;
+    background: #DDDDDD;
     position: absolute;
     top: 0;
     left: 0;
@@ -2401,29 +2397,15 @@ body {
 @media (max-width: 479.98px) {
   .header .menu__body {
     width: 100%;
-    background: -o-linear-gradient(right, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);
-    background: linear-gradient(to left, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);
-    padding: 20px 62px 50px 44px;
-  }
-
-  .header .menu__list {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 40%;
-            flex: 0 1 40%;
-  }
-
-  .header .menu__list li {
-    margin: 0 0 30px 0;
-  }
-
-  .header .menu__list li:last-child {
-    margin: 0 0 0 0;
   }
 
   .header .body-menu__content {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2432,19 +2414,9 @@ body {
 
   .header .body-menu__bottom {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 60%;
-            flex: 0 1 60%;
-    padding: 5px 0 0 25px;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 17px 0 0 20px;
   }
 
   .header .body-menu__bottom:before {
