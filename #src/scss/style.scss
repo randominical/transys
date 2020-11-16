@@ -23,6 +23,7 @@ $md1: 1198.98;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
+$md5: 319.98;
 
 $maxWidth: 1920;
 
@@ -369,7 +370,7 @@ body {
                 left: -100%;
                 overflow: auto;
                 z-index: 3;
-                padding: 20px 100px 50px 44px;
+                padding: 20px 110px 50px 44px;
                 transition: all .3s ease-out;
                 &.active {
                     left: 0;
@@ -380,6 +381,9 @@ body {
                 display: block;
                 li {
                     margin: 0 0 30px 0;
+                    &:last-child {
+                        margin: 0 0 15px 0;
+                    }
                 }
             }
             &__link {
@@ -404,13 +408,13 @@ body {
                 }
             }
             &__content {
-                flex: 0 1 80%;
+                flex: 0 1 70%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
             }
             &__bottom {
-                flex: 0 1 30%;
+                flex: 0 0 auto;
                 color: rgba(60, 70, 78, 1);
                 p {
                     margin: 0;
@@ -454,7 +458,7 @@ body {
                     content: '';
                     width: 229px;
                     height: 1px;
-                    background: #DDDDDD;
+                    background: rgba(221, 221, 221, 1);
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -466,22 +470,67 @@ body {
         .menu {
             &__body {
                 width: 100%;
+                background:linear-gradient(to left, rgba(0, 60, 95, 1) 0, rgba(0, 60, 95, 1) 14px, rgba(10, 99, 151, 1) 14px, rgba(10, 99, 151, 1) 28px, rgba(0, 141, 210, 1) 28px,rgba(0, 141, 210, 1) 42px, rgba(255, 255, 255, 1) 42px, rgba(255, 255, 255, 1));
+                padding: 20px 62px 50px 44px;
+            }
+            &__list {
+                flex: 0 1 40%;
+                li {
+                    margin: 0 0 30px 0;
+                    &:last-child {
+                        margin: 0 0 0 0;
+                    }
+                }  
             }
         }
         .body-menu {
             &__content {
                 flex: 0 1 auto;
-                display: flex;
                 flex-direction: row;
             }
             &__bottom {
-                flex: 0 1 50%;
-                padding: 17px 0 0 20px;
+                flex: 0 1 60%;
+                padding: 5px 0 0 25px;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: space-between;
                 &:before {
                     content: '';
                     width: 1px;
                     height: 100%;
                     background: #DDDDDD;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: $md5 + px) {
+        .menu {
+            &__list {
+                flex: 1 1 50%;
+                li {
+                    &:last-child {
+                        margin: 0 0 30px 0;
+                    }
+                }  
+            }
+        }
+        .body-menu {
+            &__content {
+                flex: 0 1 90%;
+                flex-direction: column;
+            }
+            &__bottom {
+                flex: 0 0 auto;
+                justify-content: start;
+                padding: 22px 0 0 0;
+                &:before {
+                    content: '';
+                    width: 229px;
+                    height: 1px;
+                    background: rgba(221, 221, 221, 1);
                     position: absolute;
                     top: 0;
                     left: 0;
