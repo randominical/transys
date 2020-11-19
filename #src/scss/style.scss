@@ -43,8 +43,7 @@ html {
 
 body {
     height: 100%;
- //   background: rgba(255, 255, 255, 1);
- background: red;
+    background: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
     @media (max-width: $md3 + px) {
@@ -58,7 +57,6 @@ body {
     flex: 0 0 auto;
     width: 100%;
     max-width: $maxWidth + px;
-    min-width: 280px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -132,7 +130,6 @@ body {
 }
 //========================================
 .header {
-    background: blue;
     width: 100%;
     height: 85px;
     display: flex;
@@ -161,7 +158,7 @@ body {
         margin: 0 10px 0 0;
     }
     &__right {
-        flex: 0 1 27%;
+        flex: 0 1 auto;
         display: flex;
         justify-content: space-between;
         margin: 0 0 0 10px;
@@ -200,6 +197,17 @@ body {
         flex: 0 0 100px;
         margin: 0 50px 0 0;
     }
+    .if_icon {
+        padding: 0 0 0 30px;
+        position: relative;
+        &:before {
+            font-family: 'Icon1';
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
     &__link {
         flex: 0 1 200px;
         height: 32px;
@@ -207,11 +215,17 @@ body {
         align-items: center;
         justify-content: center;
         white-space: nowrap;
-        padding: 0 5px;
+        padding: 0 5px !important;
         border: 2px solid rgba(255, 255, 255, 0.5);
         &:hover {
             background:$blue;
-            border: $blue;
+            border: 2px solid $blue;
+        }
+        &.if_tbcall-phone {
+            padding: 0;
+            &:before {
+                display: none;
+            }
         }
     }
     .lang {
@@ -250,22 +264,11 @@ body {
             margin: 0 10px;
             padding: 17px 5px;
             white-space: nowrap;
-                &:hover {
-                    color: rgba(57, 184, 255, 1);
-                }
+            &:hover {
+                color: rgba(57, 184, 255, 1);
             }
         }
-        .if_icon {
-            padding: 0 0 0 30px;
-            position: relative;
-            &:before {
-                font-family: 'Icon1';
-                font-size: 16px;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        }
+    }
     @media (max-width: 1550px) {
         .body-menu {
             &__link {
@@ -287,9 +290,6 @@ body {
             width: 170px;
             margin: 0 5px 0 0;
         }
-        &__right {
-            flex: 1 1 27%;
-        }
         &__address {
             margin: 0 5px 0 0;
         }
@@ -310,11 +310,10 @@ body {
         &__left {
             order: 2;
             flex: 0 1 auto;
-            margin: 0 20px 0 20px;
+            margin: 0 5px 0 30px;
         }
         &__right {
             order: 3;
-            flex: 0 1 50%;
         }
         .menu {
             &__burger {
@@ -381,7 +380,7 @@ body {
                 left: -100%;
                 overflow: auto;
                 z-index: 3;
-                padding: 20px 110px 50px 44px;
+                padding: 20px 110px 0 44px;
                 transition: all .3s ease-out;
                 &.active {
                     left: 0;
@@ -419,7 +418,7 @@ body {
                 }
             }
             &__bottom {
-                flex: 0 1 30%;
+                flex: 0 1 auto;
                 color: rgba(60, 70, 78, 1);
                 p {
                     margin: 0;
@@ -452,18 +451,14 @@ body {
         &__logo {
             width: 135px;
         }
-        .lang {
-            &__option {
-                margin: 0 2.5px;
-            }
-        }
         .body-menu {
             &__bottom {
-                padding: 53px 0 0 0;
+                width: 100%;
+                padding: 53px 0 35px 0;
                 position: relative;
                 &:before {
                     content: '';
-                    width: 229px;
+                    width: 70%;
                     height: 1px;
                     background: rgba(221, 221, 221, 1);
                     position: absolute;
@@ -471,6 +466,9 @@ body {
                     left: 0;
                 }
             }
+        }
+        &__address, &__time, &__lang {
+            display: none !important;
         }
     }
     @media (max-width: $md4 + px) {
@@ -481,10 +479,28 @@ body {
                 padding: 20px 62px 50px 44px;
             }
         }
-
+        &__link {
+            font-size: 0 !important;
+            border: none;
+            width: 19px;
+            height: 19px;
+            position: relative;
+        }
+        .if_tbcall-phone {
+            &:before {
+                display: block;
+                font-size: 19px;
+                transform: scale(-1, 1);
+                top: 9.5px
+            }
+        }
     }
     @media (max-width: $md5 + px) {
-
+        .body-menu {
+            &__logo {
+                flex: 0 0 14px;
+            }
+        }
     }
 }
 //========================================
