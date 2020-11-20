@@ -2327,11 +2327,19 @@ body {
     color: #35a0ee;
   }
 
+  .header .body-menu__top {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0 0 30px 0;
+  }
+
   .header .body-menu__bottom {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     color: #3c464e;
+    padding: 0 0 30px 0;
   }
 
   .header .body-menu__bottom p {
