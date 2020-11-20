@@ -20,7 +20,7 @@ $fontF: 'Futura', sans-serif;
 $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
 $md1: 1198.98;
-$md2: 991.98;
+$md2: 999.98;
 $md3: 767.98;
 $md4: 479.98;
 $md5: 319.98;
@@ -161,14 +161,14 @@ body {
         flex: 0 0 auto;
         display: flex;
         justify-content: space-between;
-        margin: 0 0 0 10px;
+        margin: 0;
     }
     &__attributes {
         display: flex;
         align-items: center;
     }
     &__menu {
-        flex: 0 1 30%;
+        flex: 0 0 auto;
         margin: 0 10px;
     }
     &__logo {
@@ -245,8 +245,6 @@ body {
         &__burger {
             display: none
         }
-        &__body {
-        }
     }
     .body-menu {
         &__logo {
@@ -294,7 +292,7 @@ body {
             margin: 0 5px 0 0;
         }
         &__time {
-            margin: 0 5px 0 0;
+            margin: 0 10px 0 0;
         }
         .body-menu {
             &__link {
@@ -311,6 +309,9 @@ body {
         }
         &__right {
             order: 3;
+        }
+        &__menu {
+            margin: 0;
         }
         .menu {
             &__burger {
@@ -580,7 +581,7 @@ body {
             color: rgba(255,255,255,1);
         }
     }
-    @media (max-height: 630px) {
+    @media (min-width: $md2 + 1 + px) and (max-height: 630px) {
         &__title {
             font-size: 40px;
             line-height: 48px;
@@ -588,18 +589,51 @@ body {
         }
         &__text {
             font-size: 16px;
-            line-height: 18px;
+            line-height: 19px;
             margin: 0 0 50px 0;
             p {
                 margin: 0 0 20px 0;
             }
         }
-        &__link {
-            width: 206px;
-            height: 30px;
-            font-family: $fontF;
+    }
+    @media (max-width: $md2 + px) {
+        &__content {
+            max-width: 500px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0 0 40px;
+            &:after {
+                content: '';
+                height: 1.5px;
+                width: 100%;
+                background: $blue;
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+            }
+        }
+        &__text {
             font-size: 14px;
             line-height: 17px;
+            margin: 0 0 45px 0;
+            p {
+                margin: 0 0 29px 0;
+            }
+        }
+        &__link {
+            width: 178.5px;
+            height: 30px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__down { 
+            display: none;
+        }
+        &__soc {
+            font-size: 23px;
+            margin: 12px 0 12px 0;
         }
     }
 }
