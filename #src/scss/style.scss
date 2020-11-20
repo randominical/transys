@@ -158,18 +158,18 @@ body {
         margin: 0 10px 0 0;
     }
     &__right {
-        flex: 0 1 auto;
+        flex: 0 0 auto;
         display: flex;
         justify-content: space-between;
         margin: 0 0 0 10px;
     }
-    &__menu {
-        flex: 0 1 30%;
-        margin: 0 10px;
-    }
     &__attributes {
         display: flex;
         align-items: center;
+    }
+    &__menu {
+        flex: 0 1 30%;
+        margin: 0 10px;
     }
     &__logo {
         width: 215px;
@@ -306,7 +306,7 @@ body {
         height: 60px;
         &__left {
             order: 2;
-            flex: 0 1 auto;
+            flex: 0 0 auto;
             margin: 0 5px 0 30px;
         }
         &__right {
@@ -398,7 +398,7 @@ body {
                 }
             }
             &__list {
-                flex: 0 1 50%;
+                flex: 0 0 auto;
                 display: block;
                 li {
                     margin: 0 0 30px 0;
@@ -443,9 +443,6 @@ body {
             }
             &__tel, &__address {
                 margin: 0 0 35px 0;
-            }
-            &__time {
-
             }
         } 
     }
@@ -522,7 +519,7 @@ body {
     &__content {
         max-width: 750px;
         margin: auto 0;
-        padding: 0 0 0 259px;
+        padding: 0 0 0 6%;
     }
     &__title {
         font-weight: 700;
@@ -582,7 +579,29 @@ body {
         &:hover {
             color: rgba(255,255,255,1);
         }
-    }  
+    }
+    @media (max-height: 630px) {
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+            margin: 0 0 40px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 18px;
+            margin: 0 0 50px 0;
+            p {
+                margin: 0 0 20px 0;
+            }
+        }
+        &__link {
+            width: 206px;
+            height: 30px;
+            font-family: $fontF;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
 }
 //========================================
 .benefits {
