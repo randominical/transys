@@ -2466,7 +2466,7 @@ body {
   }
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   body.lock {
     overflow: hidden;
   }
@@ -2498,6 +2498,19 @@ body {
   .header__lang {
     display: none !important;
   }
+
+  .fullscreen__content {
+    max-width: 450px;
+  }
+
+  .fullscreen__text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .fullscreen__iconbar {
+    display: none;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -2523,6 +2536,22 @@ body {
         -ms-transform: scale(-1, 1);
             transform: scale(-1, 1);
     top: 9.5px;
+  }
+
+  .fullscreen__content {
+    padding: 0;
+  }
+
+  .fullscreen__title {
+    font-size: 18px;
+  }
+
+  .fullscreen__text {
+    margin: 0 0 20px 0;
+  }
+
+  .fullscreen__text p {
+    margin: 0 0 10px 0;
   }
 }
 

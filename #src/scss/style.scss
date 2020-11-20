@@ -21,7 +21,7 @@ $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
 $md1: 1198.98;
 $md2: 1000.98;
-$md3: 768.98;
+$md3: 767.98;
 $md4: 479.98;
 $md5: 319.98;
 
@@ -650,6 +650,33 @@ body {
             margin: 0 0 30px 0;
             p {
                 margin: 0 0 15px 0;
+            }
+        }
+    }
+    @media (max-width: $md3 + px) {
+        &__content {
+            max-width: 450px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__iconbar {
+            display: none;
+        }
+    }
+    @media (max-width: $md4 + px) {
+        &__content {
+            padding: 0;
+          //  margin: 0;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__text {
+            margin: 0 0 20px 0;
+            p {
+                margin: 0 0 10px 0;
             }
         }
     }
