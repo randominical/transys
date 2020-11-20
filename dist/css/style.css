@@ -2552,6 +2552,19 @@ body {
     overflow: hidden;
   }
 
+  .title_section {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .title_b:before {
+    right: calc(100% + 30px);
+  }
+
+  .title_b:after {
+    left: calc(100% + 30px);
+  }
+
   .header__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 135px;
@@ -2593,6 +2606,11 @@ body {
     display: none;
   }
 
+  .benefits .title_b:before,
+  .benefits .title_b:after {
+    width: 100px;
+  }
+
   .benefits__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2623,7 +2641,7 @@ body {
   }
 
   .benefits__list span:first-child {
-    margin: 0 80px 0 20px;
+    margin: 0 10% 0 20px;
   }
 }
 
@@ -2666,6 +2684,11 @@ body {
 
   .fullscreen__text p {
     margin: 0 0 10px 0;
+  }
+
+  .benefits .title_b:before,
+  .benefits .title_b:after {
+    width: 68px;
   }
 }
 
