@@ -75,6 +75,10 @@ body {
     &_m {
         max-width: 1490px;
     }
+    &_s {
+        max-width: 1430px;
+        padding: 40px;
+    }
     @media (max-width: $md1 + px) {
         padding: 0 20px;
     }
@@ -113,6 +117,18 @@ body {
         }
         &:after {
             left: calc(100% + 60px);
+        }
+    }
+    @media (max-width: $md1 + px) {
+        &_section {
+            font-size: 30px;
+            line-height: 25px;
+        }
+    }
+    @media (max-width: $md2 + px) {
+        &_section {
+            font-size: 24px;
+            line-height: 29px;
         }
     }
 }
@@ -717,6 +733,15 @@ body {
     }
     &__pic {
         flex: 0 1 66.666%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
     &__list {
         flex: 0 1 33.333%;
@@ -733,6 +758,74 @@ body {
             width: 56px;
             height: 56px;
             margin: 0 45px 0 0;
+        }
+    }
+    @media (max-width: 1400px) {
+        &__li {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    @media (max-width: $md1 + px) {
+        &:before {
+            height: 15px;
+        }
+        .title_b {
+            &:before, &:after {
+                width: 214px;
+            }
+        }
+        &__li {
+            img {
+                width: 45px;
+                height: 45px;
+                margin: 0 37px 0 0;
+            }
+        }
+    }
+    @media (max-width: $md2 + px) {
+        padding: 77px 0 50px 0;
+        &:before {
+            width: 56%;
+        }
+        &__title {
+            margin: 0 0 52px 0;
+        }
+        &__li {
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0 0 18px 0;
+            img {
+                width: 41px;
+                height: 41px;
+                margin: 0 34px 0 0;
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        .title_b {
+            &:before, &:after {
+                width: 150px;
+            }
+        }
+    }
+    @media (max-width: $md3 + px) {
+        &__box {
+            flex-direction: column;
+        }
+        &__pic {
+            flex: 0 0 auto;
+        }
+        &__list {
+            flex: 0 1 auto;
+            max-width: 100%;
+            display: flex;
+            span {
+                flex: 0 1 50%;
+                &:first-child {
+                    margin: 0 80px 0 20px;
+                }
+            }
         }
     }
 }
