@@ -21,7 +21,7 @@ $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
 $md1: 1198.98;
 $md2: 1000.98;
-$md3: 767.98;
+$md3: 768.98;
 $md4: 479.98;
 $md5: 319.98;
 
@@ -44,6 +44,7 @@ html {
 body {
     height: 100%;
     background: rgba(255, 255, 255, 1);
+    background: black;
     display: flex;
     flex-direction: column;
     @media (max-width: $md3 + px) {
@@ -54,7 +55,7 @@ body {
 }
 
 .wrapper {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     width: 100%;
     max-width: $maxWidth + px;
     margin: 0 auto;
@@ -151,14 +152,14 @@ body {
         align-items: center;
     }
     &__left {
-        flex: 0 1 65%;
+        flex: 0 1 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 10px 0 0;
     }
     &__right {
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         display: flex;
         justify-content: space-between;
         margin: 0;
@@ -166,13 +167,14 @@ body {
     &__attributes {
         display: flex;
         align-items: center;
+        justify-content: start;
     }
     &__menu {
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         margin: 0 10px;
     }
     &__logo {
-        width: 215px;
+        flex: 0 1 215px;
         height: auto;
         overflow: hidden;
         margin: 0 45px 0 0;
@@ -182,8 +184,9 @@ body {
         }
     }
     &__lang {
+        flex: 0 1 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
     }
     &__address {
@@ -230,16 +233,14 @@ body {
     }
     .lang {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-            &__option {
-                color: rgba(120, 161, 182, 1);
-                text-transform: uppercase;
-                margin: 0 6px;
-                &.active, &:hover {
-                    color: rgba(255, 255, 255, 1);
-                }
+        &__option {
+            color: rgba(120, 161, 182, 1);
+            text-transform: uppercase;
+            margin: 0 6px;
+            &.active, &:hover {
+                color: rgba(255, 255, 255, 1);
             }
+        }
     }
     .menu {
         &__burger {
@@ -285,7 +286,7 @@ body {
     }
     @media (max-width: 1400px) {
         &__logo {
-            width: 170px;
+            flex: 0 1 170px;
             margin: 0 5px 0 0;
         }
         &__address {
@@ -304,11 +305,13 @@ body {
         height: 60px;
         &__left {
             order: 2;
-            flex: 0 0 auto;
             margin: 0 5px 0 30px;
         }
         &__right {
             order: 3;
+        }
+        &__logo {
+            flex: 0 1 150px;
         }
         &__menu {
             margin: 0;
@@ -399,7 +402,7 @@ body {
                 }
             }
             &__list {
-                flex: 0 0 auto;
+                flex: 0 1 auto;
                 display: block;
                 li {
                     margin: 0 0 30px 0;
@@ -416,11 +419,11 @@ body {
                 }
             }
             &__top {
-                flex: 0 0 auto;
+                flex: 0 1 auto;
                 margin: 0 0 30px 0;
             }
             &__bottom {
-                flex: 0 0 auto;
+                flex: 0 1 auto;
                 color: rgba(60, 70, 78, 1);
                 padding: 0 0 30px 0;
                 p {
@@ -449,7 +452,7 @@ body {
     }
     @media (max-width: $md3 + px) {
         &__logo {
-            width: 135px;
+            flex: 0 1 135px;
         }
         .body-menu {
             &__bottom {
@@ -744,7 +747,7 @@ body {
         }
     }
     &__column {
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         height: 100%;
         display: flex;
         align-items: flex-end;

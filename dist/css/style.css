@@ -603,6 +603,7 @@ html {
 body {
   height: 100%;
   background: white;
+  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,8 +615,8 @@ body {
 
 .wrapper {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -746,8 +747,8 @@ body {
 
 .header__left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 65%;
-          flex: 0 1 65%;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,8 +763,8 @@ body {
 
 .header__right {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,17 +781,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .header__menu {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   margin: 0 10px;
 }
 
 .header__logo {
-  width: 215px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 215px;
+          flex: 0 1 215px;
   height: auto;
   overflow: hidden;
   margin: 0 45px 0 0;
@@ -802,12 +808,15 @@ body {
 }
 
 .header__lang {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -880,12 +889,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header .lang__option {
@@ -1183,8 +1186,8 @@ body {
 
 .types__column {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2158,7 +2161,9 @@ body {
 
 @media (max-width: 1400px) {
   .header__logo {
-    width: 170px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 170px;
+            flex: 0 1 170px;
     margin: 0 5px 0 0;
   }
 
@@ -2190,9 +2195,6 @@ body {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
     margin: 0 5px 0 30px;
   }
 
@@ -2200,6 +2202,12 @@ body {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+            flex: 0 1 150px;
   }
 
   .header__menu {
@@ -2327,8 +2335,8 @@ body {
 
   .header .body-menu__list {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     display: block;
   }
 
@@ -2351,15 +2359,15 @@ body {
 
   .header .body-menu__top {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     margin: 0 0 30px 0;
   }
 
   .header .body-menu__bottom {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     color: #3c464e;
     padding: 0 0 30px 0;
   }
@@ -2458,13 +2466,15 @@ body {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
   body.lock {
     overflow: hidden;
   }
 
   .header__logo {
-    width: 135px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 135px;
+            flex: 0 1 135px;
   }
 
   .header .body-menu__bottom {
