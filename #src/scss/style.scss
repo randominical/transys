@@ -44,7 +44,6 @@ html {
 body {
     height: 100%;
     background: rgba(255, 255, 255, 1);
-    background: black;
     display: flex;
     flex-direction: column;
     @media (max-width: $md3 + px) {
@@ -55,7 +54,7 @@ body {
 }
 
 .wrapper {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     width: 100%;
     max-width: $maxWidth + px;
     margin: 0 auto;
