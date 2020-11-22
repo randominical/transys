@@ -727,6 +727,37 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+  /*    @media (max-width: $md4 + px) {
+        .menu {
+            &__body {
+                width: 100%;
+                background:linear-gradient(to left, rgba(0, 60, 95, 1) 0, rgba(0, 60, 95, 1) 14px, rgba(10, 99, 151, 1) 14px, rgba(10, 99, 151, 1) 28px, rgba(0, 141, 210, 1) 28px,rgba(0, 141, 210, 1) 42px, rgba(255, 255, 255, 1) 42px, rgba(255, 255, 255, 1));
+                padding: 20px 62px 50px 44px;
+            }
+        }
+        &__link {
+            font-size: 0 !important;
+            border: none;
+            width: 19px;
+            height: 19px;
+            position: relative;
+        }
+        .if_tbcall-phone {
+            &:before {
+                display: block;
+                font-size: 19px;
+                transform: scale(-1, 1);
+                top: 9.5px
+            }
+        }
+    }
+    @media (max-width: $md5 + px) {
+        .body-menu {
+            &__logo {
+                flex: 0 0 14px;
+            }
+        }
+    }*/
 }
 
 .header,
@@ -949,6 +980,21 @@ body {
   padding: 100px 0 25px 0;
   color: white;
   position: relative;
+  /*    @media (max-width: $md4 + px) {
+        &__content {
+            padding: 0;
+          //  margin: 0;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__text {
+            margin: 0 0 20px 0;
+            p {
+                margin: 0 0 10px 0;
+            }
+        }
+    }*/
 }
 
 .fullscreen .container {
@@ -1052,6 +1098,13 @@ body {
 .benefits {
   padding: 114px 0 110px 0;
   position: relative;
+  /*    @media (max-width: $md4 + px) {
+        .title_b {
+            &:before, &:after {
+                width: 68px;
+            }
+        }
+    }*/
 }
 
 .benefits:before {
@@ -2143,7 +2196,7 @@ body {
   }
 }
 
-@media (min-width: 1001.98px) and (max-height: 630px) {
+@media (min-width: 769.98px) and (max-height: 630px) {
   .fullscreen__title {
     font-size: 40px;
     line-height: 48px;
@@ -2207,7 +2260,7 @@ body {
   }
 }
 
-@media (max-width: 1198.98px) {
+@media (max-width: 999.98px) {
   .container {
     padding: 0 20px;
   }
@@ -2445,7 +2498,14 @@ body {
   }
 }
 
-@media (max-width: 1000.98px) {
+@media (max-width: 900px) {
+  .benefits .title_b:before,
+  .benefits .title_b:after {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768.98px) {
   .title_section {
     font-size: 24px;
     line-height: 29px;
@@ -2522,7 +2582,7 @@ body {
   }
 }
 
-@media (max-width: 1000.98px) and (max-height: 450px) {
+@media (max-width: 768.98px) and (max-height: 450px) {
   .fullscreen__title {
     margin: 0 0 20px;
   }
@@ -2540,14 +2600,7 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .benefits .title_b:before,
-  .benefits .title_b:after {
-    width: 150px;
-  }
-}
-
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   body.lock {
     overflow: hidden;
   }
@@ -2642,60 +2695,5 @@ body {
 
   .benefits__list span:first-child {
     margin: 0 10% 0 20px;
-  }
-}
-
-@media (max-width: 479.98px) {
-  .header .menu__body {
-    width: 100%;
-    background: -o-linear-gradient(right, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);
-    background: linear-gradient(to left, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);
-    padding: 20px 62px 50px 44px;
-  }
-
-  .header__link {
-    font-size: 0 !important;
-    border: none;
-    width: 19px;
-    height: 19px;
-    position: relative;
-  }
-
-  .header .if_tbcall-phone:before {
-    display: block;
-    font-size: 19px;
-    -webkit-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-            transform: scale(-1, 1);
-    top: 9.5px;
-  }
-
-  .fullscreen__content {
-    padding: 0;
-  }
-
-  .fullscreen__title {
-    font-size: 18px;
-  }
-
-  .fullscreen__text {
-    margin: 0 0 20px 0;
-  }
-
-  .fullscreen__text p {
-    margin: 0 0 10px 0;
-  }
-
-  .benefits .title_b:before,
-  .benefits .title_b:after {
-    width: 68px;
-  }
-}
-
-@media (max-width: 319.98px) {
-  .header .body-menu__logo {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 14px;
-            flex: 0 0 14px;
   }
 }

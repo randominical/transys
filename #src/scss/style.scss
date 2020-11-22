@@ -19,11 +19,9 @@ $fontF: 'Futura', sans-serif;
 //цвета
 $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
-$md1: 1198.98;
-$md2: 1000.98;
-$md3: 767.98;
-$md4: 479.98;
-$md5: 319.98;
+$md1: 999.98;
+$md2: 768.98;
+$md3: 479.98;
 
 $maxWidth: 1920;
 
@@ -503,7 +501,7 @@ body {
             display: none !important;
         }
     }
-    @media (max-width: $md4 + px) {
+/*    @media (max-width: $md4 + px) {
         .menu {
             &__body {
                 width: 100%;
@@ -533,7 +531,7 @@ body {
                 flex: 0 0 14px;
             }
         }
-    }
+    }*/
 }
 //========================================
 .fullscreen {
@@ -694,7 +692,7 @@ body {
             display: none;
         }
     }
-    @media (max-width: $md4 + px) {
+/*    @media (max-width: $md4 + px) {
         &__content {
             padding: 0;
           //  margin: 0;
@@ -708,7 +706,7 @@ body {
                 margin: 0 0 10px 0;
             }
         }
-    }
+    }*/
 }
 //========================================
 .benefits {
@@ -847,13 +845,13 @@ body {
             }
         }
     }
-    @media (max-width: $md4 + px) {
+/*    @media (max-width: $md4 + px) {
         .title_b {
             &:before, &:after {
                 width: 68px;
             }
         }
-    }
+    }*/
 
 }
 //========================================
