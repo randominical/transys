@@ -180,28 +180,26 @@ body {
         align-items: center;
     }
     &__left {
-        flex: 0 1 60%;
+        flex: 0 0 60%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 10px 0 0;
+        margin: 0 5px 0 0;
     }
     &__right {
-        flex: 0 1 30%;
+        flex: 0 0 30%;
         display: flex;
         justify-content: space-between;
         margin: 0;
     }
     &__attributes {
-        flex: 0 1 auto;
         display: flex;
+        justify-content: flex-start;
         align-items: center;
-        justify-content: start;
-        margin: 0 0 0 0;
+        margin: 0;
     }
     &__menu {
-        flex: 0 1 auto;
-        margin: 0 10px;
+        margin: 0 5px;
     }
     &__logo {
         flex: 0 0 215px;
@@ -214,7 +212,7 @@ body {
         }
     }
     &__lang {
-        flex: 0 1 auto;
+        flex: 0 0 auto;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -262,7 +260,7 @@ body {
         }
     }
     .lang {
-        display: flex;
+        margin: 0 10px 0 0;
         &__option {
             color: rgba(120, 161, 182, 1);
             text-transform: uppercase;
@@ -299,12 +297,16 @@ body {
         }
     }
     @media (max-width: 1600px) {
+        &__left {
+            flex: 0 0 auto;
+            justify-content: flex-start;
+        }
         &__logo {
             margin: 0 15px 0 0;
         }
         .body-menu {
             &__link {
-                margin: 0 5px;
+                margin: 0 1px;
                 padding: 5px 5px;
             }
         }
@@ -316,11 +318,13 @@ body {
         }
     }
     @media (max-width: 1300px) {
-        &__left, &__right {
-            flex: 0 1 auto;
+        &__right {
+            flex: 0 0 auto;
         }
-        &__logo {
-            flex: 0 0 176px;
+        .lang {
+            &__option {
+                margin: 0 3px;
+            }
         }
         .body-menu {
             &__link {
@@ -332,7 +336,7 @@ body {
             flex: 0 1 150px;
         }
     }
-    @media (max-width: $md1 + 200 + px) {
+    @media (max-width: 1250px) {
         height: 60px;
         &__left {
             order: 2;
@@ -480,7 +484,32 @@ body {
                 margin: 0 0 35px 0;
             }
         } 
-    }/*
+    }
+    @media (max-width: $md2 + px) {
+        &__logo {
+            flex: 0 1 135px;
+        }
+        .body-menu {
+            &__bottom {
+                width: 100%;
+                padding: 53px 0 35px 0;
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 70%;
+                    height: 1px;
+                    background: rgba(221, 221, 221, 1);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        &__address, &__time, &__lang {
+            display: none !important;
+        }
+    }
+    /*
     @media (max-width: $md3 + px) {
         &__logo {
             flex: 0 1 135px;
