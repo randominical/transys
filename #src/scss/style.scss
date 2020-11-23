@@ -296,11 +296,17 @@ body {
         }
     }
     @media (max-width: 1600px) {
-        &__left, &__right {
-            flex: 0 0 auto;
+        &__left {
+            flex: 0 0 65%;
         }
     }
     @media (max-width: 1500px) {
+        &__left {
+            flex: 0 0 63%;
+        }
+        &__right {
+            flex: 0 0 35%;
+        }
         .body-menu {
             &__link {
                 margin: 0 1px;
@@ -344,10 +350,12 @@ body {
     @media (max-width: $md1 + px) {
         height: 60px;
         &__left {
+            flex: 0 0 auto;
             order: 2;
             margin: 0 5px 0 30px;
         }
         &__right {
+            flex: 0 0 auto;
             order: 3;
         }
         &__logo {
