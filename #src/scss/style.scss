@@ -528,6 +528,10 @@ body {
         }
     }
     @media (max-width: $md3 + px) {
+        &__right {
+            flex: 0 0 auto;
+            justify-content: flex-end;
+        }
         &__logo {
             flex: 0 0 135px;
         }
@@ -550,6 +554,9 @@ body {
         &__address, &__time, &__lang {
             display: none !important;
         }
+        &__link {
+            flex: 0 0 115px;
+        }
     }
     @media (max-width: $md4 + px) {
         .menu {
@@ -560,9 +567,9 @@ body {
             }
         }
         &__link {
+            flex: 0 0 19px;
             font-size: 0 !important;
             border: none;
-            width: 19px;
             height: 19px;
             position: relative;
         }
