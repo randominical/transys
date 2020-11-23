@@ -19,9 +19,10 @@ $fontF: 'Futura', sans-serif;
 //цвета
 $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
-$md1: 999.98;
-$md2: 768.98;
-$md3: 479.98;
+$md1: 1199.98;
+$md2: 999.98;
+$md3: 768.98;
+$md4: 479.98;
 
 $maxWidth: 1920;
 
@@ -70,6 +71,9 @@ body {
     }
     &_h {
         padding: 0 45px;
+        @media (max-width: 1500px) {
+            padding:  0 20px !important;
+        }
     }
     &_m {
         max-width: 1490px;
@@ -78,9 +82,6 @@ body {
         max-width: 1430px;
         padding: 40px;
     }
-/*    @media (max-width: $md1 + px) {
-        padding: 0 20px;
-    }*/
 }
 
 .main {
@@ -184,7 +185,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 5px 0 0;
+        margin: 0 10px 0 0;
     }
     &__right {
         flex: 0 0 30%;
@@ -194,9 +195,8 @@ body {
     }
     &__attributes {
         display: flex;
-        justify-content: flex-start;
         align-items: center;
-        margin: 0;
+        margin: 0 10px 0 0;
     }
     &__menu {
         margin: 0 5px;
@@ -212,21 +212,22 @@ body {
         }
     }
     &__lang {
-        flex: 0 0 auto;
         display: flex;
-        justify-content: start;
         align-items: center;
+        li {
+            margin: 0 6px;
+        }
     }
     &__address {
         flex: 0 0 150px;
-        margin: 0 20px 0 0;
+        margin: 0 24px 0 0;
         address {
             font-style: normal;
         }
     }
     &__time {
         flex: 0 0 100px;
-        margin: 0 50px 0 0;
+        margin: 0 54px 0 0;
     }
     .if_icon {
         padding: 0 0 0 30px;
@@ -260,11 +261,9 @@ body {
         }
     }
     .lang {
-        margin: 0 10px 0 0;
         &__option {
             color: rgba(120, 161, 182, 1);
             text-transform: uppercase;
-            margin: 0 6px;
             &.active, &:hover {
                 color: rgba(255, 255, 255, 1);
             }
@@ -297,46 +296,52 @@ body {
         }
     }
     @media (max-width: 1600px) {
-        &__left {
+        &__left, &__right {
             flex: 0 0 auto;
-            justify-content: flex-start;
         }
-        &__logo {
-            margin: 0 15px 0 0;
-        }
+    }
+    @media (max-width: 1500px) {
         .body-menu {
             &__link {
                 margin: 0 1px;
-                padding: 5px 5px;
             }
         }
-        &__address {
-            margin: 0 10px 0 0;
-        }
-        &__time {
-            margin: 0 10px 0 0;
-        }
     }
-    @media (max-width: 1300px) {
-        &__right {
-            flex: 0 0 auto;
+    @media (max-width: 1400px) {
+        &__logo {
+            margin: 0 15px 0 0;
         }
-        .lang {
-            &__option {
+        &__lang {
+            li {
                 margin: 0 3px;
             }
         }
-        .body-menu {
-            &__link {
-                margin: 0 2px;
-                padding: 5px 2px;
-            }
+        &__address {
+            margin: 0 15px 0 0;
         }
-        &__link {
-            flex: 0 1 150px;
+        &__time {
+            margin: 0 25px 0 0;
         }
     }
-    @media (max-width: 1250px) {
+    @media (max-width: 1300px) {
+        &__left {
+            margin: 0 5px 0 0;
+        }
+        &__logo {
+            flex: 0 0 190px;
+            margin: 0 5px 0 0;
+        }
+        &__attributes {
+            margin: 0 1px 0 0;
+        }
+        &__address {
+            margin: 0 5px 0 0;
+        }
+        &__time {
+            margin: 0 5px 0 0;
+        }
+    }
+    @media (max-width: $md1 + px) {
         height: 60px;
         &__left {
             order: 2;
@@ -347,6 +352,12 @@ body {
         }
         &__logo {
             flex: 0 0 150px;
+            margin: 0 45px 0 0;
+        }
+        &__lang {
+            li {
+                margin: 0 6px;
+            }
         }
         &__menu {
             margin: 0;
@@ -483,9 +494,32 @@ body {
             &__tel, &__address {
                 margin: 0 0 35px 0;
             }
-        } 
+        }
+        &__address {
+            margin: 0 30px 0 0;
+        }
+        &__time {
+            margin: 0 50px 0 0;
+        }
+        &__link {
+            flex: 0 1 150px;
+        }
     }
     @media (max-width: $md2 + px) {
+        &__left {
+            flex: 0 0 30%;
+        }
+        &__logo {
+            margin: 0 15px 0 0;
+        }
+        &__address {
+            margin: 0 10px 0 0;
+        }
+        &__time {
+            margin: 0 15px 0 0;
+        }
+    }
+    @media (max-width: $md3 + px) {
         &__logo {
             flex: 0 1 135px;
         }

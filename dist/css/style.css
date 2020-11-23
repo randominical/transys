@@ -628,9 +628,6 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 27px;
-  /*    @media (max-width: $md1 + px) {
-        padding: 0 20px;
-    }*/
 }
 
 .container_f {
@@ -852,7 +849,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 5px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .header__right {
@@ -872,13 +869,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 
 .header__menu {
@@ -900,25 +894,23 @@ body {
 }
 
 .header__lang {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__lang li {
+  margin: 0 6px;
 }
 
 .header__address {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 150px;
           flex: 0 0 150px;
-  margin: 0 20px 0 0;
+  margin: 0 24px 0 0;
 }
 
 .header__address address {
@@ -929,7 +921,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
           flex: 0 0 100px;
-  margin: 0 50px 0 0;
+  margin: 0 54px 0 0;
 }
 
 .header .if_icon {
@@ -977,14 +969,9 @@ body {
   display: none;
 }
 
-.header .lang {
-  margin: 0 10px 0 0;
-}
-
 .header .lang__option {
   color: #78a1b6;
   text-transform: uppercase;
-  margin: 0 6px;
 }
 
 .header .lang__option.active,
@@ -2408,57 +2395,68 @@ body {
 }
 
 @media (max-width: 1600px) {
-  .header__left {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  .header__logo {
-    margin: 0 15px 0 0;
-  }
-
-  .header .body-menu__link {
-    margin: 0 1px;
-    padding: 5px 5px;
-  }
-
-  .header__address {
-    margin: 0 10px 0 0;
-  }
-
-  .header__time {
-    margin: 0 10px 0 0;
-  }
-}
-
-@media (max-width: 1300px) {
+  .header__left,
   .header__right {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
   }
+}
 
-  .header .lang__option {
-    margin: 0 3px;
+@media (max-width: 1500px) {
+  .container_h {
+    padding: 0 20px !important;
   }
 
   .header .body-menu__link {
-    margin: 0 2px;
-    padding: 5px 2px;
-  }
-
-  .header__link {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 150px;
-            flex: 0 1 150px;
+    margin: 0 1px;
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1400px) {
+  .header__logo {
+    margin: 0 15px 0 0;
+  }
+
+  .header__lang li {
+    margin: 0 3px;
+  }
+
+  .header__address {
+    margin: 0 15px 0 0;
+  }
+
+  .header__time {
+    margin: 0 25px 0 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__left {
+    margin: 0 5px 0 0;
+  }
+
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 190px;
+            flex: 0 0 190px;
+    margin: 0 5px 0 0;
+  }
+
+  .header__attributes {
+    margin: 0 1px 0 0;
+  }
+
+  .header__address {
+    margin: 0 5px 0 0;
+  }
+
+  .header__time {
+    margin: 0 5px 0 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
   .header {
     height: 60px;
   }
@@ -2480,6 +2478,11 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 150px;
             flex: 0 0 150px;
+    margin: 0 45px 0 0;
+  }
+
+  .header__lang li {
+    margin: 0 6px;
   }
 
   .header__menu {
@@ -2670,9 +2673,47 @@ body {
   .header .body-menu__address {
     margin: 0 0 35px 0;
   }
+
+  .header__address {
+    margin: 0 30px 0 0;
+  }
+
+  .header__time {
+    margin: 0 50px 0 0;
+  }
+
+  .header__link {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+            flex: 0 1 150px;
+  }
+}
+
+@media (max-width: 999.98px) {
+  .header__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+
+  .header__logo {
+    margin: 0 15px 0 0;
+  }
+
+  .header__address {
+    margin: 0 10px 0 0;
+  }
+
+  .header__time {
+    margin: 0 15px 0 0;
+  }
 }
 
 @media (max-width: 768.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .header__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 135px;
@@ -2699,11 +2740,5 @@ body {
   .header__time,
   .header__lang {
     display: none !important;
-  }
-}
-
-@media (max-width: 479.98px) {
-  body.lock {
-    overflow: hidden;
   }
 }
