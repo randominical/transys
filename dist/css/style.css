@@ -2553,16 +2553,17 @@ body {
   }
 
   .header .body-menu__logo {
+    width: 161.28px;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 18px;
-            flex: 0 0 18px;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     overflow: hidden;
     margin: 0 0 30px 20px;
   }
 
   .header .body-menu__logo img {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    height: auto;
   }
 
   .header .body-menu__logo.active {
@@ -2688,6 +2689,10 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 135px;
             flex: 0 0 135px;
+  }
+
+  .header .body-menu__logo {
+    width: 135px;
   }
 
   .header .body-menu__bottom {

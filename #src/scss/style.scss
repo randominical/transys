@@ -444,12 +444,13 @@ body {
         }
         .body-menu {
             &__logo {
-                flex: 0 0 18px;
+                width: 161.28px;
+                flex: 0 0 auto;
                 overflow: hidden;
                 margin: 0 0 30px 20px;
                 img {
-                    height: 100%;
-                    width: auto;
+                    width: 100%;
+                    height: auto;
                 }
                 &.active {
                     display: block;
@@ -536,6 +537,9 @@ body {
             flex: 0 0 135px;
         }
         .body-menu {
+            &__logo {
+                width: 135px;
+            }
             &__bottom {
                 width: 100%;
                 padding: 53px 0 35px 0;
