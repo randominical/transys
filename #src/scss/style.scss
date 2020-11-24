@@ -241,7 +241,7 @@ body {
         }
         &__link {
             margin: 0 1px;
-            padding: 17px 2px;
+            padding: 17px 3px;
             white-space: nowrap;
             &:hover {
                 color: rgba(57, 184, 255, 1);
@@ -732,7 +732,6 @@ body {
     @media (max-width: $md4 + px) {
         &__content {
             padding: 0;
-          //  margin: 0;
         }
         &__title {
             font-size: 18px;
