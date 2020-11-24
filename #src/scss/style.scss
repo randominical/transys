@@ -307,14 +307,27 @@ body {
         }
     }
     @media (max-width: 1300px) {
+        &__column {
+            &_1 {
+                flex: 0 0 300px;
+            }
+        }
         &__logo {
             flex: 0 0 180px;
+        }
+        .lang {
+            &__option {
+                margin: 0 3px;
+            }
         }
         &__address {
             margin: 0 1.5% 0 0;
         }
         &__time {
             margin: 0 2% 0 0;
+        }
+        &__link {
+            flex: 0 1 180px;
         }
     }
     @media (max-width: $md1 + px) {
@@ -337,6 +350,11 @@ body {
         &__logo {
             flex: 0 0 176px;
             margin: 0 45px 0 0;
+        }
+        .lang {
+            &__option {
+                margin: 0 6px;
+            }
         }
         .menu {
             &__burger {

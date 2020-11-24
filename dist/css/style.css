@@ -2168,10 +2168,20 @@ body {
 }
 
 @media (max-width: 1300px) {
+  .header__column_1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+  }
+
   .header__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 180px;
             flex: 0 0 180px;
+  }
+
+  .header .lang__option {
+    margin: 0 3px;
   }
 
   .header__address {
@@ -2180,6 +2190,12 @@ body {
 
   .header__time {
     margin: 0 2% 0 0;
+  }
+
+  .header__link {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 180px;
+            flex: 0 1 180px;
   }
 }
 
@@ -2222,6 +2238,10 @@ body {
         -ms-flex: 0 0 176px;
             flex: 0 0 176px;
     margin: 0 45px 0 0;
+  }
+
+  .header .lang__option {
+    margin: 0 6px;
   }
 
   .header .menu__burger {
