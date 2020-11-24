@@ -107,6 +107,7 @@ body {
     }
     &_b {
         display: inline-block;
+        margin: 0;
         position: relative;
         &:before, &:after {
             content: '';
@@ -735,6 +736,7 @@ body {
 //========================================
 .benefits {
     padding: 114px 0 110px 0;
+    background: linear-gradient(180deg, rgba(207, 212, 219, 1) 43.05%, rgba(186, 193, 201, 0) 100%);
     position: relative;
     &:before {
         content: '';
@@ -744,16 +746,6 @@ body {
         top: 0;
         left: 0;
         background:linear-gradient(to right, rgba(0, 60, 95, 1) 0, rgba(0, 60, 95, 1) 33%, rgba(10, 99, 151, 1) 33%, rgba(10, 99, 151, 1) 66%, rgba(0, 141, 210, 1) 66%, rgba(0, 141, 210, 1) 100%);
-    }
-    &:after {
-        content: '';
-        width: 100vw;
-        height: 120%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(180deg, rgba(207, 212, 219, 1) 43.05%, rgba(186, 193, 201, 0) 100%);
-        z-index: -1;
     }
     &__title {
         margin: 0 0 119px 0;
@@ -815,7 +807,6 @@ body {
         }
     }
     @media (max-width: $md2 + px) {
-        padding: 77px 0 50px 0;
         &:before {
             width: 56%;
         }
@@ -839,6 +830,11 @@ body {
         }
     }
     @media (max-width: $md3 + px) {
+        background: linear-gradient(180deg, rgba(207, 212, 219, 1) 13.05%, rgba(186, 193, 201, 0) 37%, white);
+        padding: 77px 0 50px 0;
+        &__title {
+            margin: 0 0 30px 0;
+        }
         .title_b {
             &:before, &:after {
                 width: 100px;
@@ -869,6 +865,10 @@ body {
         }
     }
     @media (max-width: $md4 + px) {
+        padding: 47px 0 50px 0;
+        &__title {
+            margin: 0 0 20px 0;
+        }
         .title_b {
             &:before, &:after {
                 width: 68px;

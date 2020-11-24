@@ -672,6 +672,7 @@ body {
 
 .title_b {
   display: inline-block;
+  margin: 0;
   position: relative;
 }
 
@@ -1032,6 +1033,9 @@ body {
 
 .benefits {
   padding: 114px 0 110px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(43.05%, #cfd4db), to(rgba(186, 193, 201, 0)));
+  background: -o-linear-gradient(top, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
+  background: linear-gradient(180deg, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
   position: relative;
 }
 
@@ -1045,19 +1049,6 @@ body {
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #003c5f), color-stop(33%, #003c5f), color-stop(33%, #0a6397), color-stop(66%, #0a6397), color-stop(66%, #008dd2), to(#008dd2));
   background: -o-linear-gradient(left, #003c5f 0, #003c5f 33%, #0a6397 33%, #0a6397 66%, #008dd2 66%, #008dd2 100%);
   background: linear-gradient(to right, #003c5f 0, #003c5f 33%, #0a6397 33%, #0a6397 66%, #008dd2 66%, #008dd2 100%);
-}
-
-.benefits:after {
-  content: '';
-  width: 100vw;
-  height: 120%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(43.05%, #cfd4db), to(rgba(186, 193, 201, 0)));
-  background: -o-linear-gradient(top, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
-  background: linear-gradient(180deg, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
-  z-index: -1;
 }
 
 .benefits__title {
@@ -2479,10 +2470,6 @@ body {
     width: 135px;
   }
 
-  .benefits {
-    padding: 77px 0 50px 0;
-  }
-
   .benefits:before {
     width: 56%;
   }
@@ -2612,6 +2599,17 @@ body {
     display: none;
   }
 
+  .benefits {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13.05%, #cfd4db), color-stop(37%, rgba(186, 193, 201, 0)), to(white));
+    background: -o-linear-gradient(top, #cfd4db 13.05%, rgba(186, 193, 201, 0) 37%, white);
+    background: linear-gradient(180deg, #cfd4db 13.05%, rgba(186, 193, 201, 0) 37%, white);
+    padding: 77px 0 50px 0;
+  }
+
+  .benefits__title {
+    margin: 0 0 30px 0;
+  }
+
   .benefits .title_b:before,
   .benefits .title_b:after {
     width: 100px;
@@ -2698,6 +2696,14 @@ body {
 
   .fullscreen__text p {
     margin: 0 0 10px 0;
+  }
+
+  .benefits {
+    padding: 47px 0 50px 0;
+  }
+
+  .benefits__title {
+    margin: 0 0 20px 0;
   }
 
   .benefits .title_b:before,
