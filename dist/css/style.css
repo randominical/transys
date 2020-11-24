@@ -2383,6 +2383,7 @@ body {
 
   .header .body-menu__link {
     color: #3c464e;
+    padding: 15px 1px;
     margin: 0;
   }
 
