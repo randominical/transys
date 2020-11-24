@@ -20,7 +20,7 @@ $fontF: 'Futura', sans-serif;
 $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
 $md1: 1198.98;
-$md2: 1000.98;
+$md2: 999.98;
 $md3: 767.98;
 $md4: 479.98;
 $md5: 319.98;
@@ -513,6 +513,11 @@ body {
             flex: 0 0 135px;
             margin: 0 20px 0 0;
         }
+        .body-menu {
+            &__logo {
+                width: 135px;
+            }
+        }
     }
     @media (max-width: $md3 + px) {
         &__column {
@@ -561,13 +566,6 @@ body {
                 font-size: 19px;
                 transform: scale(-1, 1);
                 top: 9.5px;
-            }
-        }
-    }
-    @media (max-width: $md5 + px) {
-        .body-menu {
-            &__logo {
-                flex: 0 0 14px;
             }
         }
     }
