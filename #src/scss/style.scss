@@ -67,6 +67,7 @@ body {
 .container {
     width: 100%;
     max-width: $maxWidth + px;
+    min-width: 280px;
     margin: 0 auto;
     padding: 0 27px;
     &_f {
@@ -138,6 +139,13 @@ body {
         &_section {
             font-size: 18px;
             line-height: 22px;
+        }
+    }
+    @media (max-width: $md5 + px) {
+        &_b {
+            &:before, &:after {
+               display: none;
+            }
         }
     }
 }
@@ -761,7 +769,6 @@ body {
     }
     &__pic {
         flex: 0 1 66.666%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -836,6 +843,12 @@ body {
             &:before, &:after {
                 width: 100px;
             }
+            &:before {
+                right: calc(100% + 20px);
+            }
+            &:after {
+                left: calc(100% + 20px);
+            }
         }
         &__box {
             flex-direction: column;
@@ -861,8 +874,56 @@ body {
                 width: 68px;
             }
         }
+        &__list {
+            flex-direction: column;
+            span {
+                flex: 0 0 auto;
+                display: flex;
+                justify-content: space-between;
+                &:first-child {
+                    margin: 0 0 30px 0;
+                }
+                li {
+                    margin: 0 1px 0 0;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &__li {
+            flex: 0 0 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            img {
+                margin: 0 0 10px 0;
+            }
+        }
     }
-
+    @media (max-width: 370px) {
+        &__list {
+            flex-direction: row;
+            span {
+                flex: 0 0 50%;
+                flex-direction: column;
+                &:first-child {
+                    margin: 0 5px 0 0;
+                }
+                &:last-child {
+                    margin: 0 0 0 5px;
+                }
+                li {
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+        &__li {
+            flex: 0 0 115px;
+            
+        }
+    }
 }
 //========================================
 .types {
