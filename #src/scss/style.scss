@@ -735,7 +735,7 @@ body {
 }
 //========================================
 .benefits {
-    padding: 114px 0 110px 0;
+    padding: 114px 0 200px 0;
     background: linear-gradient(180deg, rgba(207, 212, 219, 1) 43.05%, rgba(186, 193, 201, 0) 100%);
     position: relative;
     &:before {
@@ -927,6 +927,7 @@ body {
 }
 //========================================
 .types {
+    margin: -100px 0 0 0;
     padding: 18px 0 125px 0;
     background: url('../img/types/types_cloud_1.svg') right 90px top 115px /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 100px 195px/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 128px 630px /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 230px 1245px /109px auto no-repeat;
     &__body {
