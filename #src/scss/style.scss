@@ -50,6 +50,9 @@ body {
         &.lock {
             overflow: hidden;
         }
+    }
+    @media (max-width: 280px) {
+        width: 280px;
     } 
 }
 
@@ -161,6 +164,7 @@ body {
 //========================================
 .header {
     width: 100%;
+    min-width: 280px;
     height: 85px;
     display: flex;
     justify-content: space-between;
