@@ -334,7 +334,8 @@ body {
             }
         }
         &__logo {
-            flex: 0 0 150px;
+            flex: 0 0 176px;
+            margin: 0 45px 0 0;
         }
         .menu {
             &__burger {
@@ -405,17 +406,19 @@ body {
                 transition: all .3s ease-out;
                 &.active {
                     left: 0;
+                    z-index: 3;
                 }
             }
         }
         .body-menu {
             &__logo {
-                flex: 0 0 18px;
+                flex: 0 0 auto;
+                width: 161px;
                 overflow: hidden;
                 margin: 0 0 30px 20px;
                 img {
-                    height: 100%;
-                    width: auto;
+                    width: 100%;
+                    height: auto;
                 }
                 &.active {
                     display: block;
@@ -451,6 +454,7 @@ body {
                 }
                 &.active {
                     display: block;
+                    z-index: 3;
                 }
                 .if_icon {
                     padding: 0 0 0 37px;
@@ -468,11 +472,30 @@ body {
             &__tel, &__address {
                 margin: 0 0 35px 0;
             }
+        }
+        &__address {
+            margin: 0 3.5% 0 0;
+        }
+        &__time {
+            margin: 0 8% 0 0;
         } 
     }
-    @media (max-width: $md3 + px) {
+    @media (max-width: $md2 + px) {
+        &__column {
+            &_1 {
+                flex: 0 0 270px;
+            }
+        }
         &__logo {
-            flex: 0 1 135px;
+            flex: 0 0 135px;
+            margin: 0 20px 0 0;
+        }
+    }
+    @media (max-width: $md3 + px) {
+        &__column {
+            &_1 {
+                flex: 0 0 150px;
+            }
         }
         .body-menu {
             &__bottom {
@@ -508,13 +531,15 @@ body {
             width: 19px;
             height: 19px;
             position: relative;
+            z-index: 0;
         }
         .if_tbcall-phone {
             &:before {
                 display: block;
                 font-size: 19px;
                 transform: scale(-1, 1);
-                top: 9.5px
+                top: 9.5px;
+                z-index: 0;
             }
         }
     }

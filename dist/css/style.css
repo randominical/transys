@@ -2218,8 +2218,9 @@ body {
 
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 150px;
-            flex: 0 0 150px;
+        -ms-flex: 0 0 176px;
+            flex: 0 0 176px;
+    margin: 0 45px 0 0;
   }
 
   .header .menu__burger {
@@ -2322,19 +2323,21 @@ body {
 
   .header .menu__body.active {
     left: 0;
+    z-index: 3;
   }
 
   .header .body-menu__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 18px;
-            flex: 0 0 18px;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 161px;
     overflow: hidden;
     margin: 0 0 30px 20px;
   }
 
   .header .body-menu__logo img {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    height: auto;
   }
 
   .header .body-menu__logo.active {
@@ -2386,6 +2389,7 @@ body {
 
   .header .body-menu__bottom.active {
     display: block;
+    z-index: 3;
   }
 
   .header .body-menu__bottom .if_icon {
@@ -2405,6 +2409,14 @@ body {
   .header .body-menu__tel,
   .header .body-menu__address {
     margin: 0 0 35px 0;
+  }
+
+  .header__address {
+    margin: 0 3.5% 0 0;
+  }
+
+  .header__time {
+    margin: 0 8% 0 0;
   }
 
   .benefits:before {
@@ -2427,6 +2439,19 @@ body {
   .title_section {
     font-size: 24px;
     line-height: 29px;
+  }
+
+  .header__column_1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 270px;
+            flex: 0 0 270px;
+  }
+
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 135px;
+            flex: 0 0 135px;
+    margin: 0 20px 0 0;
   }
 
   .fullscreen__content {
@@ -2543,10 +2568,10 @@ body {
     left: calc(100% + 30px);
   }
 
-  .header__logo {
+  .header__column_1 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 135px;
-            flex: 0 1 135px;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
   }
 
   .header .body-menu__bottom {
@@ -2637,6 +2662,7 @@ body {
     width: 19px;
     height: 19px;
     position: relative;
+    z-index: 0;
   }
 
   .header .if_tbcall-phone:before {
@@ -2646,6 +2672,7 @@ body {
         -ms-transform: scale(-1, 1);
             transform: scale(-1, 1);
     top: 9.5px;
+    z-index: 0;
   }
 
   .fullscreen__content {
