@@ -180,27 +180,22 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-    &__left {
-        flex: 0 1 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 10px 0 0;
-    }
-    &__right {
-        flex: 0 1 auto;
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-    }
-    &__attributes {
+    &__column {
+        flex: 0 0 33.333%;
         display: flex;
         align-items: center;
-        justify-content: start;
-    }
-    &__menu {
-        flex: 0 1 auto;
-        margin: 0 10px;
+        &_1 {
+            justify-content: flex-start;
+            margin: 0 10px 0 0;
+        }
+        &_2 {
+            justify-content: center;
+            margin: 0 10px 0 0;
+        }
+        &_3 {
+            justify-content: flex-end;
+            margin: 0;
+        }
     }
     &__logo {
         flex: 0 1 215px;
@@ -212,22 +207,53 @@ body {
             height: auto;
         }
     }
-    &__lang {
-        flex: 0 1 auto;
+    &__menu {
+        width: 100%;
+    }
+    .lang {
         display: flex;
-        justify-content: start;
-        align-items: center;
+        &__option {
+            color: rgba(120, 161, 182, 1);
+            text-transform: uppercase;
+            margin: 0 6px;
+            &.active, &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+    .body-menu {
+        width: 100%;
+        &__logo {
+            display: none;
+        }
+        &__bottom {
+            display: none;
+        }
+        &__list {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__link {
+            margin: 0 1px;
+            padding: 17px 2px;
+            white-space: nowrap;
+            &:hover {
+                color: rgba(57, 184, 255, 1);
+            }
+        }
     }
     &__address {
         flex: 0 0 150px;
-        margin: 0 20px 0 0;
+        margin: 0 3.5% 0 0;
         address {
             font-style: normal;
         }
     }
     &__time {
         flex: 0 0 100px;
-        margin: 0 50px 0 0;
+        margin: 0 8% 0 0;
     }
     .if_icon {
         padding: 0 0 0 30px;
@@ -260,90 +286,55 @@ body {
             }
         }
     }
-    .lang {
-        display: flex;
-        &__option {
-            color: rgba(120, 161, 182, 1);
-            text-transform: uppercase;
-            margin: 0 6px;
-            &.active, &:hover {
-                color: rgba(255, 255, 255, 1);
-            }
-        }
-    }
     .menu {
         &__burger {
             display: none
         }
     }
-    .body-menu {
-        &__logo {
-            display: none;
-        }
-        &__bottom {
-            display: none;
-        }
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        &__link {
-            margin: 0 10px;
-            padding: 17px 5px;
-            white-space: nowrap;
-            &:hover {
-                color: rgba(57, 184, 255, 1);
+    @media (max-width: 1750px) {
+        &__column {
+            &_2 {
+                flex: 0 0 27%;
             }
         }
     }
-    @media (max-width: 1550px) {
-        .body-menu {
-            &__link {
-                margin: 0 2px;
-            }
-            &__logo {
-                margin: 0 25px 0 0;
-            }
-            &__address {
-                margin: 0 10px 0 0;
-            }
-            &__time {
-                margin: 0 15px 0 0;
-            }
+    @media (max-width: 1500px) {
+        &__column {
+            flex: 0 0 auto;
+        }
+        &__logo {
+            margin: 0 15px 0 0;
         }
     }
-    @media (max-width: 1400px) {
+    @media (max-width: 1300px) {
         &__logo {
-            flex: 0 1 170px;
-            margin: 0 5px 0 0;
+            flex: 0 0 180px;
         }
         &__address {
-            margin: 0 5px 0 0;
+            margin: 0 1.5% 0 0;
         }
         &__time {
-            margin: 0 10px 0 0;
-        }
-        .body-menu {
-            &__link {
-                flex: 0 1 150px;
-            }
+            margin: 0 2% 0 0;
         }
     }
     @media (max-width: $md1 + px) {
         height: 60px;
-        &__left {
-            order: 2;
-            margin: 0 5px 0 30px;
-        }
-        &__right {
-            order: 3;
+        &__column {
+            &_1 {
+                order: 1;
+                margin: 0 20px 0 30px;
+            }
+            &_2 {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            &_3 {
+                order: 2;
+            }
         }
         &__logo {
-            flex: 0 1 150px;
-        }
-        &__menu {
-            margin: 0;
+            flex: 0 0 150px;
         }
         .menu {
             &__burger {
@@ -1523,10 +1514,6 @@ body {
     }
     &__address {
         font-style: normal;
-    }
-    &__time {
-    }
-    &__iconbar {
     }
     &__soc {
         font-family: 'Icon1';

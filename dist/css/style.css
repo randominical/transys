@@ -749,52 +749,37 @@ body {
           align-items: center;
 }
 
-.header__left {
+.header__column {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__column_1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0 10px 0 0;
 }
 
-.header__right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.header__column_2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px 0 0;
+}
+
+.header__column_3 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0;
-}
-
-.header__attributes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.header__menu {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  margin: 0 10px;
 }
 
 .header__logo {
@@ -811,26 +796,67 @@ body {
   height: auto;
 }
 
-.header__lang {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+.header__menu {
+  width: 100%;
+}
+
+.header .lang {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+}
+
+.header .lang__option {
+  color: #78a1b6;
+  text-transform: uppercase;
+  margin: 0 6px;
+}
+
+.header .lang__option.active,
+.header .lang__option:hover {
+  color: white;
+}
+
+.header .body-menu {
+  width: 100%;
+}
+
+.header .body-menu__logo {
+  display: none;
+}
+
+.header .body-menu__bottom {
+  display: none;
+}
+
+.header .body-menu__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .body-menu__link {
+  margin: 0 1px;
+  padding: 17px 2px;
+  white-space: nowrap;
+}
+
+.header .body-menu__link:hover {
+  color: #39b8ff;
 }
 
 .header__address {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 150px;
           flex: 0 0 150px;
-  margin: 0 20px 0 0;
+  margin: 0 3.5% 0 0;
 }
 
 .header__address address {
@@ -841,7 +867,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
           flex: 0 0 100px;
-  margin: 0 50px 0 0;
+  margin: 0 8% 0 0;
 }
 
 .header .if_icon {
@@ -889,55 +915,8 @@ body {
   display: none;
 }
 
-.header .lang {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .lang__option {
-  color: #78a1b6;
-  text-transform: uppercase;
-  margin: 0 6px;
-}
-
-.header .lang__option.active,
-.header .lang__option:hover {
-  color: white;
-}
-
 .header .menu__burger {
   display: none;
-}
-
-.header .body-menu__logo {
-  display: none;
-}
-
-.header .body-menu__bottom {
-  display: none;
-}
-
-.header .body-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .body-menu__link {
-  margin: 0 10px;
-  padding: 17px 5px;
-  white-space: nowrap;
-}
-
-.header .body-menu__link:hover {
-  color: #39b8ff;
 }
 
 .fullscreen {
@@ -2161,49 +2140,46 @@ body {
   }
 }
 
-@media (max-width: 1550px) {
-  .header .body-menu__link {
-    margin: 0 2px;
+@media (max-width: 1750px) {
+  .header__column_2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 27%;
+            flex: 0 0 27%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .header__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 
-  .header .body-menu__logo {
-    margin: 0 25px 0 0;
-  }
-
-  .header .body-menu__address {
-    margin: 0 10px 0 0;
-  }
-
-  .header .body-menu__time {
+  .header__logo {
     margin: 0 15px 0 0;
   }
 }
 
 @media (max-width: 1400px) {
-  .header__logo {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 170px;
-            flex: 0 1 170px;
-    margin: 0 5px 0 0;
-  }
-
-  .header__address {
-    margin: 0 5px 0 0;
-  }
-
-  .header__time {
-    margin: 0 10px 0 0;
-  }
-
-  .header .body-menu__link {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 150px;
-            flex: 0 1 150px;
-  }
-
   .benefits__li {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
+  }
+
+  .header__address {
+    margin: 0 1.5% 0 0;
+  }
+
+  .header__time {
+    margin: 0 2% 0 0;
   }
 }
 
@@ -2221,27 +2197,29 @@ body {
     height: 60px;
   }
 
-  .header__left {
+  .header__column_1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 20px 0 30px;
+  }
+
+  .header__column_2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .header__column_3 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 0 5px 0 30px;
-  }
-
-  .header__right {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
 
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 150px;
-            flex: 0 1 150px;
-  }
-
-  .header__menu {
-    margin: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
   }
 
   .header .menu__burger {
