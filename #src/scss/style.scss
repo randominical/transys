@@ -1004,6 +1004,7 @@ body {
         font-size: 18px;
         line-height: 22px;
         text-align: center;
+        white-space: nowrap;
         color: rgba(60, 70, 78, 1);
         position: absolute;
         left: 50%;
@@ -1031,6 +1032,34 @@ body {
             height: 100%;
             width: auto;
         }
+    }
+    @media (max-width: 1600px) {
+        &__body {
+            background: url(../img/types/types_line.svg) center 230px/1150px auto no-repeat;
+        }
+        &__row {
+            height: 236px;
+            padding: 0 18%;
+        }
+    }
+    @media (max-width: 1300px) {
+        &__row {
+            &:nth-child(1) {
+                justify-content: space-between;
+            }
+            &:nth-child(2) {
+                justify-content: space-between;
+            }
+            &:nth-child(3) {
+                justify-content: space-between;
+            }
+            &:last-child {
+                height: 370px;
+            }
+        }
+    }
+    @media (max-width: $md3 + px) {
+        margin: 0;
     }
 }
 //========================================
