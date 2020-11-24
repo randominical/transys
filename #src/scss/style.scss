@@ -139,14 +139,6 @@ body {
             font-size: 18px;
             line-height: 22px;
         }
-        &_b {
-            &:before {
-                right: calc(100% + 30px);
-            }
-            &:after {
-                left: calc(100% + 30px);
-            }
-        }
     }
 }
 
@@ -796,12 +788,6 @@ body {
             margin: 0 45px 0 0;
         }
     }
-    @media (max-width: 1400px) {
-        &__li {
-            font-size: 16px;
-            line-height: 20px;
-        }
-    }
     @media (max-width: $md1 + px) {
         &:before {
             height: 15px;
@@ -812,6 +798,8 @@ body {
             }
         }
         &__li {
+            font-size: 16px;
+            line-height: 20px;
             img {
                 width: 45px;
                 height: 45px;
@@ -837,8 +825,6 @@ body {
                 margin: 0 34px 0 0;
             }
         }
-    }
-    @media (max-width: 900px) {
         .title_b {
             &:before, &:after {
                 width: 150px;
