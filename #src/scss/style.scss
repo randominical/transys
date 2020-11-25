@@ -930,6 +930,10 @@ body {
     margin: -100px 0 0 0;
     padding: 18px 0 125px 0;
     background: url('../img/types/types_cloud_1.svg') right 90px top 115px /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 100px 195px/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 128px 630px /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 230px 1245px /109px auto no-repeat;
+    &__title {
+        max-width: 410px;
+        margin: 0 auto;
+    }
     &__body {
         display: flex;
         flex-direction: column;
@@ -1062,6 +1066,20 @@ body {
         }
     }
     @media (max-width: $md1 + px) {
+        &__title {
+            max-width: 100%;
+        }
+        .title_b {
+            &:before, &:after {
+                width: 147px;
+            }
+            &:before {
+                right: calc(100% + 30px);
+            }
+            &:after {
+                left: calc(100% + 30px);
+            }
+        }
         &__body {
             background: url(../img/types/types_line.svg) center 190px/940px auto no-repeat;
         }
@@ -1073,6 +1091,21 @@ body {
         }
     }
     @media (max-width: $md2 + px) {
+        padding: 18px 0 100px 0;
+        &__title {
+            max-width: 464px;
+        }
+        .title_b {
+            &:before, &:after {
+                width: 123px;
+            }
+            &:before {
+                right: calc(100% + 25px);
+            }
+            &:after {
+                left: calc(100% + 25px);
+            }
+        }
         &__body {
             background: url(../img/types/types_line.svg) center 140px/700px auto no-repeat;
         }
@@ -1085,6 +1118,15 @@ body {
     }
     @media (max-width: $md3 + px) {
         margin: 0;
+        padding: 10px 0 50px 0;
+        &__title {
+            max-width: 340px;
+        }
+        .title_b {
+            &:before, &:after {
+                width: 40px;
+            }
+        }
         &__body {
             background: url(../img/types/types_line_s.svg) center 155px/444px auto no-repeat;
         }
@@ -1122,6 +1164,12 @@ body {
     @media (max-width: 500px) {
         &__body {
             background: transparent;
+        }
+    }
+    @media (max-width: $md4 + px) {
+        padding: 10px 0 30px 0;
+        &__title {
+            max-width: 250px;
         }
     }
 }
