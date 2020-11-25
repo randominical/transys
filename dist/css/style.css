@@ -2742,12 +2742,36 @@ body {
     height: 325px;
   }
 
+  .types__row_4 {
+    height: 210px;
+  }
+
+  .types__row:last-child {
+    margin: -50px 0 0 0;
+  }
+
   .types__column {
     height: 50%;
   }
 
   .types__column_5 {
     height: 53%;
+  }
+
+  .types__column_8 {
+    height: 100%;
+  }
+
+  .types__pic_7 img {
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+}
+
+@media (max-width: 500px) {
+  .types__body {
+    background: transparent;
   }
 }
 

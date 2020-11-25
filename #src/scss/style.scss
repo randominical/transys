@@ -1095,12 +1095,33 @@ body {
             &_3 {
                 height: 325px;
             }
+            &_4 {
+                height: 210px;
+            }
+            &:last-child {
+                margin: -50px 0 0 0;
+            }
         }
         &__column {
             height: 50%;
             &_5 {
                 height: 53%;
             }
+            &_8 {
+                height: 100%;
+            }
+        }
+        &__pic {
+            &_7 {
+                img {
+                    transform: scale(-1, 1);
+                }
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        &__body {
+            background: transparent;
         }
     }
 }
