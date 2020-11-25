@@ -2180,6 +2180,13 @@ body {
   }
 }
 
+@media (max-width: 1400px) {
+  .types__row:last-child {
+    height: 370px;
+    background: url("../img/types/types_wave_1.svg") bottom 8% left 19%/164px auto no-repeat, url("../img/types/types_wave_2.svg") bottom 7.5% right 11%/316px auto no-repeat, url("../img/types/types_cloud_1.svg") top 35% right 20%/109px auto no-repeat, url("../img/types/types_cloud_2.svg") left 33% top 46%/255px auto no-repeat, url("../img/types/types_cloud_4.svg") left 42% top 30%/114px auto no-repeat;
+  }
+}
+
 @media (max-width: 1300px) {
   .header__column_1 {
     -webkit-box-flex: 0;
@@ -2534,7 +2541,7 @@ body {
   }
 
   .types__row:nth-child(2) {
-    background: url("../img/types/types_cloud_1.svg") 7% 50%/77px auto no-repeat, url("../img/types/types_cloud_3.svg") 56% 22%/213px auto no-repeat;
+    background: url("../img/types/types_cloud_1.svg") 7% 50%/77px auto no-repeat, url("../img/types/types_cloud_3.svg") 52% 23%/213px auto no-repeat;
   }
 
   .types__row:nth-child(3) {
@@ -2630,6 +2637,7 @@ body {
 
   .types__row:last-child {
     height: 240px;
+    background: url("../img/types/types_wave_1.svg") bottom 8% left 23%/118px auto no-repeat, url("../img/types/types_wave_2.svg") bottom 5% right 21.5%/225px auto no-repeat, url("../img/types/types_cloud_1.svg") top 34% right 30%/80px auto no-repeat, url("../img/types/types_cloud_2.svg") left 10% top 30%/252px auto no-repeat, url("../img/types/types_cloud_4.svg") left 30% top 14%/80px auto no-repeat, url("../img/types/types_cloud_3.svg") right 5% top 58%/213px auto no-repeat;
   }
 }
 
