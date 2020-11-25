@@ -929,7 +929,7 @@ body {
 .types {
     margin: -100px 0 0 0;
     padding: 18px 0 125px 0;
-    background: url('../img/types/types_cloud_1.svg') right 90px top 115px /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 100px 195px/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 128px 630px /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 230px 1245px /109px auto no-repeat;
+    background: url('../img/types/types_cloud_1.svg') right 6% top 7% /212px auto no-repeat, url('../img/types/types_cloud_2.svg') 5% 12%/299px auto no-repeat, url('../img/types/types_cloud_1.svg') 8% 33% /212px auto no-repeat, url('../img/types/types_cloud_1.svg') 15% 64% /109px auto no-repeat;
     &__title {
         max-width: 410px;
         margin: 0 auto;
@@ -951,7 +951,7 @@ body {
             justify-content: flex-end;
         }
         &:nth-child(2) {
-            background: url('../img/types/types_cloud_1.svg') 40% 50% /109px auto no-repeat, url('../img/types/types_cloud_3.svg') 85% 90px /299px auto no-repeat;
+            background: url('../img/types/types_cloud_1.svg') 40% 50% /109px auto no-repeat, url('../img/types/types_cloud_3.svg') 85% 20% /299px auto no-repeat;
             justify-content: flex-start;
         }
         &:nth-child(3) {
