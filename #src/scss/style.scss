@@ -19,7 +19,7 @@ $fontF: 'Futura', sans-serif;
 //цвета
 $blue: rgba(0, 147, 255, 1);
 //брейкпойнты
-$md1: 1198.98;
+$md1: 1199.98;
 $md2: 999.98;
 $md3: 767.98;
 $md4: 479.98;
@@ -1055,6 +1055,17 @@ body {
             }
             &:last-child {
                 height: 370px;
+            }
+        }
+    }
+    @media (max-width: $md1 + px) {
+        &__body {
+            background: url(../img/types/types_line_2.svg) center 210px/1000px auto no-repeat;
+        }
+        &__row {
+            height: 215px;
+            &:last-child {
+                height: 361px;
             }
         }
     }

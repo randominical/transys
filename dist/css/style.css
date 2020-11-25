@@ -2219,7 +2219,7 @@ body {
   }
 }
 
-@media (max-width: 1198.98px) {
+@media (max-width: 1199.98px) {
   .container {
     padding: 0 20px;
   }
@@ -2479,6 +2479,18 @@ body {
     width: 45px;
     height: 45px;
     margin: 0 37px 0 0;
+  }
+
+  .types__body {
+    background: url(../img/types/types_line_2.svg) center 210px/1000px auto no-repeat;
+  }
+
+  .types__row {
+    height: 215px;
+  }
+
+  .types__row:last-child {
+    height: 361px;
   }
 }
 
