@@ -1063,33 +1063,44 @@ body {
     }
     @media (max-width: $md1 + px) {
         &__body {
-            background: url(../img/types/types_line.svg) center 210px/1018px auto no-repeat;
+            background: url(../img/types/types_line.svg) center 190px/940px auto no-repeat;
         }
         &__row {
-            height: 212px;
+            height: 194px;
             &:last-child {
-                height: 361px;
+                height: 340px;
             }
         }
     }
     @media (max-width: $md2 + px) {
         &__body {
-            background: url(../img/types/types_line.svg) center 175px/729px auto no-repeat;
+            background: url(../img/types/types_line.svg) center 140px/700px auto no-repeat;
         }
         &__row {
-            height: 177px;
+            height: 144px;
             &:last-child {
-                height: 280px;
+                height: 240px;
             }
         }
     }
     @media (max-width: $md3 + px) {
         margin: 0;
         &__body {
-            background: url(../img/types/types_line_s.svg) center 175px/729px auto no-repeat;
+            background: url(../img/types/types_line_s.svg) center 155px/444px auto no-repeat;
         }
         &__row {
+            height: 314px;
             flex-direction: column;
+            align-items: center;
+            &_3 {
+                height: 325px;
+            }
+        }
+        &__column {
+            height: 50%;
+            &_5 {
+                height: 53%;
+            }
         }
     }
 }
