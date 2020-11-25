@@ -958,7 +958,7 @@ body {
             background: url('../img/types/types_cloud_1.svg') 45% 55% /109px auto no-repeat, url('../img/types/types_cloud_1.svg') right 60px bottom 60px /109px auto no-repeat, url('../img/types/types_cloud_3.svg') 100px 50% /299px auto no-repeat, url('../img/types/types_cloud_3.svg') right 164px top 46% /299px auto no-repeat;
         }
         &:last-child {
-            height: 580px;
+            height: 500px;
             background: url('../img/types/types_wave_1.svg') bottom 10% left 24%/164px auto no-repeat, url('../img/types/types_wave_2.svg') bottom 8.5% right 18.5%/316px auto no-repeat, url('../img/types/types_cloud_1.svg') top 35% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 46%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 30%/114px auto no-repeat;
         }
     }
@@ -1043,6 +1043,9 @@ body {
         }
     }
     @media (max-width: 1300px) {
+        &__column {
+            margin: 0;
+        }
         &__row {
             &:nth-child(1) {
                 justify-content: space-between;
@@ -1060,17 +1063,34 @@ body {
     }
     @media (max-width: $md1 + px) {
         &__body {
-            background: url(../img/types/types_line_2.svg) center 210px/1000px auto no-repeat;
+            background: url(../img/types/types_line.svg) center 210px/1018px auto no-repeat;
         }
         &__row {
-            height: 215px;
+            height: 212px;
             &:last-child {
                 height: 361px;
             }
         }
     }
+    @media (max-width: $md2 + px) {
+        &__body {
+            background: url(../img/types/types_line.svg) center 175px/729px auto no-repeat;
+        }
+        &__row {
+            height: 177px;
+            &:last-child {
+                height: 280px;
+            }
+        }
+    }
     @media (max-width: $md3 + px) {
         margin: 0;
+        &__body {
+            background: url(../img/types/types_line_s.svg) center 175px/729px auto no-repeat;
+        }
+        &__row {
+            flex-direction: column;
+        }
     }
 }
 //========================================
