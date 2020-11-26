@@ -1033,7 +1033,7 @@ body {
         width: auto;
         position: absolute;
         top: 30%;
-        left: 61%;
+        left: 41%;
         img {
             height: 100%;
             width: auto;
@@ -1214,6 +1214,7 @@ body {
         &__row {
             background: transparent !important;
             &:last-child {
+                background: url(../img/types/types_cloud_1.svg) left 90% top 35%/57px auto no-repeat, url(../img/types/types_cloud_2.svg) left 3% top 41%/102px auto no-repeat, url(../img/types/types_cloud_4.svg) left 24% top 23%/50px auto no-repeat !important;
                 padding: 0;
                 height: 300px;
             }  
@@ -1257,7 +1258,7 @@ body {
             transform: translate(-52%, 0);
         }
         &__plane {
-            top: 15%;
+            top: 25%;
         }
     }
     @media (max-width: $md4 + px) {
@@ -1272,12 +1273,17 @@ body {
         }
         &__ship {
             height: 45%;
+            transform: translate(-55%, 0);
         }
     }
     @media (max-width: $md5 + px) {
         &__ship {
             height: 40%;
             top: 100px;
+        }
+        &__plane {
+            top: 35%;
+            left: 41%;
         }
     }
 }

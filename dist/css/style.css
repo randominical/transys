@@ -1269,7 +1269,7 @@ body {
   width: auto;
   position: absolute;
   top: 30%;
-  left: 61%;
+  left: 41%;
 }
 
 .types__plane img {
@@ -2897,6 +2897,7 @@ body {
   }
 
   .types__row:last-child {
+    background: url(../img/types/types_cloud_1.svg) left 90% top 35%/57px auto no-repeat, url(../img/types/types_cloud_2.svg) left 3% top 41%/102px auto no-repeat, url(../img/types/types_cloud_4.svg) left 24% top 23%/50px auto no-repeat !important;
     padding: 0;
     height: 300px;
   }
@@ -2951,7 +2952,7 @@ body {
   }
 
   .types__plane {
-    top: 15%;
+    top: 25%;
   }
 }
 
@@ -3075,6 +3076,9 @@ body {
 
   .types__ship {
     height: 45%;
+    -webkit-transform: translate(-55%, 0);
+        -ms-transform: translate(-55%, 0);
+            transform: translate(-55%, 0);
   }
 }
 
@@ -3124,6 +3128,11 @@ body {
   .types__ship {
     height: 40%;
     top: 100px;
+  }
+
+  .types__plane {
+    top: 35%;
+    left: 41%;
   }
 }
 
