@@ -80,7 +80,7 @@ body {
         max-width: 1490px;
     }
     &_s {
-        max-width: 1430px;
+        max-width: 1280px;
         padding: 40px;
     }
     @media (max-width: $md1 + px) {
@@ -1289,13 +1289,13 @@ body {
 }
 //========================================
 .quality {
-    background: url('../img/quality_bg.svg') 50% 800px/90% no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 550px, rgba(10, 99, 151, 1) 550px, rgba(10, 99, 151, 1));
+    background: url('../img/quality/quality_cloud_1.svg') 97% 32%/211px auto no-repeat, url('../img/quality/quality_plane.svg') 65% 41%/370px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 88% 41%/299px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 94% 45%/103px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 19% 51%/299px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 91% 55%/180px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 605px, rgba(10, 99, 151, 1) 605px, rgba(10, 99, 151, 1));
     padding: 80px 0 100px 0;
     &__top {
         background: url('../img/quality/quality_main.png') 0 -50px/358px no-repeat;
         max-width: 920px;
         height: 698px;
-        padding: 0 0 0 350px;
+        padding: 20px 0 0 350px;
     }
     &__slogan {
         font-weight: 600;
@@ -1324,13 +1324,13 @@ body {
     }
     &__item {
         display: flex;
-        padding: 40px 10px;
+        padding: 20px 10px;
         &:nth-child(n) {
-            width: 47.77%;
+            width: 44.77%;
             align-self: flex-end;
         }
         &:nth-child(2n) {
-            width: 43.75%;
+            width: 43%;
             align-self: flex-start;
         }
     }
@@ -1345,6 +1345,9 @@ body {
         font-size: 20px;
         line-height: 125.9%;
         color: rgba(255, 255, 255, 1);
+    }
+    &__title {
+        font-weight: bold;
     }
     &__link {
         width: 298px;

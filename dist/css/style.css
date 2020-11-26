@@ -643,7 +643,7 @@ body {
 }
 
 .container_s {
-  max-width: 1430px;
+  max-width: 1280px;
   padding: 40px;
 }
 
@@ -1278,8 +1278,8 @@ body {
 }
 
 .quality {
-  background: url("../img/quality_bg.svg") 50% 800px/90% no-repeat, -o-linear-gradient(280deg, white 0, white 550px, #0a6397 550px, #0a6397);
-  background: url("../img/quality_bg.svg") 50% 800px/90% no-repeat, linear-gradient(170deg, white 0, white 550px, #0a6397 550px, #0a6397);
+  background: url("../img/quality/quality_cloud_1.svg") 97% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 88% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 91% 55%/180px auto no-repeat, -o-linear-gradient(280deg, white 0, white 605px, #0a6397 605px, #0a6397);
+  background: url("../img/quality/quality_cloud_1.svg") 97% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 88% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 91% 55%/180px auto no-repeat, linear-gradient(170deg, white 0, white 605px, #0a6397 605px, #0a6397);
   padding: 80px 0 100px 0;
 }
 
@@ -1287,7 +1287,7 @@ body {
   background: url("../img/quality/quality_main.png") 0 -50px/358px no-repeat;
   max-width: 920px;
   height: 698px;
-  padding: 0 0 0 350px;
+  padding: 20px 0 0 350px;
 }
 
 .quality__slogan {
@@ -1330,17 +1330,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 10px;
+  padding: 20px 10px;
 }
 
 .quality__item:nth-child(n) {
-  width: 47.77%;
+  width: 44.77%;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
 .quality__item:nth-child(2n) {
-  width: 43.75%;
+  width: 43%;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -1357,6 +1357,10 @@ body {
   font-size: 20px;
   line-height: 125.9%;
   color: white;
+}
+
+.quality__title {
+  font-weight: bold;
 }
 
 .quality__link {
