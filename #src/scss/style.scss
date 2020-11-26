@@ -1194,6 +1194,7 @@ body {
             }
             &_8 {
                 height: 100%;
+                margin: 40px 0 0 0;
             }
         }
         &__pic {
@@ -1223,7 +1224,7 @@ body {
                 height: auto;
             }
             &_8 {
-                margin-top: 50px;
+                padding: 50px 0 0 0;
                 width: 100%;
                 justify-content: center;
             }
@@ -1238,7 +1239,7 @@ body {
                 }
             }
             &_8 {
-                width: 50%;
+                width: 350px;
                 height: 100%;
                 display: flex;
                 align-items: flex-end;
@@ -1249,25 +1250,14 @@ body {
             }
         }
         &__ship {
-            width: 120%;
-            height: auto;
-            bottom: 25%;
+            height: 49%;
+            width: auto;
+            bottom: 50px;
             left: 50%;
-            transform: translate(-50%, 0);
-            img {
-                width: 100%;
-                height: auto;
-            }
+            transform: translate(-52%, 0);
         }
         &__plane {
-            width: 30%;
-            height: auto;
-            top: 5%;
-            left: 50%;
-            img {
-                width: 100%;
-                height: auto;
-            }
+            top: 15%;
         }
     }
     @media (max-width: $md4 + px) {
@@ -1275,25 +1265,19 @@ body {
         &__title {
             max-width: 250px;
         }
-    }
-    @media (max-width: 450px) {
-        &__ship {
-            top: 100px
-        }
-        &__pic {
-            &_8 {
-                width: 180px;
-            }
-        }
-    }
-    @media (max-width: 410px) {
         &__row {
             &:last-child {
-                height: 210px;
-            }
+                height: 260px;
+            }  
         }
         &__ship {
-            top: 50px
+            height: 45%;
+        }
+    }
+    @media (max-width: $md5 + px) {
+        &__ship {
+            height: 40%;
+            top: 100px;
         }
     }
 }
