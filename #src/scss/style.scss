@@ -963,7 +963,7 @@ body {
         }
         &:last-child {
             height: 500px;
-            background: url('../img/types/types_cloud_1.svg') top 35% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 46%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 30%/114px auto no-repeat;
+            background: url('../img/types/types_cloud_1.svg') top 30% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 32%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 18%/114px auto no-repeat;
         }
     }
     &__column {
@@ -1028,16 +1028,14 @@ body {
         }
     }
     &__plane {
-        height: 14.01%;
+        height: 16.01%;
         width: auto;
         position: absolute;
         top: 30%;
-        left: 55%;
-        z-index: -10;
+        left: 61%;
         img {
             height: 100%;
             width: auto;
-            z-index: -10;
         }
     }
     @media (max-width: 1810px) {
@@ -1059,7 +1057,7 @@ body {
         &__row {
             &:last-child {
                 height: 370px;
-                background: url('../img/types/types_cloud_1.svg') top 35% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 46%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 30%/114px auto no-repeat;
+                background: url('../img/types/types_cloud_1.svg') top 16% right 20%/109px auto no-repeat, url('../img/types/types_cloud_2.svg') left 33% top 28%/255px auto no-repeat, url('../img/types/types_cloud_4.svg') left 42% top 16%/114px auto no-repeat;
             }
         }
     }
@@ -1117,7 +1115,7 @@ body {
             }
             &:last-child {
                 height: 340px;
-                background: url('../img/types/types_cloud_1.svg') top 34% right 30%/80px auto no-repeat, url('../img/types/types_cloud_2.svg') left 10% top 30%/252px auto no-repeat, url('../img/types/types_cloud_4.svg') left 30% top 14%/80px auto no-repeat, url('../img/types/types_cloud_3.svg') right 5% top 58%/213px auto no-repeat;
+                background: url('../img/types/types_cloud_1.svg') top 25% right 30%/80px auto no-repeat, url('../img/types/types_cloud_2.svg') left 10% top 30%/252px auto no-repeat, url('../img/types/types_cloud_4.svg') left 30% top 14%/80px auto no-repeat, url('../img/types/types_cloud_3.svg') left 105% top 58%/213px auto no-repeat;
             }
         }
     }
@@ -1144,14 +1142,14 @@ body {
             height: 144px;
             &:last-child {
                 height: 240px;
-                background: url('../img/types/types_cloud_1.svg') top 34% right 30%/80px auto no-repeat, url('../img/types/types_cloud_2.svg') left 10% top 30%/252px auto no-repeat, url('../img/types/types_cloud_4.svg') left 30% top 14%/80px auto no-repeat, url('../img/types/types_cloud_3.svg') right 5% top 58%/213px auto no-repeat;
+                background: url('../img/types/types_cloud_1.svg') top 25% right 30%/80px auto no-repeat, url('../img/types/types_cloud_2.svg') left 15% top 30%/210px auto no-repeat, url('../img/types/types_cloud_4.svg') left 30% top 14%/80px auto no-repeat, url('../img/types/types_cloud_3.svg') right 5% top 50%/180px auto no-repeat;
             }
         }
     }
     @media (max-width: $md3 + px) {
         background: url('../img/types/types_cloud_1.svg') left 14% top 10%/65px auto no-repeat, url('../img/types/types_cloud_2.svg') 107% 8%/178px auto no-repeat, url('../img/types/types_cloud_3.svg') 0% 18%/178px auto no-repeat;
         margin: 0;
-        padding: 10px 0 50px 0;
+        padding: 10px 0 80px 0;
         &__title {
             max-width: 340px;
         }
