@@ -1284,7 +1284,7 @@ body {
 }
 
 .quality__top {
-  background: url("../img/quality.png") 0 -50px/358px no-repeat;
+  background: url("../img/quality/quality_main.png") 0 -50px/358px no-repeat;
   max-width: 920px;
   height: 698px;
   padding: 0 0 0 350px;
