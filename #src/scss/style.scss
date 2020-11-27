@@ -86,6 +86,9 @@ body {
     @media (max-width: $md1 + px) {
         padding: 0 40px;
     }
+    @media (max-width: $md3 + px) {
+        padding: 0 20px;
+    }
 }
 
 .main {
@@ -1121,7 +1124,7 @@ body {
         }
     }
     @media (max-width: $md2 + px) {
-        padding: 18px 0 70px 0;
+        padding: 18px 0 80px 0;
         &__title {
             max-width: 464px;
         }
@@ -1150,7 +1153,6 @@ body {
     @media (max-width: $md3 + px) {
         background: url('../img/types/types_cloud_1.svg') left 14% top 10%/65px auto no-repeat, url('../img/types/types_cloud_2.svg') 107% 8%/178px auto no-repeat, url('../img/types/types_cloud_3.svg') 0% 18%/178px auto no-repeat;
         margin: 0;
-        padding: 10px 0 50px 0;
         &__title {
             max-width: 340px;
         }
@@ -1406,7 +1408,7 @@ body {
         }
     }
     @media (max-width: $md3 + px) {
-        background: url('../img/quality/quality_cloud_2.svg') 90% 15%/216px auto no-repeat, url('../img/quality/quality_cloud_4.svg') 57% 18%/70px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
+        background: url('../img/quality/quality_cloud_2.svg') 90% 17%/216px auto no-repeat, url('../img/quality/quality_cloud_4.svg') 57% 20%/70px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
         &__top {
             background: url('../img/quality/quality_main.png') 0 -20px/177px no-repeat;
             max-width: 100%;
@@ -1497,6 +1499,9 @@ body {
             line-height: 29px;
             text-shadow: .5px .5px 0px rgba(255, 255, 255, 1), -.5px -.5px 0px rgba(255, 255, 255, 1), .5px -.5px 0px rgba(255, 255, 255, 1), -.5px .5px 0px rgba(255, 255, 255, 1);
         }
+    }
+    @media (max-width: 410px) {
+        background: url('../img/quality/quality_cloud_2.svg') 15% 285px/130px auto no-repeat, url('../img/quality/quality_cloud_4.svg') 0% 340px/70px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
     }
 }
 //========================================

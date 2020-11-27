@@ -2671,7 +2671,7 @@ body {
   }
 
   .types {
-    padding: 18px 0 70px 0;
+    padding: 18px 0 80px 0;
   }
 
   .types__title {
@@ -2770,6 +2770,10 @@ body {
 @media (max-width: 767.98px) {
   body.lock {
     overflow: hidden;
+  }
+
+  .container {
+    padding: 0 20px;
   }
 
   .title_section {
@@ -2878,7 +2882,6 @@ body {
   .types {
     background: url("../img/types/types_cloud_1.svg") left 14% top 10%/65px auto no-repeat, url("../img/types/types_cloud_2.svg") 107% 8%/178px auto no-repeat, url("../img/types/types_cloud_3.svg") 0% 18%/178px auto no-repeat;
     margin: 0;
-    padding: 10px 0 50px 0;
   }
 
   .types__title {
@@ -2955,8 +2958,8 @@ body {
   }
 
   .quality {
-    background: url("../img/quality/quality_cloud_2.svg") 90% 15%/216px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 57% 18%/70px auto no-repeat, -o-linear-gradient(280deg, white 0, white 290px, #0a6397 290px, #0a6397);
-    background: url("../img/quality/quality_cloud_2.svg") 90% 15%/216px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 57% 18%/70px auto no-repeat, linear-gradient(170deg, white 0, white 290px, #0a6397 290px, #0a6397);
+    background: url("../img/quality/quality_cloud_2.svg") 90% 17%/216px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 57% 20%/70px auto no-repeat, -o-linear-gradient(280deg, white 0, white 290px, #0a6397 290px, #0a6397);
+    background: url("../img/quality/quality_cloud_2.svg") 90% 17%/216px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 57% 20%/70px auto no-repeat, linear-gradient(170deg, white 0, white 290px, #0a6397 290px, #0a6397);
   }
 
   .quality__top {
@@ -3273,6 +3276,13 @@ body {
     font-size: 24px;
     line-height: 29px;
     text-shadow: 0.5px 0.5px 0px white, -0.5px -0.5px 0px white, 0.5px -0.5px 0px white, -0.5px 0.5px 0px white;
+  }
+}
+
+@media (max-width: 410px) {
+  .quality {
+    background: url("../img/quality/quality_cloud_2.svg") 15% 285px/130px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 0% 340px/70px auto no-repeat, -o-linear-gradient(280deg, white 0, white 290px, #0a6397 290px, #0a6397);
+    background: url("../img/quality/quality_cloud_2.svg") 15% 285px/130px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 0% 340px/70px auto no-repeat, linear-gradient(170deg, white 0, white 290px, #0a6397 290px, #0a6397);
   }
 }
 
