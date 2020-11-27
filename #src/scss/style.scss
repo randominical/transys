@@ -1405,7 +1405,7 @@ body {
         }
     }
     @media (max-width: $md3 + px) {
-        background: url('../img/quality/quality_plane.svg') 77% 41%/242px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 37% 34%/153px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 100% 46%/216px auto no-repeat, url('../img/quality/quality_cloud_2.svg') right 103% top 53%/216px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 29% 61%/131px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 85% 73%/131px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 37% 77%/79px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 31% 79%/90px auto no-repeat, url('../img/quality/quality_ship.svg') right 115% bottom 100px/544px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
+        background: url('../img/quality/quality_cloud_2.svg') 90% 15%/216px auto no-repeat, url('../img/quality/quality_cloud_4.svg') 57% 18%/70px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
         &__top {
             background: url('../img/quality/quality_main.png') 0 -20px/177px no-repeat;
             max-width: 100%;
@@ -1431,6 +1431,20 @@ body {
         &__item {
             width: 100% !important;
             justify-content: space-between;
+            padding: 0 0 50px 0 !important;
+            margin: 0;
+            &:first-child {
+                background: url('../img/quality/quality_cloud_1.svg') 35% 95%/109px no-repeat;
+            }
+            &:nth-child(2) {
+                background: url('../img/quality/quality_cloud_1.svg') 90% 95%/131px no-repeat;
+            }
+            &:nth-child(3) {
+                background: url('../img/quality/quality_cloud_1.svg') 0% 95%/79px no-repeat;
+            }
+            &:nth-child(4) {
+                background: url('../img/quality/quality_cloud_4.svg') 90% 95%/70px no-repeat;
+            }
         }
         &__article {
             flex: 0 0 calc(100% - 160px);
@@ -1438,6 +1452,9 @@ body {
         &__number {
             font-size: 150px;
             margin: 0;
+        }
+        &__link {
+            width: 255px;
         }
     }
 }
