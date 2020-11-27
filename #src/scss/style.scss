@@ -1447,6 +1447,9 @@ body {
             &:nth-child(4) {
                 background: url('../img/quality/quality_cloud_4.svg') 90% 95%/70px no-repeat;
             }
+            &:last-child {
+                padding: 0 !important;
+            }
         }
         &__article {
             flex: 0 0 calc(100% - 160px);
@@ -1460,10 +1463,12 @@ body {
         }
     }
     @media (max-width: $md4 + px) {
+        background: url('../img/quality/quality_cloud_2.svg') 38% 285px/172px auto no-repeat, url('../img/quality/quality_cloud_4.svg') 0% 340px/70px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
         &__top {
             background: url('../img/quality/quality_main.png') 100% 70px/137px no-repeat;
             padding: 0;
             height: 340px;
+            margin: 0 0 30px 0;
         }
         &__slogan {
             margin: 0 0 30px 0;
@@ -1474,6 +1479,15 @@ body {
         }
         &__contact {
             padding: 0 137px 0 0;
+        }
+        &__body {
+            margin: 0 0 20px 0;
+        }
+        &__item {
+            background: none !important;
+            &:first-child {
+                background: url('../img/quality/quality_cloud_1.svg') 100% 95%/109px no-repeat !important;
+            }
         }
         &__article {
             flex: 0 0 calc(100% - 30px);
