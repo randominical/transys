@@ -1363,7 +1363,7 @@ body {
         background: url('../img/quality/quality_cloud_1.svg') 88% 25%/79px auto no-repeat, url('../img/quality/quality_plane.svg') 74% 41%/370px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 40% 35%/153px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 88% 46%/216px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 11% 52%/216px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 25% 55%/131.4px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 68% 63%/130.9px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 82% 66%/216.55px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 34% 75%/79px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 30% 77%/90px auto no-repeat, url('../img/quality/quality_ship.svg') -1% 85%/544px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 605px, rgba(10, 99, 151, 1) 605px, rgba(10, 99, 151, 1));
     }
     @media (max-width: $md1 + px) {
-        background: url('../img/quality/quality_cloud_1.svg') 88% 400px/79px auto no-repeat, url('../img/quality/quality_plane.svg') 77% 41%/242px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 40% 35%/153px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 88% 46%/216px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 11% 52%/216px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 25% 55%/131.4px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 68% 63%/130.9px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 82% 66%/216.55px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 34% 75%/79px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 30% 77%/90px auto no-repeat, url('../img/quality/quality_ship.svg') -1% 85%/544px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 450px, rgba(10, 99, 151, 1) 450px, rgba(10, 99, 151, 1));
+        background: url('../img/quality/quality_cloud_1.svg') 88% 350px/79px auto no-repeat, url('../img/quality/quality_plane.svg') 77% 41%/242px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 40% 35%/153px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 88% 46%/216px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 11% 52%/216px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 25% 55%/131.4px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 68% 63%/130.9px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 82% 66%/216.55px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 34% 75%/79px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 30% 77%/90px auto no-repeat, url('../img/quality/quality_ship.svg') left -1% bottom 100px/544px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 420px, rgba(10, 99, 151, 1) 420px, rgba(10, 99, 151, 1));
         padding: 30px 0 50px 0;
         &__top {
             background: url('../img/quality/quality_main.png') 0 -20px/259px no-repeat;
@@ -1380,7 +1380,7 @@ body {
             line-height: 17px;
         }
         &__body {
-            margin: -150px 0 90px 0;
+            margin: -180px 0 90px 0;
         }
         &__item {
             width: 50% !important;
@@ -1391,10 +1391,15 @@ body {
                 padding: 3px 0px 3px 5px;
             }
         }
-    }
+        &__number {
+            margin: 0 20px 0 0;
+        }
+        &__article {
+            font-size: 14px;
+        }
     }
     @media (max-width: $md2 + px) {
-
+    }
 }
 //========================================
 .photos {

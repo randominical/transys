@@ -2576,8 +2576,8 @@ body {
   }
 
   .quality {
-    background: url("../img/quality/quality_cloud_1.svg") 88% 400px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131.4px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/130.9px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/216.55px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") -1% 85%/544px auto no-repeat, -o-linear-gradient(280deg, white 0, white 450px, #0a6397 450px, #0a6397);
-    background: url("../img/quality/quality_cloud_1.svg") 88% 400px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131.4px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/130.9px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/216.55px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") -1% 85%/544px auto no-repeat, linear-gradient(170deg, white 0, white 450px, #0a6397 450px, #0a6397);
+    background: url("../img/quality/quality_cloud_1.svg") 88% 350px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131.4px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/130.9px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/216.55px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") left -1% bottom 100px/544px auto no-repeat, -o-linear-gradient(280deg, white 0, white 420px, #0a6397 420px, #0a6397);
+    background: url("../img/quality/quality_cloud_1.svg") 88% 350px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131.4px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/130.9px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/216.55px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") left -1% bottom 100px/544px auto no-repeat, linear-gradient(170deg, white 0, white 420px, #0a6397 420px, #0a6397);
     padding: 30px 0 50px 0;
   }
 
@@ -2599,7 +2599,7 @@ body {
   }
 
   .quality__body {
-    margin: -150px 0 90px 0;
+    margin: -180px 0 90px 0;
   }
 
   .quality__item {
@@ -2612,6 +2612,14 @@ body {
 
   .quality__item:nth-child(n+1) {
     padding: 3px 0px 3px 5px;
+  }
+
+  .quality__number {
+    margin: 0 20px 0 0;
+  }
+
+  .quality__article {
+    font-size: 14px;
   }
 }
 
