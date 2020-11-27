@@ -2952,6 +2952,56 @@ body {
         -ms-transform: scale(-1, 1);
             transform: scale(-1, 1);
   }
+
+  .quality {
+    background: url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 37% 34%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 100% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") right 103% top 53%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 29% 61%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 85% 73%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 37% 77%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 31% 79%/90px auto no-repeat, url("../img/quality/quality_ship.svg") right 115% bottom 100px/544px auto no-repeat, -o-linear-gradient(280deg, white 0, white 290px, #0a6397 290px, #0a6397);
+    background: url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 37% 34%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 100% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") right 103% top 53%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 29% 61%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 85% 73%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 37% 77%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 31% 79%/90px auto no-repeat, url("../img/quality/quality_ship.svg") right 115% bottom 100px/544px auto no-repeat, linear-gradient(170deg, white 0, white 290px, #0a6397 290px, #0a6397);
+  }
+
+  .quality__top {
+    background: url("../img/quality/quality_main.png") 0 -20px/177px no-repeat;
+    max-width: 100%;
+    height: 330px;
+    padding: 20px 0 0 177px;
+  }
+
+  .quality__slogan {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+
+  .quality__name {
+    font-size: 14px;
+    margin: 0 0 0 0;
+  }
+
+  .quality__contact {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .quality__body {
+    margin: 0 0 48px 0;
+    display: block;
+  }
+
+  .quality__item {
+    width: 100% !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .quality__article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 160px);
+            flex: 0 0 calc(100% - 160px);
+  }
+
+  .quality__number {
+    font-size: 150px;
+    margin: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -3008,8 +3058,8 @@ body {
   }
 
   .types__pic_8 img {
-    width: 100%;
-    height: auto;
+    height: 70px;
+    width: auto;
   }
 
   .types__ship {
