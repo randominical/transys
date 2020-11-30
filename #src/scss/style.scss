@@ -1524,6 +1524,18 @@ body {
             flex: 0 0 285px;
         }
     }
+    @media (max-width: $md2 + px) {
+        height: 120px;
+        &__item {
+            flex: 0 0 244px;
+        }
+    }
+    @media (max-width: $md3 + px) {
+        height: 90px;
+        &__item {
+            flex: 0 0 183px;
+        }
+    }
 }
 //========================================
 .guarantee {

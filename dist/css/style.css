@@ -2723,6 +2723,16 @@ body {
   .quality__body {
     margin: -150px 0 40px 0;
   }
+
+  .photos {
+    height: 120px;
+  }
+
+  .photos__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 244px;
+            flex: 0 0 244px;
+  }
 }
 
 @media (max-width: 999.98px), (max-height: 450px) {
@@ -3044,6 +3054,16 @@ body {
 
   .quality__link {
     width: 255px;
+  }
+
+  .photos {
+    height: 90px;
+  }
+
+  .photos__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 183px;
+            flex: 0 0 183px;
   }
 }
 
