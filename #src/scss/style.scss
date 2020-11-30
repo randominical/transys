@@ -2003,6 +2003,45 @@ body {
             height: 30px;
         }
     }
+    @media (max-width: $md2 + px) {
+        .title_b {
+            &:before, &:after {
+                width: 191px;
+            }
+        }
+        &__portraits {
+            height: 63.65px;
+        }
+        &__portrait {
+            flex: 0 0 63.65px;
+        }
+    }
+    @media (max-width: $md3 + px) {
+        padding: 60px 0 66px 0;
+        &__portraits {
+            max-width: 550px;
+            margin: 0 auto 37px auto;
+            height: auto;
+            flex-wrap: wrap;
+        }
+        &__portrait {
+            flex: 0 0 16.667%;
+            height: auto;
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &__article { 
+            max-width: 100%;
+        }
+    }
 }
 //========================================
 .recommendation {
