@@ -1534,12 +1534,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .guarantee .tabs__features {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 29.1%;
           flex: 0 1 29.1%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1547,18 +1554,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 55px 0 0;
   counter-reset: myCounter;
 }
 
 .guarantee .tabs__feature {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
   padding: 0 0 0 90px;
   list-style: none;
   margin: 0 0 64px 0;
   position: relative;
+}
+
+.guarantee .tabs__feature:last-child {
+  margin: 0;
 }
 
 .guarantee .tabs__feature:before {
@@ -2629,6 +2642,98 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 285px;
             flex: 0 0 285px;
+  }
+
+  .guarantee__title {
+    margin: 0 0 36px 0;
+  }
+
+  .guarantee .title_b:before,
+  .guarantee .title_b:after {
+    width: 275px;
+  }
+
+  .guarantee .title_b:before {
+    right: calc(100% + 36px);
+  }
+
+  .guarantee .title_b:after {
+    left: calc(100% + 36px);
+  }
+
+  .guarantee__tabs {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .guarantee__caption:hover .tabs__icon_1,
+  .guarantee__caption.active .tabs__icon_1 {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/22px no-repeat !important;
+  }
+
+  .guarantee__caption:hover .tabs__icon_2,
+  .guarantee__caption.active .tabs__icon_2 {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/20.4px no-repeat !important;
+  }
+
+  .guarantee__caption:hover .tabs__icon_3,
+  .guarantee__caption.active .tabs__icon_3 {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/20.1px no-repeat !important;
+  }
+
+  .guarantee__caption:hover .tabs__icon_4,
+  .guarantee__caption.active .tabs__icon_4 {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/20.9px no-repeat !important;
+  }
+
+  .guarantee__caption:hover .tabs__icon_5,
+  .guarantee__caption.active .tabs__icon_5 {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/18.33px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon {
+    width: 39.8px;
+    height: 39.8px;
+  }
+
+  .guarantee .tabs__icon_1 {
+    background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_1.svg") center/22px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_1:hover {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_1.svg") center/22px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_2 {
+    background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_2.svg") center/20.4px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_2:hover {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_2.svg") center/20.4px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_3 {
+    background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_3.svg") center/20.1px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_3:hover {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_3.svg") center/20.1px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_4 {
+    background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_4.svg") center/20.9px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_4:hover {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_4.svg") center/20.9px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_5 {
+    background: #f1f1f1 url("../img/guarantee/icons_n/guarantee_5.svg") center/18.33px no-repeat !important;
+  }
+
+  .guarantee .tabs__icon_5:hover {
+    background: #0a6397 url("../img/guarantee/icons_h/guarantee_5.svg") center/18.33px no-repeat !important;
   }
 }
 

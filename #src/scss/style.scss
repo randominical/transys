@@ -1635,21 +1635,28 @@ body {
             display: none;
             &.active {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
         }
         &__features {
             flex: 0 1 29.1%;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             margin: 0 55px 0 0;
             counter-reset: myCounter;
         }
         &__feature {
+            flex: 0 0 33.333%;
             padding: 0 0 0 90px;
             list-style: none;
             margin: 0 0 64px 0;
             position: relative;
+            &:last-child {
+                margin: 0;
+            }
             &:before {
                 counter-increment: myCounter;
                 content:counter(myCounter);
@@ -1673,6 +1680,83 @@ body {
             img {
                 width: 100%;
                 height: auto;
+            }
+        }
+    }
+    @media (max-width: $md1 + px) {
+        &__title {
+            margin: 0 0 36px 0;
+        }
+        .title_b {
+            &:before, &:after {
+                width: 275px;
+            }
+            &:before {
+                right: calc(100% + 36px);
+            }
+            &:after {
+                left: calc(100% + 36px);
+            }
+        }
+        &__tabs {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__caption {
+            &:hover, &.active {
+                .tabs__icon {
+                    &_1 {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_1.svg') center/22px no-repeat !important;
+                    }
+                    &_2 {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_2.svg') center/20.4px no-repeat !important;
+                    }
+                    &_3 {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_3.svg') center/20.1px no-repeat !important;
+                    }
+                    &_4 {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_4.svg') center/20.9px no-repeat !important;
+                    }
+                    &_5 {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_5.svg') center/18.33px no-repeat !important;
+                    }
+                }
+            }
+        }
+        .tabs {
+            &__icon {
+                width: 39.8px;
+                height: 39.8px;
+                &_1 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_1.svg') center/22px no-repeat !important;
+                    &:hover {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_1.svg') center/22px no-repeat !important;
+                    }
+                }
+                &_2 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_2.svg') center/20.4px no-repeat !important;
+                    &:hover {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_2.svg') center/20.4px no-repeat !important;
+                    }
+                }
+                &_3 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_3.svg') center/20.1px no-repeat !important;
+                    &:hover {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_3.svg') center/20.1px no-repeat !important;
+                    }
+                }
+                &_4 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_4.svg') center/20.9px no-repeat !important;
+                    &:hover {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_4.svg') center/20.9px no-repeat !important;
+                    }
+                }
+                &_5 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_5.svg') center/18.33px no-repeat !important;
+                    &:hover {
+                        background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_5.svg') center/18.33px no-repeat !important;
+                    }
+                }
             }
         }
     }
