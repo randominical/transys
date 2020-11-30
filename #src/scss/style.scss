@@ -1150,7 +1150,7 @@ body {
             }
         }
     }
-    @media (max-width: $md3 + px) {
+    @media (max-width: 780px) {
         background: url('../img/types/types_cloud_1.svg') left 14% top 10%/65px auto no-repeat, url('../img/types/types_cloud_2.svg') 107% 8%/178px auto no-repeat, url('../img/types/types_cloud_3.svg') 0% 18%/178px auto no-repeat;
         margin: 0;
         &__title {
