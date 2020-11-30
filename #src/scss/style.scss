@@ -1518,6 +1518,12 @@ body {
             height: 100%;
         }
     }
+    @media (max-width: $md1 + px) {
+        height: 140px;
+        &__item {
+            flex: 0 0 285px;
+        }
+    }
 }
 //========================================
 .guarantee {

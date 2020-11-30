@@ -2620,6 +2620,16 @@ body {
   .quality__article {
     font-size: 18px;
   }
+
+  .photos {
+    height: 140px;
+  }
+
+  .photos__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 285px;
+            flex: 0 0 285px;
+  }
 }
 
 @media (max-width: 999.98px) {
