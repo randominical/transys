@@ -1845,6 +1845,48 @@ body {
             }
         }
     }
+    @media (max-width: $md4 + px) {
+        padding: 57px 0 20px 0;
+        .title_b {
+            &:before {
+                right: calc(100% + 20px);
+            }
+            &:after {
+                left: calc(100% + 20px);
+            }
+        }
+        &__tabs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .tabs {
+            &__captions {
+                flex-direction: column;
+                margin: 0 20px 0 0;
+                &:before {
+                    display: none;
+                }
+            }
+            &__caption {
+                margin: 0 0 5px 0;
+            }
+            &__features {
+                flex-direction: column;
+                height: 100%;
+                padding: 20px 5px 20px 5px;
+                background: #F1F1F1;
+                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+                margin: 0 0 0 0;
+            }
+            &__feature {
+                margin: 0 0 20px 0;
+            }
+            &__pic {
+                display: none;
+            }
+        }
+    }
 }
 //========================================
 .team {
