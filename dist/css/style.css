@@ -1633,20 +1633,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 121px;
+  height: auto;
   margin: 0 0 76px 0;
 }
 
 .team__portrait {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 121px;
-          flex: 0 0 121px;
-  height: 100%;
+      -ms-flex: 0 0 6.25%;
+          flex: 0 0 6.25%;
+  height: auto;
 }
 
 .team__portrait img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .team__portrait:first-child {
@@ -1663,6 +1663,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #008dd2), color-stop(50%, #008dd2), color-stop(50%, #0a6397), to(#0a6397));
   background: -o-linear-gradient(left, #008dd2 0, #008dd2 50%, #0a6397 50%, #0a6397 100%);
   background: linear-gradient(to right, #008dd2 0, #008dd2 50%, #0a6397 50%, #0a6397 100%);
+  z-index: 10;
 }
 
 .team__portrait:last-child {
@@ -2206,22 +2207,7 @@ body {
 
 @media (max-width: 1470px) {
   .team__portraits {
-    height: 71px;
     margin: 0 0 46px 0;
-  }
-
-  .team__portrait {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 71.02px;
-            flex: 0 0 71.02px;
-  }
-
-  .team__portrait:first-child:before {
-    width: 142px;
-  }
-
-  .team__portrait:last-child:after {
-    width: 142px;
   }
 }
 
@@ -2946,19 +2932,22 @@ body {
             flex: 0 1 56%;
   }
 
-  .team .title_b:before,
-  .team .title_b:after {
-    width: 191px;
-  }
-
   .team__portraits {
     height: 63.65px;
   }
 
   .team__portrait {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 63.65px;
-            flex: 0 0 63.65px;
+    height: 100%;
+  }
+
+  .team__portrait img {
+    height: 100%;
+    width: auto;
+  }
+
+  .team .title_b:before,
+  .team .title_b:after {
+    width: 191px;
   }
 }
 
@@ -3370,6 +3359,19 @@ body {
     padding: 60px 0 66px 0;
   }
 
+  .team .title_b:before,
+  .team .title_b:after {
+    width: 61px;
+  }
+
+  .team .title_b:before {
+    right: calc(100% + 22px);
+  }
+
+  .team .title_b:after {
+    left: calc(100% + 22px);
+  }
+
   .team__portraits {
     max-width: 550px;
     margin: 0 auto 37px auto;
@@ -3382,6 +3384,11 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 16.667%;
             flex: 0 0 16.667%;
+    height: auto;
+  }
+
+  .team__portrait img {
+    width: 100%;
     height: auto;
   }
 
@@ -3700,6 +3707,20 @@ body {
 
   .guarantee .tabs__pic {
     display: none;
+  }
+
+  .team {
+    padding: 60px 0 60px 0;
+  }
+
+  .team__portrait {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+
+  .team__article {
+    margin: 0 0 40px 0;
   }
 }
 
