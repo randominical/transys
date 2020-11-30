@@ -1954,6 +1954,55 @@ body {
         height: 40px;
         margin: 0 auto;
     }
+    @media (max-width: 1470px) {
+        &__portraits {
+            height: 71px;
+            margin: 0 0 46px 0;
+        }
+        &__portrait {
+            flex: 0 0 71.02px;
+            &:first-child {
+                &:before {
+                    width: 142px;
+                }
+            }
+            &:last-child {
+                &:after {
+                    width: 142px;
+                }
+            }
+        }
+    }
+    @media (max-width: $md1 + px) {
+        padding: 60px 0 60px 0;
+        &__title {
+            margin: 0 0 43px 0;
+        }
+        .title_b {
+            &:before, &:after {
+                width: 230px;
+            }
+            &:before {
+                right: calc(100% + 55px);
+            }
+            &:after {
+                left: calc(100% + 55px);
+            }
+        }
+        &__article {
+            font-size: 14px;
+            line-height: 125.9%;
+            max-width: 568px;
+            margin: 0 auto 60px auto;
+            p {
+                margin: 0 0 20px 0;
+            }
+        }
+        &__link {
+            width: 270px;
+            height: 30px;
+        }
+    }
 }
 //========================================
 .recommendation {
