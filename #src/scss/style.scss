@@ -1777,6 +1777,23 @@ body {
             }
         }
     }
+    @media (max-width: $md2 + px) {
+        padding: 56px 0 60px 0;
+        .title_b {
+            &:before, &:after {
+                width: 209px;
+            }
+        }
+        .tabs {
+            &__features {
+                flex: 0 1 36%;
+                margin: 0 40px 0 0;
+            }
+            &__pic {
+                flex: 0 1 56%;
+            }
+        }
+    }
 }
 //========================================
 .team {

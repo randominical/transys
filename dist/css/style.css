@@ -2864,6 +2864,28 @@ body {
         -ms-flex: 0 0 244px;
             flex: 0 0 244px;
   }
+
+  .guarantee {
+    padding: 56px 0 60px 0;
+  }
+
+  .guarantee .title_b:before,
+  .guarantee .title_b:after {
+    width: 209px;
+  }
+
+  .guarantee .tabs__features {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 36%;
+            flex: 0 1 36%;
+    margin: 0 40px 0 0;
+  }
+
+  .guarantee .tabs__pic {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 56%;
+            flex: 0 1 56%;
+  }
 }
 
 @media (max-width: 999.98px), (max-height: 450px) {
