@@ -2267,7 +2267,7 @@ body {
         justify-content: center;
         padding: 40px 20px 20px 40px;
         position: relative;
-        z-index: 0;
+        z-index: 1;
         &:after {
             content: '';
             width: 12px;
@@ -2295,8 +2295,8 @@ body {
         &__pic {
             position: absolute;
             right: calc(100% - 30px);
-            bottom: 0;
-            height: 110%;
+            bottom: 15px;
+            height: 105%;
             z-index: 1;
             img {
                 height: 100%;
@@ -2435,6 +2435,11 @@ body {
                 width: 9.3px;
             }
         }
+        .form {
+            &__pic {
+                bottom: 12px;
+            }
+        }
         &__offer {
             font-size: 14px;
         }
@@ -2460,7 +2465,7 @@ body {
         }
         .form {
             &__pic {
-                height: 105%;
+                bottom: 11px;
             }
             &__title {
                 font-size: 18px;
@@ -2526,6 +2531,7 @@ body {
         }
         .list-price {
             width: 60%;
+            padding: 15px 0;
             &__item {
                 padding: 0 0 0 60px;
                 margin: 0 0 20px 0;

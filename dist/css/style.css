@@ -1863,7 +1863,7 @@ body {
           justify-content: center;
   padding: 40px 20px 20px 40px;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .price__form:after {
@@ -1905,8 +1905,8 @@ body {
 .price .form__pic {
   position: absolute;
   right: calc(100% - 30px);
-  bottom: 0;
-  height: 110%;
+  bottom: 15px;
+  height: 105%;
   z-index: 1;
 }
 
@@ -2952,6 +2952,10 @@ body {
     width: 9.3px;
   }
 
+  .price .form__pic {
+    bottom: 12px;
+  }
+
   .price__offer {
     font-size: 14px;
   }
@@ -3165,7 +3169,7 @@ body {
   }
 
   .price .form__pic {
-    height: 105%;
+    bottom: 11px;
   }
 
   .price .form__title {
@@ -3740,6 +3744,7 @@ body {
 
   .price .list-price {
     width: 60%;
+    padding: 15px 0;
   }
 
   .price .list-price__item {
