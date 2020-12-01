@@ -2163,7 +2163,7 @@ body {
         }
     }
     @media (max-width: $md1 + px) {
-        padding: 61px 0 50px 0;
+        padding: 61px 0 80px 0;
         &__title {
             margin: 0 0 15px 0;
         }
@@ -2258,12 +2258,12 @@ body {
         display: flex;
     }
     &__form {
+        flex: 0 0 573px;
         background: rgba(0, 60, 95, 1);
         margin: -15px 0 -15px 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 561px;
         padding: 40px 20px 20px 40px;
         position: relative;
         z-index: 0;
@@ -2310,6 +2310,7 @@ body {
             margin: 0 0 75px 0;
         }
         &__row {
+            width: 100%;
             display: flex;
             margin: 0 0 40px 0;
         }
@@ -2325,11 +2326,11 @@ body {
                 border: 1px solid rgba(196, 196, 196, 1);
             }
             &_name {
-                flex: 0 1 46%;
+                flex: 0 0 230px;
                 margin: 0 16px 0 0;
             }
             &_tel {
-                flex: 0 1 44%;
+                flex: 0 0 219px;
             }
             &_submit, &_reset {
                 flex: 0 0 129.33px;
@@ -2353,10 +2354,19 @@ body {
     }
     .list-price {
         counter-reset: myCounter;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         &__item {
+            flex: 0 0 33.333%;
             padding: 0 0 0 90px;
             list-style: none;
-            margin: 0 0 64px 0;
+            margin: 0 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             position: relative;
             &:before {
                 counter-increment: myCounter;
@@ -2368,19 +2378,70 @@ body {
                 font-size: 50px;
                 color: rgba(255, 255, 255, 1);
                 position: absolute;
-                top: -18px;
+                top: 50%;
                 left: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transform: translate(0, -50%);
             }
             &:last-child {
+                margin: 0;
+            }
+            p {
                 margin: 0;
             }
         }
     }
     @media (max-width: 1400px) {
-
+        &__form {
+            flex: 0 0 445px;
+        }
+        .form {
+            &__title {
+                font-size: 24px;
+                line-height: 29px;
+                margin: 0 0 30px 0;
+            }
+            &__input {
+                height: 27px;
+                &_name {
+                    flex: 0 0 178px !important;
+                    margin: 0 12px 0 0;
+                }
+                &_tel {
+                    flex: 0 0 170px !important;
+                }
+            }
+        }
+        &__offer {
+            padding: 10px 0 10px 0;
+        }
+    }
+    @media (max-width: $md1 + px) {
+        &__form {
+            margin: -12px 0 -12px 198px;
+            padding: 35px 30px 20px 30px;
+            &:after {
+                width: 9.3px;
+            }
+        }
+        &__offer {
+            font-size: 14px;
+        }
+        .price__list {
+            padding: 0 0 0 20px;
+        }
+        .list-price {
+            &__item {
+                padding: 0 0 0 75px;
+                &:before {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 34px;
+                }
+            }
+        }
     }
 }
 //========================================
