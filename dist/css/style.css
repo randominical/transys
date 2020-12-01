@@ -3850,6 +3850,10 @@ body {
   .team__article {
     margin: 0 0 40px 0;
   }
+
+  .recommendation {
+    padding: 60px 0 30px 0;
+  }
 }
 
 @media (max-width: 410px) {
