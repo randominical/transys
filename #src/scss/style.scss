@@ -2537,6 +2537,22 @@ body {
             }
         }
     }
+    @media (max-width: $md4 + px) {
+        &:before {
+            width: 100%;
+        }
+        &__form {
+            padding: 37px 20px 30px 40px;
+        }
+        &__offer {
+            background: transparent;
+        }
+        .list-price {
+            width: 100%;
+            padding: 35px 0;
+        }
+    }
+
 }
 //========================================
 .map {
