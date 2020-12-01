@@ -2583,19 +2583,20 @@ body {
         justify-content: space-between;
     }
     &__left {
-        flex: 0 0 25%;
+        flex: 0 0 auto;
         padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 0 30px 0 0;
     }
     &__main {
-        flex: 0 0 75%;
+        flex: 0 1 65%;
         display: flex;
     }
     &__middle {
         display: flex;
-        margin: 0 40px 0 0;
+        margin: 0;
     }
     &__right {
         flex: 1 0 50%;
@@ -2605,8 +2606,7 @@ body {
     &__column {
         margin: 0 40px 0 0;
         padding: 20px 0 0 0;
-        &:last-child {
-            text-align: right;
+        &_s {
             margin: 0;
         }
     }
@@ -2657,6 +2657,11 @@ body {
             color: rgba(0, 141, 210, 1);
         }
     }
+    @media (max-width: 1300px) {
+        &__main {
+            flex: 0 1 75%;
+        }
+    }
     @media (max-width: $md1 + px) {
         padding: 21px 0 10px 0;
         &__logo {
@@ -2669,14 +2674,15 @@ body {
         &__left {
             flex: 0 0 auto;
         }
+        &__main {
+            flex: 0 1 85%;
+        }
         &__column {
-            &:last-child {
-                flex: 0 0 auto;
+            margin: 0 25px 0 0;
+            &_s {
+                margin: 0;
             }
         }
-    }
-    @media (max-width: $md2 + px) {
-
     }
 }
 //========================================
