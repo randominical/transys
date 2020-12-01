@@ -2226,6 +2226,26 @@ body {
             }
         }
     }
+    @media (max-width: $md3 + px) {
+        padding: 60px 0 57px 0;
+        &__title {
+            margin: 0 0 5px 0;
+        }
+        .title_b {
+            &:before, &::after {
+                width: 45px;
+            }
+        }
+        &__partners {
+            margin: 0 0 16px 0;
+        }
+        &__logo {
+            flex: 0 1 25%;
+            &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+                display: none;
+            }
+        }
+    }
 }
 //========================================
 .price {
