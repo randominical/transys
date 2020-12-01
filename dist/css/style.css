@@ -1659,7 +1659,6 @@ body {
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #008dd2), color-stop(50%, #008dd2), color-stop(50%, #0a6397), to(#0a6397));
   background: -o-linear-gradient(left, #008dd2 0, #008dd2 50%, #0a6397 50%, #0a6397 100%);
   background: linear-gradient(to right, #008dd2 0, #008dd2 50%, #0a6397 50%, #0a6397 100%);
-  z-index: 10;
 }
 
 .team__portrait:last-child {
