@@ -2258,6 +2258,7 @@ body {
         display: flex;
     }
     &__form {
+        height: auto;
         flex: 0 0 573px;
         background: rgba(0, 60, 95, 1);
         margin: -15px 0 -15px 320px;
@@ -2313,6 +2314,9 @@ body {
             width: 100%;
             display: flex;
             margin: 0 0 40px 0;
+            &_2 {
+                margin: 0;
+            }
         }
         &__input {
             height: 32px;
@@ -2358,6 +2362,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: flex-start;
         &__item {
             flex: 0 0 33.333%;
             padding: 0 0 0 90px;
@@ -2416,9 +2421,6 @@ body {
                     width: 125px !important;
                     height: 30px;
                 }
-                &_reset {
-                    display: none;
-                }
             }
         }
         &__offer {
@@ -2468,13 +2470,69 @@ body {
             &__row {
                 display: block;
                 width: 225px;
-                margin: 00 0 24px;
+                margin: 0 0 24px 0;
+                &_2 {
+                    margin: 0;
+                }
             }
             &__input {
                 width: 100%;
                 flex: 0 0 27px;
                 &_name {
                     margin: 0 0 9px 0;
+                }
+                &_reset {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (max-width: $md3 + px) {
+        position: relative;
+        &:before {
+            content: '';
+            height: 9.6px;
+            width: 60%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background:linear-gradient(to right,  rgba(0, 141, 210, 1) 0,rgba(0, 141, 210, 1) 33%, rgba(10, 99, 151, 1) 33%, rgba(10, 99, 151, 1) 66%, rgba(0, 60, 95, 1) 66%,  rgba(0, 60, 95, 1));
+        }
+        .container {
+            flex-direction: column-reverse;
+        }
+        &__form {
+            margin: 0 -20px 0 -20px;
+            padding: 20px 105px 20px 110px;
+            justify-content: center;
+            &:after {
+                display: none;
+            }
+        }
+        .form {
+            &__row {
+                width: 80%;
+                min-width: 225px;
+            }
+            &__pic {
+                display: none;
+            }
+        }
+        &__offer {
+            max-width: 100%;
+            background: url('../img/price.png') left/auto 100% no-repeat;
+            display: flex;
+            align-items: flex-end;
+        }
+        .list-price {
+            width: 60%;
+            &__item {
+                padding: 0 0 0 60px;
+                margin: 0 0 20px 0;
+                &:before {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 34px;
                 }
             }
         }
