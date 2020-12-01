@@ -2684,6 +2684,22 @@ body {
             }
         }
     }
+    @media (max-width: $md2 + px) {
+        &__main {
+            flex: 0 0 auto;
+            justify-content: space-between;
+        }
+        &__middle, &__right {
+            flex-direction: column;
+            flex: 0 0 auto;
+        }
+        &__middle {
+            margin: 0 65px 0 0;
+        }
+        &__column {
+            margin: 0;
+        }
+    }
 }
 //========================================
 @keyframes arrow {
