@@ -2256,18 +2256,6 @@ body {
     color: rgba(255, 255, 255, 1);
     .container {
         display: flex;
-        position: relative;
-    }
-    &__pic {
-        position: absolute;
-        left: 80px;
-        bottom: 0;
-        height: 110%;
-        z-index: 1;
-        img {
-            height: 100%;
-            width: auto;
-        }
     }
     &__form {
         background: rgba(0, 60, 95, 1);
@@ -2303,6 +2291,17 @@ body {
         }
     }
     .form {
+        &__pic {
+            position: absolute;
+            right: calc(100% - 30px);
+            bottom: 0;
+            height: 110%;
+            z-index: 1;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
         &__title {
             font-weight: 600;
             font-size: 36px;
@@ -2379,6 +2378,9 @@ body {
                 margin: 0;
             }
         }
+    }
+    @media (max-width: 1400px) {
+
     }
 }
 //========================================
