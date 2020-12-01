@@ -1754,7 +1754,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #181a18;
-  margin: 5px;
+  margin: 0 5px 0 0;
   padding: 0 0 0 24px;
   background: url("../img/recommendation/user.svg") 0 0/14.67px 14.67px no-repeat;
 }
@@ -1769,6 +1769,7 @@ body {
 }
 
 .recommendation .item-slider__raiting {
+  padding: 5px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1804,6 +1805,7 @@ body {
 }
 
 .recommendation__logos {
+  height: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1813,11 +1815,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .recommendation__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+  max-height: 100%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+.recommendation__logo img {
+  width: 100%;
+  height: auto;
 }
 
 .price {
@@ -2215,6 +2227,10 @@ body {
   .types__row:last-child {
     height: 370px;
     background: url("../img/types/types_cloud_1.svg") top 16% right 20%/109px auto no-repeat, url("../img/types/types_cloud_2.svg") left 33% top 28%/255px auto no-repeat, url("../img/types/types_cloud_4.svg") left 42% top 16%/114px auto no-repeat;
+  }
+
+  .recommendation .slider {
+    width: 90%;
   }
 }
 
@@ -2804,6 +2820,50 @@ body {
     width: 270px;
     height: 30px;
   }
+
+  .recommendation {
+    padding: 61px 0 50px 0;
+  }
+
+  .recommendation__title {
+    margin: 0 0 15px 0;
+  }
+
+  .recommendation .title_b:before,
+  .recommendation .title_b::after {
+    width: 237px;
+  }
+
+  .recommendation .title_b:before {
+    right: calc(100% + 50px);
+  }
+
+  .recommendation .title_b:after {
+    left: calc(100% + 50px);
+  }
+
+  .recommendation__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 42px 0;
+  }
+
+  .recommendation .slider {
+    margin: 0 auto 30px auto;
+  }
+
+  .recommendation .slider__item {
+    background: white;
+    padding: 20px;
+    margin: 0 15px 0 0;
+  }
+
+  .recommendation__partners {
+    font-size: 14px;
+    line-height: 17.07px;
+    margin: 0 0 40px 0;
+    padding: 10px 0 0 0;
+  }
 }
 
 @media (max-width: 1017px) {
@@ -2948,6 +3008,17 @@ body {
   .team .title_b:before,
   .team .title_b:after {
     width: 191px;
+  }
+
+  .recommendation__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 16%;
+            flex: 0 1 16%;
+  }
+
+  .recommendation__logo:nth-child(6),
+  .recommendation__logo:nth-child(7) {
+    display: none;
   }
 }
 

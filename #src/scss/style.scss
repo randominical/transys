@@ -2081,7 +2081,7 @@ body {
         }
         .slick-slide:not(.slick-active) {
             opacity: 0.5;
-         }
+        }
         &__item {
             background: rgba(255, 255, 255, 1);
             padding: 29px 29px 60px 29px;
@@ -2099,7 +2099,7 @@ body {
             font-size: 16px;
             line-height: 18px;
             color: rgba(24, 26, 24, 1);
-            margin: 5px;   
+            margin: 0 5px 0 0;   
             padding: 0 0 0 24px;
             background: url('../img/recommendation/user.svg') 0 0/14.67px 14.67px no-repeat;         
         }
@@ -2111,6 +2111,7 @@ body {
             margin: 0;
         }
         &__raiting {
+            padding: 5px 0 0 0;
             display: flex;
             span {
                 background: url('../img/recommendation/icon_n.svg') center/contain no-repeat;
@@ -2140,12 +2141,69 @@ body {
         padding: 20px 0 0 0;
     }
     &__logos {
+        height: 77px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        overflow: hidden;
     }
     &__logo {
+        flex: 0 1 10%;
+        max-height: 100%;
         filter: grayscale(1);
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media (max-width: 1400px) {
+        .slider {
+            width: 90%;
+        }
+    }
+    @media (max-width: $md1 + px) {
+        padding: 61px 0 50px 0;
+        &__title {
+            margin: 0 0 15px 0;
+        }
+        .title_b {
+            &:before, &::after {
+                width: 237px;
+            }
+            &:before {
+                right: calc(100% + 50px);
+            }
+            &:after {
+                left: calc(100% + 50px);
+            }
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0 0 42px 0;
+        }
+        .slider {
+            margin: 0 auto 30px auto;
+            &__item {
+                background: rgba(255, 255, 255, 1);
+                padding: 20px;
+                margin: 0 15px 0 0;
+            }
+        }
+        &__partners {
+            font-size: 14px;
+            line-height: 17.07px;
+            margin: 0 0 40px 0;
+            padding: 10px 0 0 0;
+        }
+    }
+    @media (max-width: $md2 + px) {
+        &__logo {
+            flex: 0 1 16%;
+            &:nth-child(6), &:nth-child(7) {
+                display: none;
+            }
+        }
     }
 }
 //========================================
