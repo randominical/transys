@@ -4153,6 +4153,11 @@ body {
     top: 35%;
     left: 41%;
   }
+
+  .price .form__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 280px) {
