@@ -7,5 +7,13 @@ $(document).ready(function(){
       slidesToShow: 3,
       infinite: true,
       swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
   });
 });
