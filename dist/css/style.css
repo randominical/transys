@@ -1718,7 +1718,7 @@ body {
 }
 
 .recommendation .slider {
-  width: 65%;
+  width: 1240px;
   margin: 0 auto 31px auto;
 }
 
@@ -2231,7 +2231,7 @@ body {
   }
 
   .recommendation .slider {
-    width: 90%;
+    width: 1000px;
   }
 }
 
