@@ -2103,15 +2103,40 @@ body {
           justify-content: space-between;
 }
 
+.footer__main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 40px 0 0;
+}
+
+.footer__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer__column {
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
   padding: 20px 0 0 0;
 }
 
 .footer__column:last-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16%;
-          flex: 0 0 16%;
   text-align: right;
   margin: 0;
 }
@@ -2142,6 +2167,12 @@ body {
 
 .footer__address {
   font-style: normal;
+}
+
+.footer__iconbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__soc {

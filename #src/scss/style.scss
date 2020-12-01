@@ -2589,11 +2589,23 @@ body {
         flex-direction: column;
         justify-content: space-between;
     }
+    &__main {
+        flex: 0 0 75%;
+        display: flex;
+    }
+    &__middle {
+        display: flex;
+        margin: 0 40px 0 0;
+    }
+    &__right {
+        flex: 1 0 50%;
+        display: flex;
+        justify-content: space-between;
+    }
     &__column {
-        margin: 0 20px 0 0;
+        margin: 0 40px 0 0;
         padding: 20px 0 0 0;
         &:last-child {
-            flex: 0 0 16%;
             text-align: right;
             margin: 0;
         }
@@ -2620,6 +2632,9 @@ body {
     }
     &__address {
         font-style: normal;
+    }
+    &__iconbar {
+        display: flex;
     }
     &__soc {
         font-family: 'Icon1';
