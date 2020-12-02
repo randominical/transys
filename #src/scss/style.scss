@@ -2335,6 +2335,12 @@ body {
 .price {
     background: rgba(18, 120, 180, 1);
     color: rgba(255, 255, 255, 1);
+    position: relative;
+    &__anchor {
+        position: absolute;
+        left: 0;
+        bottom: calc(100% + 50px);
+    }
     .container {
         display: flex;
     }
@@ -2574,7 +2580,9 @@ body {
         }
     }
     @media (max-width: $md3 + px) {
-        position: relative;
+        &__anchor {
+            top: 0px;
+        }
         &:before {
             content: '';
             height: 9.6px;

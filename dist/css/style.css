@@ -1838,6 +1838,13 @@ body {
 .price {
   background: #1278b4;
   color: white;
+  position: relative;
+}
+
+.price__anchor {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 50px);
 }
 
 .price .container {
@@ -3818,8 +3825,8 @@ body {
     display: none;
   }
 
-  .price {
-    position: relative;
+  .price__anchor {
+    top: 0px;
   }
 
   .price:before {
