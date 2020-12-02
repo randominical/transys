@@ -1650,28 +1650,29 @@ body {
         }
         &__feature {
             flex: 0 0 33.333%;
-                padding: 0 0 0 90px;
-                list-style: none;
-                margin: 0 0 64px 0;
-                position: relative;
-                &:last-child {
-                    margin: 0;
-                }
-                &:before {
-                    counter-increment: myCounter;
-                    content:counter(myCounter);
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 50%;
-                    border: 1px solid rgba(10, 99, 151, 1);
-                    font-size: 50px;
+            padding: 0 0 0 90px;
+            list-style: none;
+            margin: 0 0 64px 0;
+            position: relative;
+            &:last-child {
+                margin: 0;
+            }
+            &:before {
+                counter-increment: myCounter;
+                content:counter(myCounter);
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                border: 1px solid rgba(10, 99, 151, 1);
+                font-size: 50px;
                 color: rgba(0, 141, 210, 1);
                 position: absolute;
-                top: -18px;
+                top: 50%;
                 left: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transform: translate(0, -50%);    
             }
         }
         &__pic {
@@ -1776,7 +1777,6 @@ body {
                     width: 49.4px;
                     height: 49.4px;
                     font-size: 27px;
-                    top: -12px;
                 }
             }
         }
@@ -1849,7 +1849,7 @@ body {
         }
     }
     @media (max-width: $md4 + px) {
-        padding: 57px 0 20px 0;
+        padding: 57px 0 0 0;
         .title_b {
             &:before {
                 right: calc(100% + 20px);
@@ -1863,13 +1863,16 @@ body {
         }
         &__accordion {
             display: block;
+            padding: 0 26px;
         }
         .accordion {
             &__title {
+                height: 65px;
                 text-transform: capitalize;
                 color: rgba(55, 65, 72, 1);
                 display: flex;
                 align-items: center;
+                margin: 0;
                 &.active {
                     font-weight: 600;
                     .accordion__icon {
@@ -1895,6 +1898,7 @@ body {
                 width: 39.8px;
                 height: 39.8px;
                 border-radius: 50%;
+                margin: 0 37px 0 0;
                 &_1 {
                     background:  rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_1.svg') center/22px no-repeat !important;
                 }
@@ -1912,7 +1916,48 @@ body {
                 }
             }
             &__content {
+                background: #F1F1F1;
+                box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.15);
+                margin: 0 -46px;
+                padding: 35px 46px 35px 0;
                 display: none;
+            }
+            &__list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 0;
+                counter-reset: myCounter;
+            }
+            &__li {
+                flex: 0 0 33.333%;
+                font-size: 12px;
+                line-height: 15px;
+                color: rgba(55, 65, 72, 1);
+                padding: 0 0 0 80px;
+                list-style: none;
+                margin: 0 0 45px 0;
+                position: relative;
+                &:last-child {
+                    margin: 0;
+                }
+                &:before {
+                    counter-increment: myCounter;
+                    content:counter(myCounter);
+                    width: 49.4px;
+                    height: 49.4px;
+                    border-radius: 50%;
+                    border: 1px solid rgba(10, 99, 151, 1);
+                    font-size: 40px;
+                    color: rgba(0, 141, 210, 1);
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translate(0, -50%);    
+                }
             }
         }
     }
