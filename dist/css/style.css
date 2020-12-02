@@ -3282,6 +3282,10 @@ body {
     display: none;
   }
 
+  .footer {
+    padding: 27px 0 36px 0;
+  }
+
   .footer__main {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
