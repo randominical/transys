@@ -1402,7 +1402,7 @@ body {
     }
     @media (max-width: $md2 + px) {
         background: url('../img/quality/quality_plane.svg') 77% 41%/242px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 37% 34%/153px auto no-repeat, url('../img/quality/quality_cloud_2.svg') 100% 46%/216px auto no-repeat, url('../img/quality/quality_cloud_2.svg') right 103% top 53%/216px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 29% 61%/131px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 85% 73%/131px auto no-repeat, url('../img/quality/quality_cloud_1.svg') 37% 77%/79px auto no-repeat, url('../img/quality/quality_cloud_3.svg') 31% 79%/90px auto no-repeat, url('../img/quality/quality_ship.svg') right 115% bottom 100px/544px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 370px, rgba(10, 99, 151, 1) 370px, rgba(10, 99, 151, 1));
-        padding: 0 0 50px 0;
+        padding: 20px 0 50px 0;
         &__body {
             margin: -150px 0 40px 0;
         }
