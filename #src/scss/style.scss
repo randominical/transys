@@ -1503,6 +1503,14 @@ body {
     @media (max-width: 410px) {
         background: url('../img/quality/quality_cloud_2.svg') 15% 285px/130px auto no-repeat, url('../img/quality/quality_cloud_4.svg') 0% 340px/70px auto no-repeat, linear-gradient(170deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 290px, rgba(10, 99, 151, 1) 290px, rgba(10, 99, 151, 1));
     }
+    @media (max-width: $md5 + px) {
+        &__slogan {
+            margin: 0 0 20px 0;
+        }
+        &__contact {
+            padding: 0 120px 0 0;
+        }
+    }
 }
 //========================================
 .photos {

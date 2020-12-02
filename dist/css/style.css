@@ -4458,6 +4458,14 @@ body {
     left: 41%;
   }
 
+  .quality__slogan {
+    margin: 0 0 20px 0;
+  }
+
+  .quality__contact {
+    padding: 0 120px 0 0;
+  }
+
   .price .form__title {
     font-size: 16px;
     line-height: 20px;
