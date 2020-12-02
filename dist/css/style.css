@@ -2114,6 +2114,7 @@ body {
 }
 
 .footer__middle {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2124,6 +2125,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2139,6 +2141,7 @@ body {
 
 .footer__column_s {
   margin: 0;
+  padding: 0;
 }
 
 .footer__logo {
@@ -2158,6 +2161,7 @@ body {
   line-height: 12px;
   color: #757e85;
   padding: 0 0 0 19px;
+  margin: 0;
 }
 
 .footer__tel {
@@ -3290,7 +3294,6 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    height: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -4249,6 +4252,54 @@ body {
     width: 100%;
     padding: 35px 0;
   }
+
+  .footer {
+    padding: 28px 0 15px 0;
+  }
+
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .footer__main {
+    margin: 0 0 20px 0;
+  }
+
+  .footer__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .footer__middle {
+    margin: 0 10px 0 0;
+  }
+
+  .footer__right {
+    max-width: 120px;
+  }
+
+  .footer__logo {
+    margin: 0 0 10px 0;
+  }
+
+  .footer__iconbar {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .footer__soc {
+    margin: 0 5px 0 0;
+  }
 }
 
 @media (max-width: 410px) {
@@ -4314,6 +4365,10 @@ body {
   .price .form__title {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .footer .if_icon {
+    padding: 0 0 0 20px;
   }
 }
 
