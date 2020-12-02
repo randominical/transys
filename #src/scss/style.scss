@@ -1865,7 +1865,53 @@ body {
             display: block;
         }
         .accordion {
-            .content {
+            &__title {
+                text-transform: capitalize;
+                color: rgba(55, 65, 72, 1);
+                display: flex;
+                align-items: center;
+                &.active {
+                    font-weight: 600;
+                    .accordion__icon {
+                        &_1 {
+                            background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_1.svg') center/22px no-repeat !important;
+                        }
+                        &_2 {
+                            background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_2.svg') center/20.4px no-repeat !important;
+                        }
+                        &_3 {
+                            background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_3.svg') center/20.1px no-repeat !important;
+                        }
+                        &_4 {
+                            background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_4.svg') center/20.9px no-repeat !important;
+                        }
+                        &_5 {
+                            background: rgba(10, 99, 151, 1) url('../img/guarantee/icons_h/guarantee_5.svg') center/18.33px no-repeat !important;
+                        }
+                    }
+                }
+            }
+            &__icon {
+                width: 39.8px;
+                height: 39.8px;
+                border-radius: 50%;
+                &_1 {
+                    background:  rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_1.svg') center/22px no-repeat !important;
+                }
+                &_2 {
+                    background:  rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_2.svg') center/20.4px no-repeat !important;
+                }
+                &_3 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_3.svg') center/20.1px no-repeat !important;
+                }
+                &_4 {
+                    background: rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_4.svg') center/20.9px no-repeat !important;
+                }
+                &_5 {
+                    background:  rgba(241, 241, 241, 1) url('../img/guarantee/icons_n/guarantee_5.svg') center/18.33px no-repeat !important;
+                }
+            }
+            &__content {
                 display: none;
             }
         }
