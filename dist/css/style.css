@@ -3879,6 +3879,32 @@ body {
     height: 40px;
     font-size: 34px;
   }
+
+  .footer {
+    padding: 30px 0 18px 0;
+  }
+
+  .footer__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 124px;
+            flex: 0 0 124px;
+  }
+
+  .footer__middle {
+    margin: 0 20px 0 0;
+  }
+
+  .footer__right {
+    max-width: 130px;
+  }
+
+  .footer__logo {
+    width: 124px;
+  }
+
+  .footer .if_icon {
+    padding: 0 0 0 26px;
+  }
 }
 
 @media (max-width: 500px) {

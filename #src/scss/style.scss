@@ -2708,6 +2708,24 @@ body {
             }
         }
     }
+    @media (max-width: $md3 + px) {
+        padding: 30px 0 18px 0;
+        &__left {
+            flex: 0 0 124px;
+        }
+        &__middle {
+            margin: 0 20px 0 0;
+        }
+        &__right {
+            max-width: 130px;
+        }
+        &__logo {
+            width: 124px;
+        }
+        .if_icon {
+            padding: 0 0 0 26px;
+        }
+    }
 }
 //========================================
 @keyframes arrow {
