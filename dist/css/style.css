@@ -640,7 +640,7 @@ body {
 
 .container_s {
   max-width: 1280px;
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .main {
@@ -707,6 +707,48 @@ body {
 .link-blue:hover {
   color: #003d61;
   background: white;
+}
+
+.up {
+  background: white;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.15), -2px -2px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.15), -2px -2px 5px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 60px;
+  height: 55px;
+  border-radius: 20px;
+  right: 60px;
+  bottom: 30px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  z-index: 10;
+}
+
+.up__arrow {
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid #003d61;
+  border-left: 5px solid #003d61;
+  -webkit-transform: rotate(45deg) translate(26px, 4px);
+      -ms-transform: rotate(45deg) translate(26px, 4px);
+          transform: rotate(45deg) translate(26px, 4px);
+}
+
+.up.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.up:hover {
+  background: #003d61;
+}
+
+.up:hover .up__arrow {
+  border-top: 5px solid white;
+  border-left: 5px solid white;
 }
 
 .header {
@@ -842,7 +884,7 @@ body {
 }
 
 .header .body-menu__link {
-  margin: 0 1px;
+  margin: 0 15px;
   padding: 17px 3px;
   white-space: nowrap;
 }
@@ -1028,7 +1070,7 @@ body {
 }
 
 .benefits {
-  padding: 114px 0 200px 0;
+  padding: 114px 0 240px 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(43.05%, #cfd4db), to(rgba(186, 193, 201, 0)));
   background: -o-linear-gradient(top, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
   background: linear-gradient(180deg, #cfd4db 43.05%, rgba(186, 193, 201, 0) 100%);
@@ -1111,7 +1153,7 @@ body {
 }
 
 .types {
-  margin: -100px 0 0 0;
+  margin: -60px 0 0 0;
   padding: 18px 0 125px 0;
   background: url("../img/types/types_cloud_1.svg") right 6% top 7%/212px auto no-repeat, url("../img/types/types_cloud_2.svg") 5% 12%/299px auto no-repeat, url("../img/types/types_cloud_1.svg") 8% 33%/212px auto no-repeat, url("../img/types/types_cloud_1.svg") 15% 64%/109px auto no-repeat;
 }
@@ -1276,13 +1318,13 @@ body {
 .quality {
   background: url("../img/quality/quality_cloud_1.svg") 97% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 89% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 4% 72%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 0% 61%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 1% 76%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 10% 65%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 39% 69.5%/180px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 63% 59%/100px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 91% 55%/180px auto no-repeat, url("../img/quality/quality_ship.svg") 99% 68%/755px auto no-repeat, -o-linear-gradient(280deg, white 0, white 605px, #0a6397 605px, #0a6397);
   background: url("../img/quality/quality_cloud_1.svg") 97% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 89% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 4% 72%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 0% 61%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 1% 76%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 10% 65%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 39% 69.5%/180px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 63% 59%/100px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 91% 55%/180px auto no-repeat, url("../img/quality/quality_ship.svg") 99% 68%/755px auto no-repeat, linear-gradient(170deg, white 0, white 605px, #0a6397 605px, #0a6397);
-  padding: 80px 0 100px 0;
+  padding: 20px 0 100px 0;
 }
 
 .quality__top {
   background: url("../img/quality/quality_main.png") 0 -50px/358px no-repeat;
   max-width: 920px;
-  height: 698px;
+  height: 800px;
   padding: 20px 0 0 350px;
 }
 
@@ -2284,8 +2326,8 @@ body {
   }
 
   .quality {
-    background: url("../img/quality/quality_cloud_1.svg") 105% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 97% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 4% 72%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 0% 60%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 1% 76%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") right 101% top 65%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 39% 69.5%/180px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 50% 59%/100px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 103% 55%/180px auto no-repeat, url("../img/quality/quality_ship.svg") 99% 67%/755px auto no-repeat, -o-linear-gradient(280deg, white 0, white 605px, #0a6397 605px, #0a6397);
-    background: url("../img/quality/quality_cloud_1.svg") 105% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 97% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 4% 72%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 0% 60%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 1% 76%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") right 101% top 65%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 39% 69.5%/180px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 50% 59%/100px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 103% 55%/180px auto no-repeat, url("../img/quality/quality_ship.svg") 99% 67%/755px auto no-repeat, linear-gradient(170deg, white 0, white 605px, #0a6397 605px, #0a6397);
+    background: url("../img/quality/quality_cloud_1.svg") 105% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 97% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 4% 72%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 0% 60%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 1% 76%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") right 101% top 65%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 39% 69.5%/180px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 50% 59%/100px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 103% 55%/180px auto no-repeat, url("../img/quality/quality_ship.svg") 99% 68%/735px auto no-repeat, -o-linear-gradient(280deg, white 0, white 605px, #0a6397 605px, #0a6397);
+    background: url("../img/quality/quality_cloud_1.svg") 105% 32%/211px auto no-repeat, url("../img/quality/quality_plane.svg") 65% 41%/370px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 97% 41%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 94% 45%/103px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 19% 51%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 4% 72%/299px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 0% 60%/299px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 1% 76%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") right 101% top 65%/120px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 39% 69.5%/180px auto no-repeat, url("../img/quality/quality_cloud_4.svg") 50% 59%/100px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 103% 55%/180px auto no-repeat, url("../img/quality/quality_ship.svg") 99% 68%/735px auto no-repeat, linear-gradient(170deg, white 0, white 605px, #0a6397 605px, #0a6397);
   }
 }
 
@@ -2313,6 +2355,10 @@ body {
 
   .header__logo {
     margin: 0 15px 0 0;
+  }
+
+  .header .body-menu__link {
+    margin: 0 7px;
   }
 }
 
@@ -2408,6 +2454,10 @@ body {
             flex: 0 1 180px;
   }
 
+  .header .body-menu__link {
+    margin: 0 5px;
+  }
+
   .types__column {
     margin: 0;
   }
@@ -2457,6 +2507,10 @@ body {
   .title_section {
     font-size: 30px;
     line-height: 25px;
+  }
+
+  .up {
+    display: none;
   }
 
   .header {
@@ -2691,26 +2745,6 @@ body {
     margin: 0 8% 0 0;
   }
 
-  .benefits:before {
-    height: 15px;
-  }
-
-  .benefits .title_b:before,
-  .benefits .title_b:after {
-    width: 214px;
-  }
-
-  .benefits__li {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .benefits__li img {
-    width: 45px;
-    height: 45px;
-    margin: 0 37px 0 0;
-  }
-
   .types {
     background: url("../img/types/types_cloud_1.svg") right 14% top 10%/127px auto no-repeat, url("../img/types/types_cloud_2.svg") 11% 8%/180px auto no-repeat;
   }
@@ -2758,8 +2792,8 @@ body {
   }
 
   .quality {
-    background: url("../img/quality/quality_cloud_1.svg") 88% 350px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/131px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/217px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") right 101% bottom 100px/544px auto no-repeat, -o-linear-gradient(280deg, white 0, white 420px, #0a6397 420px, #0a6397);
-    background: url("../img/quality/quality_cloud_1.svg") 88% 350px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/131px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/217px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") right 101% bottom 100px/544px auto no-repeat, linear-gradient(170deg, white 0, white 420px, #0a6397 420px, #0a6397);
+    background: url("../img/quality/quality_cloud_1.svg") 88% 320px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/131px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/217px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") right 101% bottom 100px/544px auto no-repeat, -o-linear-gradient(280deg, white 0, white 420px, #0a6397 420px, #0a6397);
+    background: url("../img/quality/quality_cloud_1.svg") 88% 320px/79px auto no-repeat, url("../img/quality/quality_plane.svg") 77% 41%/242px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 40% 35%/153px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 88% 46%/216px auto no-repeat, url("../img/quality/quality_cloud_2.svg") 11% 52%/216px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 25% 55%/131px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 68% 63%/131px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 82% 66%/217px auto no-repeat, url("../img/quality/quality_cloud_1.svg") 34% 75%/79px auto no-repeat, url("../img/quality/quality_cloud_3.svg") 30% 77%/90px auto no-repeat, url("../img/quality/quality_ship.svg") right 101% bottom 100px/544px auto no-repeat, linear-gradient(170deg, white 0, white 420px, #0a6397 420px, #0a6397);
     padding: 30px 0 50px 0;
   }
 
@@ -2812,6 +2846,140 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 285px;
             flex: 0 0 285px;
+  }
+
+  .recommendation {
+    padding: 61px 0 80px 0;
+  }
+
+  .recommendation__title {
+    margin: 0 0 15px 0;
+  }
+
+  .recommendation .title_b:before,
+  .recommendation .title_b::after {
+    width: 237px;
+  }
+
+  .recommendation .title_b:before {
+    right: calc(100% + 50px);
+  }
+
+  .recommendation .title_b:after {
+    left: calc(100% + 50px);
+  }
+
+  .recommendation__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 42px 0;
+  }
+
+  .recommendation .slider__item {
+    background: white;
+    padding: 20px;
+    margin: 0 15px 0 0;
+  }
+
+  .recommendation__partners {
+    font-size: 14px;
+    line-height: 17.07px;
+    margin: 0 0 40px 0;
+    padding: 20px 0 0 0;
+  }
+
+  .price__form {
+    margin: -12px 0 -12px 198px;
+    padding: 35px 30px 20px 30px;
+  }
+
+  .price__form:after {
+    width: 9.3px;
+  }
+
+  .price .form__pic {
+    bottom: 12px;
+  }
+
+  .price__offer {
+    font-size: 14px;
+  }
+
+  .price .price__list {
+    padding: 0 0 0 20px;
+  }
+
+  .price .list-price__item {
+    padding: 0 0 0 75px;
+  }
+
+  .price .list-price__item:before {
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+  }
+
+  .footer {
+    padding: 21px 0 10px 0;
+  }
+
+  .footer__logo {
+    width: 163px;
+    margin: 0 0 12px 0;
+  }
+
+  .footer__copy {
+    padding: 0;
+  }
+
+  .footer__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+
+  .footer__main {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 85%;
+            flex: 0 1 85%;
+  }
+
+  .footer__column {
+    margin: 0 25px 0 0;
+  }
+
+  .footer__column_s {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1199.98px), (max-height: 800px) {
+  .benefits {
+    padding: 77px 0 !important;
+  }
+
+  .benefits:before {
+    height: 15px;
+  }
+
+  .benefits__title {
+    margin: 0 0 65px 0;
+  }
+
+  .benefits .title_b:before,
+  .benefits .title_b:after {
+    width: 214px;
+  }
+
+  .benefits__li {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .benefits__li img {
+    width: 45px;
+    height: 45px;
+    margin: 0 37px 0 0;
   }
 
   .guarantee {
@@ -2964,110 +3132,6 @@ body {
   .team__link {
     width: 270px;
     height: 30px;
-  }
-
-  .recommendation {
-    padding: 61px 0 80px 0;
-  }
-
-  .recommendation__title {
-    margin: 0 0 15px 0;
-  }
-
-  .recommendation .title_b:before,
-  .recommendation .title_b::after {
-    width: 237px;
-  }
-
-  .recommendation .title_b:before {
-    right: calc(100% + 50px);
-  }
-
-  .recommendation .title_b:after {
-    left: calc(100% + 50px);
-  }
-
-  .recommendation__subtitle {
-    font-size: 14px;
-    line-height: 17px;
-    margin: 0 0 42px 0;
-  }
-
-  .recommendation .slider__item {
-    background: white;
-    padding: 20px;
-    margin: 0 15px 0 0;
-  }
-
-  .recommendation__partners {
-    font-size: 14px;
-    line-height: 17.07px;
-    margin: 0 0 40px 0;
-    padding: 20px 0 0 0;
-  }
-
-  .price__form {
-    margin: -12px 0 -12px 198px;
-    padding: 35px 30px 20px 30px;
-  }
-
-  .price__form:after {
-    width: 9.3px;
-  }
-
-  .price .form__pic {
-    bottom: 12px;
-  }
-
-  .price__offer {
-    font-size: 14px;
-  }
-
-  .price .price__list {
-    padding: 0 0 0 20px;
-  }
-
-  .price .list-price__item {
-    padding: 0 0 0 75px;
-  }
-
-  .price .list-price__item:before {
-    width: 50px;
-    height: 50px;
-    font-size: 34px;
-  }
-
-  .footer {
-    padding: 21px 0 10px 0;
-  }
-
-  .footer__logo {
-    width: 163px;
-    margin: 0 0 12px 0;
-  }
-
-  .footer__copy {
-    padding: 0;
-  }
-
-  .footer__left {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
-
-  .footer__main {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 85%;
-            flex: 0 1 85%;
-  }
-
-  .footer__column {
-    margin: 0 25px 0 0;
-  }
-
-  .footer__column_s {
-    margin: 0;
   }
 }
 
@@ -3533,7 +3597,7 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(13.05%, #cfd4db), color-stop(37%, rgba(186, 193, 201, 0)), to(white));
     background: -o-linear-gradient(top, #cfd4db 13.05%, rgba(186, 193, 201, 0) 37%, white);
     background: linear-gradient(180deg, #cfd4db 13.05%, rgba(186, 193, 201, 0) 37%, white);
-    padding: 77px 0 50px 0;
+    padding: 77px 0 50px 0 !important;
   }
 
   .benefits__title {
@@ -4059,7 +4123,7 @@ body {
   }
 
   .benefits {
-    padding: 47px 0 50px 0;
+    padding: 47px 0 40px 0 !important;
   }
 
   .benefits__title {
@@ -4273,7 +4337,7 @@ body {
   }
 
   .guarantee .accordion__content {
-    background: #F1F1F1;
+    background: #f1f1f1;
     -webkit-box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.15);
     margin: 0 -46px;
@@ -4471,6 +4535,14 @@ body {
 
   .quality__contact {
     padding: 0 120px 0 0;
+  }
+
+  .quality__link {
+    width: 240px;
+  }
+
+  .guarantee .accordion__li {
+    margin: 0 0 30px 0;
   }
 
   .price .form__title {

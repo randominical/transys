@@ -5,3 +5,4 @@
 @@include('map.js');
 @@include('menu.js');
 @@include('accordion.js');
+@@include('up.js');
