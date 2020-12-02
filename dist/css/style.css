@@ -2745,6 +2745,10 @@ body {
     margin: 0 8% 0 0;
   }
 
+  .fullscreen {
+    background: url("../img/fullscreen_bg_s.jpg") center/cover no-repeat;
+  }
+
   .types {
     background: url("../img/types/types_cloud_1.svg") right 14% top 10%/127px auto no-repeat, url("../img/types/types_cloud_2.svg") 11% 8%/180px auto no-repeat;
   }
@@ -4078,10 +4082,6 @@ body {
 }
 
 @media (max-width: 479.98px) {
-  body.lock {
-    overflow: hidden;
-  }
-
   .header .menu__body {
     width: 100%;
     background: -o-linear-gradient(right, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);

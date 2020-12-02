@@ -47,8 +47,9 @@ body {
     display: flex;
     flex-direction: column;
     @media (max-width: $md4 + px) {
+//баг меню
         &.lock {
-            overflow: hidden;
+         //   overflow: hidden;
         }
     }
     @media (max-width: 280px) {
@@ -713,6 +714,9 @@ body {
                 margin: 0 0 20px 0;
             }
         }
+    }
+    @media (max-width: $md1 + px) {
+        background: url('../img/fullscreen_bg_s.jpg') center/cover no-repeat;
     }
     @media (max-width: $md2 + px), (max-height: 450px) {
         padding: 60px 0 10px 0;
