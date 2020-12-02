@@ -1607,6 +1607,10 @@ body {
   height: auto;
 }
 
+.guarantee__accordion {
+  display: none;
+}
+
 .team {
   background: url("../img/team/team_bg.jpg") center/cover no-repeat;
   padding: 76px 0 102px 0;
@@ -3466,10 +3470,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  body.lock {
-    overflow: hidden;
-  }
-
   .container {
     padding: 0 20px;
   }
@@ -3985,9 +3985,30 @@ body {
   .types__plane {
     top: 25%;
   }
+
+  .price:before {
+    width: 100%;
+  }
+
+  .price__form {
+    padding: 37px 20px 30px 40px;
+  }
+
+  .price__offer {
+    background: transparent;
+  }
+
+  .price .list-price {
+    width: 100%;
+    padding: 35px 0;
+  }
 }
 
 @media (max-width: 479.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .header .menu__body {
     width: 100%;
     background: -o-linear-gradient(right, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);
@@ -4170,51 +4191,14 @@ body {
   }
 
   .guarantee__tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .guarantee .tabs__captions {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 20px 0 0;
-  }
-
-  .guarantee .tabs__captions:before {
     display: none;
   }
 
-  .guarantee .tabs__caption {
-    margin: 0 0 5px 0;
+  .guarantee__accordion {
+    display: block;
   }
 
-  .guarantee .tabs__features {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100%;
-    padding: 20px 5px 20px 5px;
-    background: #F1F1F1;
-    -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
-    margin: 0 0 0 0;
-  }
-
-  .guarantee .tabs__feature {
-    margin: 0 0 20px 0;
-  }
-
-  .guarantee .tabs__pic {
+  .guarantee .accordion .content {
     display: none;
   }
 
@@ -4234,23 +4218,6 @@ body {
 
   .recommendation {
     padding: 60px 0 30px 0;
-  }
-
-  .price:before {
-    width: 100%;
-  }
-
-  .price__form {
-    padding: 37px 20px 30px 40px;
-  }
-
-  .price__offer {
-    background: transparent;
-  }
-
-  .price .list-price {
-    width: 100%;
-    padding: 35px 0;
   }
 
   .footer {

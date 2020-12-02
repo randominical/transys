@@ -46,7 +46,7 @@ body {
     background: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
-    @media (max-width: $md3 + px) {
+    @media (max-width: $md4 + px) {
         &.lock {
             overflow: hidden;
         }
@@ -1684,6 +1684,9 @@ body {
             }
         }
     }
+    &__accordion {
+        display: none;
+    }
     @media (max-width: $md1 + px) {
         padding: 60px 0 64px 0;
         &__title {
@@ -1856,33 +1859,13 @@ body {
             }
         }
         &__tabs {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            display: none;
         }
-        .tabs {
-            &__captions {
-                flex-direction: column;
-                margin: 0 20px 0 0;
-                &:before {
-                    display: none;
-                }
-            }
-            &__caption {
-                margin: 0 0 5px 0;
-            }
-            &__features {
-                flex-direction: column;
-                height: 100%;
-                padding: 20px 5px 20px 5px;
-                background: #F1F1F1;
-                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
-                margin: 0 0 0 0;
-            }
-            &__feature {
-                margin: 0 0 20px 0;
-            }
-            &__pic {
+        &__accordion {
+            display: block;
+        }
+        .accordion {
+            .content {
                 display: none;
             }
         }
@@ -2542,7 +2525,7 @@ body {
             }
         }
     }
-    @media (max-width: $md4 + px) {
+    @media (max-width: 500px) {
         &:before {
             width: 100%;
         }
