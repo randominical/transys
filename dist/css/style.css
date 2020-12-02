@@ -1983,6 +1983,7 @@ body {
 .price .form__input_submit {
   margin: 0 9.67px 0 0;
   background: #22b0f5;
+  border: 1px solid #22b0f5;
 }
 
 .price .form__input_reset {
@@ -2013,7 +2014,7 @@ body {
           flex: 0 0 33.333%;
   padding: 0 0 0 90px;
   list-style: none;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2344,7 +2345,6 @@ body {
 
   .price .form__input_submit {
     width: 125px !important;
-    height: 30px;
   }
 
   .price__offer {
@@ -3856,7 +3856,7 @@ body {
 
   .price .list-price__item {
     padding: 0 0 0 60px;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
 
   .price .list-price__item:before {
