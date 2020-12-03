@@ -2557,16 +2557,6 @@ body {
     margin: 0 6px;
   }
 
-  .header .menu__cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .header .menu__burger {
     display: block;
     position: fixed;
@@ -4109,13 +4099,31 @@ body {
     overflow: hidden;
   }
 
+  .header .menu__cover {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header .menu__cover.active {
+    left: 0;
+  }
+
   .header__menu {
     display: block;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
+  }
+
+  .header__menu.active {
+    left: 0;
   }
 
   .header .menu__body {

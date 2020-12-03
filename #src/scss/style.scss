@@ -415,15 +415,6 @@ body {
             }
         }
         .menu {
-            &__cover {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
-            }
             &__burger {
                 display: block;
                 position: fixed;
@@ -610,13 +601,30 @@ body {
         }
     }
     @media (max-width: $md4 + px) {
+        .menu {
+            &__cover {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                &.active {
+                    left: 0;
+                }
+            }
+        }
         &__menu {
             display: block;
             position: fixed;
             top: 0;
-            left: 0;
+            left: -100%;
             width: 100%;
             height: 100%;
+            &.active {
+                left: 0;
+            }
         }
         .menu {
             &__body {
