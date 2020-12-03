@@ -287,6 +287,7 @@ body {
             margin: 0 15px;
             padding: 17px 3px;
             white-space: nowrap;
+            z-index: 11;
             &:hover {
                 color: rgba(57, 184, 255, 1);
             }
@@ -505,16 +506,17 @@ body {
                 flex: 0 1 auto;
                 display: block;
                 li {
-                    margin: 0 0 30px 0;
-                    &:last-child {
-                        margin: 0 0 15px 0;
-                    }
+                    margin: 0;
                 }
             }
             &__link {
+                display: block;
                 color: rgba(60,70,78,1);
                 padding: 15px 1px;
-                margin: 0;
+                margin: 0 0 1px 0;
+                &:last-child {
+                    margin: 0;
+                }
                 &:hover {
                     color: rgba(53,160,238,1);
                 }

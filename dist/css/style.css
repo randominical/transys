@@ -890,6 +890,7 @@ body {
   margin: 0 15px;
   padding: 17px 3px;
   white-space: nowrap;
+  z-index: 11;
 }
 
 .header .body-menu__link:hover {
@@ -2686,16 +2687,17 @@ body {
   }
 
   .header .body-menu__list li {
-    margin: 0 0 30px 0;
-  }
-
-  .header .body-menu__list li:last-child {
-    margin: 0 0 15px 0;
+    margin: 0;
   }
 
   .header .body-menu__link {
+    display: block;
     color: #3c464e;
     padding: 15px 1px;
+    margin: 0 0 1px 0;
+  }
+
+  .header .body-menu__link:last-child {
     margin: 0;
   }
 
