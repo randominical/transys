@@ -6,8 +6,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.body-menu__list, .body-menu__logo').click(function(event) {
-        $('.menu__burger, .menu__body, .body-menu__logo, .body-menu__bottom').removeClass('active');
+    $('.body-menu__link, .body-menu__logo').click(function(event) {
         $('body').removeClass('lock');
+        $('.menu__burger, .menu__body, .body-menu__logo, .body-menu__bottom').removeClass('active');
     });
 });
