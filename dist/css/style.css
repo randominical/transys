@@ -4099,33 +4099,6 @@ body {
     overflow: hidden;
   }
 
-  .header .menu__cover {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .header .menu__cover.active {
-    left: 0;
-  }
-
-  .header__menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-  }
-
-  .header__menu.active {
-    left: 0;
-  }
-
   .header .menu__body {
     width: 100%;
     background: -o-linear-gradient(right, #003c5f 0, #003c5f 14px, #0a6397 14px, #0a6397 28px, #008dd2 28px, #008dd2 42px, white 42px, white);
