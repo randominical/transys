@@ -848,13 +848,16 @@ body {
 }
 
 .header .lang__option {
-  color: #78a1b6;
   text-transform: uppercase;
   margin: 0 6px;
 }
 
-.header .lang__option.active,
-.header .lang__option:hover {
+.header .lang__option a {
+  color: #78a1b6;
+}
+
+.header .lang__option.active a,
+.header .lang__option:hover a {
   color: white;
 }
 

@@ -257,11 +257,15 @@ body {
     .lang {
         display: flex;
         &__option {
-            color: rgba(120, 161, 182, 1);
             text-transform: uppercase;
             margin: 0 6px;
+            a {
+                color: rgba(120, 161, 182, 1);
+            }
             &.active, &:hover {
-                color: rgba(255, 255, 255, 1);
+                a {
+                    color: rgba(255, 255, 255, 1);
+                }
             }
         }
     }

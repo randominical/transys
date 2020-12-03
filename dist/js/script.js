@@ -60,6 +60,16 @@ window.initMap = function() {
   };;
 (function($) {
     $(function() {
+      $("ul.header__lang").on("click", "li:not(.active)", function() {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active")
+      });
+    });
+  })(jQuery);;
+(function($) {
+    $(function() {
       $("ul.tabs__captions").on("click", "li:not(.active)", function() {
         $(this)
           .addClass("active")
