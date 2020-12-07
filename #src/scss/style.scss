@@ -2482,7 +2482,7 @@ body {
             height: 32px;
             font-size: 12px;
             line-height: 14px;
-            display: inline-flex;
+            display: flex;
             align-items: center;
             padding: 9px 13px;
             &_name, &_tel {
