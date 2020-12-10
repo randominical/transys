@@ -42,4 +42,4 @@ window.initMap = function() {
       position: {lat: 52.090050, lng: 23.694638},
       map: map,
     });
-  };
+};
